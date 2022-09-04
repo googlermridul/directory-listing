@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" type="image/x-icon" href="./img/fav.png" />
+
+      <title>Directory Listing | Home</title>
+      <!-- bootstrap 5 -->
+      <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
+      <!-- SKITTER SLIDER -->
+      <link
+         rel="stylesheet"
+         href="./assets/plugins/skitter-master/skitter.css"
+      />
+      <!-- owl carousel -->
+      <link rel="stylesheet" href="./assets/plugins/owlcarousel/animate.css" />
+      <link
+         rel="stylesheet"
+         href="./assets/plugins/owlcarousel/owl.carousel.min.css"
+      />
+      <link
+         rel="stylesheet"
+         href="./assets/plugins/owlcarousel/owl.theme.default.min.css"
+      />
+      <!-- aos animation -->
+      <link rel="stylesheet" href="./assets/plugins/aos/aos.css" />
+      <!-- fancy box -->
+      <link
+         rel="stylesheet"
+         href="./assets/plugins/fancybox/jquery.fancybox.min.css"
+      />
+      <!-- font awesome 5 -->
+      <script src="./assets/fontawesome/fontawesomepro.js"></script>
+      <link
+         rel="stylesheet"
+         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+      />
+      <!-- custom css -->
+      <link rel="stylesheet" href="./css/style.css" />
+   </head>
+   <body class="">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-md fixed-top">
+         <div class="container">
+            <a class="navbar-brand" href="index.html">Listing</a>
+            <button
+               class="navbar-toggler p-0"
+               type="button"
+               data-bs-toggle="collapse"
+               data-bs-target="#navbarNav"
+               aria-controls="navbarNav"
+               aria-expanded="false"
+               aria-label="Toggle navigation"
+            >
+               <i class="far fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                     <a class="nav-link active" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="faq.html">FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="blog.html">Blogs</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle"> Dropdown </a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                           <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li class="dropdown dropdown2">
+                           <a class="dropdown-item dropdown-toggle"
+                              >Dropdown 2
+                           </a>
+                           <ul class="dropdown-menu dropdown-menu2">
+                              <li>
+                                 <a class="dropdown-item" href="#">Action 1</a>
+                              </li>
+                              <li>
+                                 <a class="dropdown-item" href="#">Action 2</a>
+                              </li>
+                              <li>
+                                 <a class="dropdown-item" href="#">Action 3</a>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+            <div class="navbar-text">
+               <!-- user panel -->
+               <div class="dropdown user-dropdown d-inline-block">
+                  <button class="dropdown-toggle">
+                     <i class="fal fa-user"></i>
+                  </button>
+                  <ul class="dropdown-menu">
+                     <li>
+                        <a class="dropdown-item" href="#">
+                           <i class="fal fa-hand-holding-usd"></i>
+                           make a deposit
+                        </a>
+                     </li>
+                     <li>
+                        <a class="dropdown-item" href="#">
+                           <i class="fal fa-wallet"></i>
+                           withdraw funds
+                        </a>
+                     </li>
+                     <li>
+                        <a class="dropdown-item" href="#">
+                           <i class="fal fa-user-friends"></i>
+                           invite friends
+                        </a>
+                     </li>
+                     <li>
+                        <a class="dropdown-item" href="#">
+                           <i class="fal fa-user"></i>
+                           personal profile
+                        </a>
+                     </li>
+                     <li>
+                        <a class="dropdown-item" href="#">
+                           <i class="fal fa-history"></i>
+                           bet history
+                        </a>
+                     </li>
+                     <li>
+                        <a class="dropdown-item" href="#">
+                           <i class="fal fa-cog"></i>
+                           account settings
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <!-- notification panel -->
+               <div class="notification-panel">
+                  <button class="dropdown-toggle">
+                     <i class="fal fa-bell"></i>
+                     <span class="count">34</span>
+                  </button>
+                  <ul class="notification-dropdown">
+                     <div class="dropdown-box">
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <i class="fal fa-bell"></i>
+                              <div class="text">
+                                 <p>Notification</p>
+                                 <span>Lorem ipsum dolor sit amet.</span>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <i class="fal fa-bell"></i>
+                              <div class="text">
+                                 <p>Notification</p>
+                                 <span>Lorem ipsum dolor sit amet. </span>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <i class="fal fa-bell"></i>
+                              <div class="text">
+                                 <p>Notification</p>
+                                 <span>Lorem ipsum dolor sit amet.</span>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <i class="fal fa-bell"></i>
+                              <div class="text">
+                                 <p>Notification</p>
+                                 <span>Lorem ipsum dolor sit amet.</span>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <i class="fal fa-bell"></i>
+                              <div class="text">
+                                 <p>Notification</p>
+                                 <span>Lorem ipsum dolor sit amet.</span>
+                              </div>
+                           </a>
+                        </li>
+                     </div>
+                     <div class="clear-all fixed-bottom">
+                        <a href="">Clear all</a>
+                     </div>
+                  </ul>
+               </div>
+               <!-- login register button -->
+               <button
+                  class="btn-custom"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+               >
+                  Sign In
+               </button>
+            </div>
+         </div>
+      </nav>
+
+      <!-- home section -->
+      <section class="home-section">
+         <div class="overlay h-100">
+            <div class="container h-100">
+               <div class="row h-100 align-items-center">
+                  <div class="col-lg-12">
+                     <div class="text-box text-center">
+                        <h2>Explore Best Places In City</h2>
+                        <h1>Find the best place to be</h1>
+                        <p>
+                           Find some of the best tips from around the city from
+                           our partners and friends.
+                        </p>
+                        <div class="search-bar">
+                           <div class="row">
+                              <div class="input-box col-3">
+                                 <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="What are you looking for?"
+                                 />
+                              </div>
+                              <div class="input-box col-3">
+                                 <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Enter Location"
+                                 />
+                              </div>
+                              <div class="input-box col-3">
+                                 <select
+                                    class="form-select"
+                                    aria-label="Default select example"
+                                 >
+                                    <option selected>Select Categroy</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                 </select>
+                              </div>
+                              <div class="input-box col-3">
+                                 <button class="btn-custom">search</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div class="section-bottom-shape">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+               fill="#fff"
+               fill-opacity="1"
+               d="M0,160L120,181.3C240,203,480,245,720,250.7C960,256,1200,224,1320,208L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+            ></path>
+         </svg>
+      </div>
+
+      <!-- categroy section -->
+      <section class="category-section">
+         <div class="container">
+            <div class="row g-4">
+               <div class="col-lg-2 col-md-3 col-6">
+                  <a href="">
+                     <div class="category-box">
+                        <div class="icon-box">
+                           <img
+                              class="img-fluid"
+                              src="./img/icon/hotel.png"
+                              alt=""
+                           />
+                        </div>
+                        <h5>Hotel & hostel</h5>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-lg-2 col-md-3 col-6">
+                  <a href="">
+                     <div class="category-box">
+                        <div class="icon-box">
+                           <img
+                              class="img-fluid"
+                              src="./img/icon/hot-pot.png"
+                              alt=""
+                           />
+                        </div>
+                        <h5>Food & Drink</h5>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-lg-2 col-md-3 col-6">
+                  <a href="">
+                     <div class="category-box">
+                        <div class="icon-box">
+                           <img
+                              class="img-fluid"
+                              src="./img/icon/shopping-bag.png"
+                              alt=""
+                           />
+                        </div>
+                        <h5>Shopping</h5>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-lg-2 col-md-3 col-6">
+                  <a href="">
+                     <div class="category-box">
+                        <div class="icon-box">
+                           <img
+                              class="img-fluid"
+                              src="./img/icon/theater.png"
+                              alt=""
+                           />
+                        </div>
+                        <h5>Entertainment</h5>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-lg-2 col-md-3 col-6">
+                  <a href="">
+                     <div class="category-box">
+                        <div class="icon-box">
+                           <img
+                              class="img-fluid"
+                              src="./img/icon/fuel.png"
+                              alt=""
+                           />
+                        </div>
+                        <h5>Fuel station</h5>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-lg-2 col-md-3 col-6">
+                  <a href="">
+                     <div class="category-box">
+                        <div class="icon-box">
+                           <img
+                              class="img-fluid"
+                              src="./img/icon/dumbbell.png"
+                              alt=""
+                           />
+                        </div>
+                        <h5>Fitness</h5>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-lg-2 col-md-3 col-6">
+                  <a href="">
+                     <div class="category-box">
+                        <div class="icon-box">
+                           <i class="fal fa-bed"></i>
+                        </div>
+                        <h5>Hotel & hostel</h5>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-lg-2 col-md-3 col-6">
+                  <a href="">
+                     <div class="category-box">
+                        <div class="icon-box">
+                           <i class="fal fa-burger-soda"></i>
+                        </div>
+                        <h5>Food & Drink</h5>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-lg-2 col-md-3 col-6">
+                  <a href="">
+                     <div class="category-box">
+                        <div class="icon-box">
+                           <i class="fal fa-shopping-bag"></i>
+                        </div>
+                        <h5>Shopping</h5>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-lg-2 col-md-3 col-6">
+                  <a href="">
+                     <div class="category-box">
+                        <div class="icon-box">
+                           <i class="fal fa-popcorn"></i>
+                        </div>
+                        <h5>Entertainment</h5>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-lg-2 col-md-3 col-6">
+                  <a href="">
+                     <div class="category-box">
+                        <div class="icon-box">
+                           <i class="fal fa-gas-pump"></i>
+                        </div>
+                        <h5>Fuel station</h5>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-lg-2 col-md-3 col-6">
+                  <a href="">
+                     <div class="category-box">
+                        <div class="icon-box">
+                           <i class="fal fa-dumbbell"></i>
+                        </div>
+                        <h5>Fitness</h5>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="popular-listings">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="header-text text-center">
+                     <h3>Popular listings</h3>
+                     <p>
+                        Explore the greates places in the city. You won’t be
+                        disappointed.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- about section -->
+      <!-- <section class="about-section">
+         <div class="container">
+            <div class="row g-5 align-items-center">
+               <div class="col-lg-6">
+                  <div class="img-box">
+                     <img
+                        src="./img/about-img-2.png"
+                        class="img-fluid rounded"
+                        alt=""
+                     />
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div class="text-box">
+                     <div class="header-text">
+                        <h5>About us</h5>
+                        <h2>Short story about us</h2>
+                     </div>
+                     <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Vero animi eaque nesciunt iusto quidem numquam
+                        consequuntur vel deleniti, aperiam aliquid, iure illo,
+                        impedit cum accusamus magni dolorum libero a expedita!
+                        <br />
+                        <br />
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Amet hic dicta quibusdam rem adipisci laudantium
+                        voluptatem rerum sunt dignissimos! Officiis sed minus
+                        nihil cum maiores, assumenda omnis suscipit corrupti
+                        eveniet.
+                     </p>
+                     <ul>
+                        <li>
+                           <i class="fal fa-check"></i>
+                           Lorem ipsum dolor sit amet consectetur adipisicing
+                           elit.
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section> -->
+
+      <!-- service section -->
+      <!-- <section class="service-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="header-text text-center mb-xxl-5">
+                     <h5>services</h5>
+                     <h2>our services</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section> -->
+
+      <!-- Login Modal -->
+      <div
+         class="modal fade"
+         id="loginModal"
+         tabindex="-1"
+         aria-labelledby="loginModalLabel"
+         aria-hidden="true"
+      >
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h4>Login here</h4>
+                  <button
+                     type="button"
+                     class="btn-close"
+                     data-bs-dismiss="modal"
+                     aria-label="Close"
+                  ></button>
+               </div>
+               <div class="modal-body">
+                  <form action="">
+                     <div class="row g-4">
+                        <div class="input-box col-12">
+                           <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Email address"
+                           />
+                        </div>
+                        <div class="input-box col-12">
+                           <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Password"
+                           />
+                        </div>
+                        <div class="col-12">
+                           <div class="links">
+                              <div class="form-check">
+                                 <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    id="flexCheckDefault"
+                                 />
+                                 <label
+                                    class="form-check-label"
+                                    for="flexCheckDefault"
+                                 >
+                                    Remember me
+                                 </label>
+                              </div>
+                              <a href="forgot-password.html"
+                                 >Forgot password?</a
+                              >
+                           </div>
+                        </div>
+                     </div>
+
+                     <button class="btn-custom w-100">sign in</button>
+                     <div class="bottom">
+                        Don't have an account?
+
+                        <a href="register.html">Create account</a>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Register Modal -->
+      <div
+         class="modal fade"
+         id="registerModal"
+         tabindex="-1"
+         aria-labelledby="registerModalLabel"
+         aria-hidden="true"
+      >
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h4>Join us</h4>
+                  <button
+                     type="button"
+                     class="btn-close"
+                     data-bs-dismiss="modal"
+                     aria-label="Close"
+                  ></button>
+               </div>
+               <div class="modal-body">
+                  <form action="">
+                     <div class="row g-4">
+                        <div class="input-box col-12">
+                           <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Full name"
+                           />
+                        </div>
+                        <div class="input-box col-12">
+                           <input
+                              type="email"
+                              class="form-control"
+                              placeholder="Email address"
+                           />
+                        </div>
+                        <div class="input-box col-12">
+                           <input
+                              type="password"
+                              class="form-control"
+                              placeholder="Password"
+                           />
+                        </div>
+                        <div class="col-12">
+                           <div class="links">
+                              <div class="form-check">
+                                 <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    id="termAndConditions"
+                                 />
+                                 <label
+                                    class="form-check-label"
+                                    for="termAndConditions"
+                                 >
+                                    I Agree with the Terms & conditions
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <button class="btn-custom w-100">sign up</button>
+                     <div class="bottom">
+                        Already have an account?
+
+                        <a href="login.html">Login here</a>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- bootstrap -->
+      <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+      <script src="./assets/bootstrap/masonry.pkgd.min.js"></script>
+      <!-- jquery cdn -->
+      <script src="./assets/jquery/jquery-3.6.0.min.js"></script>
+      <!-- SKITTER SLIDER -->
+      <script src="./assets/plugins/skitter-master/jquery.skitter.min.js"></script>
+      <script src="./assets/plugins/skitter-master/jquery.easing.1.3.js"></script>
+      <!-- owl carousel -->
+      <script src="./assets/plugins/owlcarousel/owl.carousel.min.js"></script>
+      <!-- counter up -->
+      <script src="./assets/plugins/counterup/jquery.waypoints.min.js"></script>
+      <script src="./assets/plugins/counterup/jquery.counterup.min.js"></script>
+      <!-- aos animation -->
+      <script src="./assets/plugins/aos/aos.js"></script>
+      <!-- fancy box -->
+      <script src="./assets/plugins/fancybox/jquery.fancybox.min.js"></script>
+      <!-- custom script -->
+      <script src="./js/script.js"></script>
+   </body>
+</html>

@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" type="image/x-icon" href="./img/fav.png" />
+
+      <title>ICO | Home</title>
+      <!-- bootstrap 5 -->
+      <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
+      <!-- SKITTER SLIDER -->
+      <link
+         rel="stylesheet"
+         href="./assets/plugins/skitter-master/skitter.css"
+      />
+      <!-- owl carousel -->
+      <link rel="stylesheet" href="./assets/plugins/owlcarousel/animate.css" />
+      <link
+         rel="stylesheet"
+         href="./assets/plugins/owlcarousel/owl.carousel.min.css"
+      />
+      <link
+         rel="stylesheet"
+         href="./assets/plugins/owlcarousel/owl.theme.default.min.css"
+      />
+      <!-- aos animation -->
+      <link rel="stylesheet" href="./assets/plugins/aos/aos.css" />
+      <!-- fancy box -->
+      <link
+         rel="stylesheet"
+         href="./assets/plugins/fancybox/jquery.fancybox.min.css"
+      />
+      <!-- font awesome 5 -->
+      <script src="./assets/fontawesome/fontawesomepro.js"></script>
+      <link
+         rel="stylesheet"
+         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+      />
+      <!-- custom css -->
+      <link rel="stylesheet" href="./css/style.css" />
+   </head>
+   <body>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-md fixed-top">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">ICO</a>
+            <button
+               class="navbar-toggler p-0"
+               type="button"
+               data-bs-toggle="collapse"
+               data-bs-target="#navbarNav"
+               aria-controls="navbarNav"
+               aria-expanded="false"
+               aria-label="Toggle navigation"
+            >
+               <i class="far fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav">
+                  <li class="nav-item">
+                     <a class="nav-link active" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="faq.html">FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="blog.html">Blogs</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle"> Dropdown </a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                           <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li class="dropdown dropdown2">
+                           <a class="dropdown-item dropdown-toggle"
+                              >Dropdown 2
+                           </a>
+                           <ul class="dropdown-menu dropdown-menu2">
+                              <li>
+                                 <a class="dropdown-item" href="#">Action 1</a>
+                              </li>
+                              <li>
+                                 <a class="dropdown-item" href="#">Action 2</a>
+                              </li>
+                              <li>
+                                 <a class="dropdown-item" href="#">Action 3</a>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+            <div class="navbar-text">
+               <button onclick="darkMode()" class="btn-custom light night-mode">
+                  <i class="fal fa-moon"></i>
+               </button>
+               <!-- user panel -->
+               <div class="dropdown user-dropdown d-inline-block">
+                  <button class="dropdown-toggle">
+                     <i class="fal fa-user"></i>
+                  </button>
+                  <ul class="dropdown-menu">
+                     <li>
+                        <a class="dropdown-item" href="deposit.html">
+                           <i class="fal fa-hand-holding-usd"></i>
+                           make a deposit
+                        </a>
+                     </li>
+                     <li>
+                        <a class="dropdown-item" href="#">
+                           <i class="fal fa-wallet"></i>
+                           withdraw funds
+                        </a>
+                     </li>
+                     <li>
+                        <a class="dropdown-item" href="#">
+                           <i class="fal fa-user-friends"></i>
+                           invite friends
+                        </a>
+                     </li>
+                     <li>
+                        <a class="dropdown-item" href="#">
+                           <i class="fal fa-user"></i>
+                           personal profile
+                        </a>
+                     </li>
+                     <li>
+                        <a class="dropdown-item" href="#">
+                           <i class="fal fa-history"></i>
+                           bet history
+                        </a>
+                     </li>
+                     <li>
+                        <a class="dropdown-item" href="#">
+                           <i class="fal fa-cog"></i>
+                           account settings
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <!-- notification panel -->
+               <div class="notification-panel">
+                  <button class="dropdown-toggle">
+                     <i class="fal fa-bell"></i>
+                     <span class="count">34</span>
+                  </button>
+                  <ul class="notification-dropdown">
+                     <div class="dropdown-box">
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <i class="fal fa-bell"></i>
+                              <div class="text">
+                                 <p>Notification</p>
+                                 <span>Lorem ipsum dolor sit amet.</span>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <i class="fal fa-bell"></i>
+                              <div class="text">
+                                 <p>Notification</p>
+                                 <span
+                                    >Lorem ipsum dolor sit amet. asdfasdffdsf
+                                    sdf sdf ds d dd fd f
+                                 </span>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <i class="fal fa-bell"></i>
+                              <div class="text">
+                                 <p>Notification</p>
+                                 <span>Lorem ipsum dolor sit amet.</span>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <i class="fal fa-bell"></i>
+                              <div class="text">
+                                 <p>Notification</p>
+                                 <span>Lorem ipsum dolor sit amet.</span>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <i class="fal fa-bell"></i>
+                              <div class="text">
+                                 <p>Notification</p>
+                                 <span>Lorem ipsum dolor sit amet.</span>
+                              </div>
+                           </a>
+                        </li>
+                     </div>
+                     <div class="clear-all fixed-bottom">
+                        <a href="">Clear all</a>
+                     </div>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </nav>
+
+      <!-- wrapper -->
+      <div class="wrapper">
+         <!-- leftbar -->
+         <div class="leftbar">
+            <div class="top p-1 d-flex">
+               <button class="btn-custom me-1">
+                  <i class="las la-podcast"></i>
+                  Live
+               </button>
+               <button class="btn-custom light">
+                  <i class="las la-meteor"></i>
+                  Upcoming
+               </button>
+            </div>
+            <ul class="main">
+               <li>
+                  <a
+                     class="dropdown-toggle active"
+                     data-bs-toggle="collapse"
+                     href="#criecktCollapse"
+                     role="button"
+                     aria-expanded="false"
+                     aria-controls="collapseExample"
+                  >
+                     <i class="far fa-cricket"></i>Cricket
+                     <span class="count">32</span>
+                  </a>
+                  <!-- dropdown item -->
+                  <div class="collapse" id="criecktCollapse">
+                     <ul class="">
+                        <li>
+                           <a href="#" class="sidebar-link">
+                              <i class="far fa-globe-americas"></i> Asia cup</a
+                           >
+                        </li>
+                        <li>
+                           <a href="#" class="sidebar-link">
+                              <i class="far fa-globe-americas"></i>World cup</a
+                           >
+                        </li>
+                        <li>
+                           <a href="#" class="sidebar-link">
+                              <i class="far fa-globe-americas"></i>Bangladesh
+                              Premier League</a
+                           >
+                        </li>
+                        <li>
+                           <a href="#" class="sidebar-link">
+                              <i class="far fa-globe-americas"></i>Pakistan
+                              Premier League</a
+                           >
+                        </li>
+                        <li>
+                           <a href="#" class="sidebar-link">
+                              <i class="far fa-globe-americas"></i>Dubai Premier
+                              League</a
+                           >
+                        </li>
+                     </ul>
+                  </div>
+               </li>
+               <li>
+                  <a
+                     class="dropdown-toggle"
+                     data-bs-toggle="collapse"
+                     href="#footballCollapse"
+                     role="button"
+                     aria-expanded="false"
+                     aria-controls="collapseExample"
+                  >
+                     <i class="far fa-futbol"></i>Football
+                     <span class="count">55</span>
+                  </a>
+                  <!-- dropdown item -->
+                  <div class="collapse" id="footballCollapse">
+                     <ul class="">
+                        <li>
+                           <a href="#" class="sidebar-link">
+                              <i class="far fa-globe-americas"></i>Asia cup</a
+                           >
+                        </li>
+                        <li>
+                           <a href="#" class="sidebar-link">
+                              <i class="far fa-globe-americas"></i>World cup</a
+                           >
+                        </li>
+                        <li>
+                           <a href="#" class="sidebar-link">
+                              <i class="far fa-globe-americas"></i>Bangladesh
+                              Premier League</a
+                           >
+                        </li>
+                        <li>
+                           <a href="#" class="sidebar-link">
+                              <i class="far fa-globe-americas"></i>Pakistan
+                              Premier League</a
+                           >
+                        </li>
+                        <li>
+                           <a href="#" class="sidebar-link">
+                              <i class="far fa-globe-americas"></i>Dubai Premier
+                              League</a
+                           >
+                        </li>
+                     </ul>
+                  </div>
+               </li>
+               <!-- list item -->
+               <li>
+                  <a href="" class="sidebar-link">
+                     <i class="far fa-table-tennis"></i>Table tennis
+                  </a>
+               </li>
+               <li>
+                  <a href="" class="sidebar-link">
+                     <i class="far fa-baseball"></i>Baseball
+                  </a>
+               </li>
+               <li>
+                  <a href="" class="sidebar-link">
+                     <i class="far fa-basketball-ball"></i>Basketball
+                  </a>
+               </li>
+               <li>
+                  <a href="" class="sidebar-link">
+                     <i class="far fa-field-hockey"></i>Hockey
+                  </a>
+               </li>
+               <li>
+                  <a href="" class="sidebar-link">
+                     <i class="far fa-horse-head"></i>Horse Racing
+                  </a>
+               </li>
+               <li>
+                  <a href="" class="sidebar-link">
+                     <i class="far fa-swimmer"></i>Swimming
+                  </a>
+               </li>
+               <li>
+                  <a href="" class="sidebar-link">
+                     <i class="far fa-chess"></i>Chess
+                  </a>
+               </li>
+               <li>
+                  <a href="" class="sidebar-link">
+                     <i class="far fa-gamepad-alt"></i>ESports
+                  </a>
+               </li>
+               <li>
+                  <a href="" class="sidebar-link">
+                     <i class="far fa-boxing-glove"></i>Boxing
+                  </a>
+               </li>
+               <li>
+                  <a href="" class="sidebar-link">
+                     <i class="far fa-golf-club"></i>Golf
+                  </a>
+               </li>
+               <li>
+                  <a href="" class="sidebar-link">
+                     <i class="far fa-table-tennis"></i>Table tennis
+                  </a>
+               </li>
+               <li>
+                  <a href="" class="sidebar-link">
+                     <i class="far fa-baseball"></i>Baseball
+                  </a>
+               </li>
+               <li>
+                  <a href="" class="sidebar-link">
+                     <i class="far fa-basketball-ball"></i>Basketball
+                  </a>
+               </li>
+               <li>
+                  <a href="" class="sidebar-link">
+                     <i class="far fa-field-hockey"></i>Hockey
+                  </a>
+               </li>
+               <li>
+                  <a href="" class="sidebar-link">
+                     <i class="far fa-horse-head"></i>Horse Racing
+                  </a>
+               </li>
+               <li>
+                  <a href="" class="sidebar-link">
+                     <i class="far fa-swimmer"></i>Swimming
+                  </a>
+               </li>
+               <li>
+                  <a href="" class="sidebar-link">
+                     <i class="far fa-chess"></i>Chess
+                  </a>
+               </li>
+               <li>
+                  <a href="" class="sidebar-link">
+                     <i class="far fa-gamepad-alt"></i>ESports
+                  </a>
+               </li>
+               <li>
+                  <a href="" class="sidebar-link">
+                     <i class="far fa-boxing-glove"></i>Boxing
+                  </a>
+               </li>
+               <li>
+                  <a href="" class="sidebar-link">
+                     <i class="far fa-golf-club"></i>Golf
+                  </a>
+               </li>
+            </ul>
+            <div class="bottom p-1">
+               <button class="btn-custom light w-100 mb-1">statistsics</button>
+               <button class="btn-custom light w-100">results</button>
+            </div>
+         </div>
+
+         <!-- rightbar -->
+         <div class="rightbar">
+            <div class="top mb-3 d-flex">
+               <button class="btn-custom me-1">
+                  <i class="las la-podcast"></i>
+                  bet slip
+               </button>
+               <button class="btn-custom light">
+                  <i class="las la-meteor"></i>
+                  my bets
+               </button>
+            </div>
+
+            <div class="mb-2">
+               <div class="d-flex justify-content-between">
+                  <p class="mb-0">Your Bets</p>
+
+                  <div class="dropdown">
+                     <button class="dropdown-toggle">
+                        <i class="fal fa-cog"></i>
+                     </button>
+                     <div class="dropdown-menu dropdown-menu2">
+                        <!-- <li>
+                           <a class="dropdown-item" href="#">Action 1</a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="#">Action 2</a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="#">Action 3</a>
+                        </li> -->
+                        <div class="form-check">
+                           <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckChecked3"
+                           />
+                           <label
+                              class="form-check-label"
+                              for="flexCheckChecked3"
+                           >
+                              Default checkbox
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckChecked"
+                           />
+                           <label
+                              class="form-check-label"
+                              for="flexCheckChecked"
+                           >
+                              Checked checkbox
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckChecke2"
+                           />
+                           <label
+                              class="form-check-label"
+                              for="flexCheckChecke2"
+                           >
+                              Checked checkbox
+                           </label>
+                        </div>
+                        <button class="btn-custom w-100">save changes</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="bet-box mb-2">
+               <p class="series d-flex align-items-start">
+                  <span>
+                     <i class="far fa-futbol"></i> 17210. Central American
+                     Championship U23</span
+                  >
+                  <button class="close-btn">
+                     <i class="fal fa-times"></i>
+                  </button>
+               </p>
+               <p class="teams">Nicaragua U23 - El Salvador U23 [1:3]</p>
+               <p>
+                  <span class="badge">1.45</span>
+                  <span>1 x 2 Houston Texans</span>
+               </p>
+            </div>
+            <div class="bet-box mb-2">
+               <p class="series d-flex align-items-start">
+                  <span>
+                     <i class="far fa-cricket"></i> 17210. Central American
+                     Championship U23</span
+                  >
+                  <button class="close-btn">
+                     <i class="fal fa-times"></i>
+                  </button>
+               </p>
+               <p class="teams">Nicaragua U23 - El Salvador U23 [1:3]</p>
+               <p>
+                  <span class="badge">1.45</span>
+                  <span>1 x 2 Houston Texans</span>
+               </p>
+            </div>
+
+            <div class="mb-3">
+               <p class="mb-1">
+                  Overall Odds <span class="float-end">2.616</span>
+               </p>
+               <p class="mb-1">
+                  Maximum stake amount <span class="float-end">0 CAD</span>
+               </p>
+               <p class="mb-1">
+                  Potential Winnings <span class="float-end">120.34 CAD</span>
+               </p>
+            </div>
+
+            <div class="input-group inc-dec mb-3">
+               <button class="decrement btn-custom">-</button>
+               <input type="text" class="form-control" value="1" />
+               <button class="increment btn-custom">+</button>
+            </div>
+
+            <form action="">
+               <div class="input-box">
+                  <input
+                     type="text"
+                     placeholder="Promo code"
+                     class="form-control"
+                  />
+               </div>
+               <div class="input-box">
+                  <select
+                     class="form-select"
+                     aria-label="Default select example"
+                  >
+                     <option selected>Accept if odds increase</option>
+                     <option value="1">One</option>
+                     <option value="2">Two</option>
+                     <option value="3">Three</option>
+                  </select>
+               </div>
+               <div class="input-box">
+                  <select
+                     class="form-select"
+                     aria-label="Default select example"
+                  >
+                     <option selected>Accumulator</option>
+                     <option value="1">One</option>
+                     <option value="2">Two</option>
+                     <option value="3">Three</option>
+                  </select>
+               </div>
+               <button class="btn-custom w-100">place bet</button>
+            </form>
+         </div>
+
+         <!-- contents -->
+         <div class="content">
+            <!-- highlights -->
+            <div class="highlights">
+               <div class="box">
+                  <h4 class="mb-3">Bangladesh Premier League</h4>
+                  <div
+                     class="row d-flex justify-content-around align-items-center"
+                  >
+                     <div class="col-4 team">
+                        <img
+                           class="img-fluid"
+                           src="./img/team/Chattogram_Challengers.png"
+                           alt=""
+                        />
+                        <h5>Chattogram Challengers</h5>
+                     </div>
+                     <div class="col-4">
+                        <span>6 inning</span>
+                        <h5>6 : 4</h5>
+                     </div>
+                     <div class="col-4 team">
+                        <img
+                           class="img-fluid"
+                           src="./img/team/dd-logo.png"
+                           alt=""
+                        />
+                        <h5>Dhaka Dynamites</h5>
+                     </div>
+                     <div class="col-12 align-self-end">
+                        <div class="d-flex justify-content-between">
+                           <button class="btn-light">3.25</button>
+                           <button class="btn-light">25</button>
+                           <button class="btn-light">1.3</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- categories -->
+            <div class="categories">
+               <a href="" class="active">
+                  <i class="far fa-table-tennis"></i><span>Table tennis</span>
+               </a>
+               <a href="">
+                  <i class="far fa-baseball"></i><span>Baseball</span>
+               </a>
+               <a href="">
+                  <i class="far fa-basketball-ball"></i><span>Basketball</span>
+               </a>
+               <a href="">
+                  <i class="far fa-field-hockey"></i><span>Hockey</span>
+               </a>
+               <a href="">
+                  <i class="far fa-horse-head"></i><span>Horse Racing</span>
+               </a>
+               <a href="">
+                  <i class="far fa-swimmer"></i><span>Swimming</span>
+               </a>
+               <a href=""> <i class="far fa-chess"></i><span>Chess</span> </a>
+               <a href="">
+                  <i class="far fa-gamepad-alt"></i><span>ESports</span>
+               </a>
+               <a href="">
+                  <i class="far fa-boxing-glove"></i><span>Boxing</span>
+               </a>
+               <a href="">
+                  <i class="far fa-golf-club"></i><span>Golf</span>
+               </a>
+            </div>
+
+            <!-- table -->
+            <div class="table-parent table-responsive">
+               <table class="table table-striped">
+                  <thead>
+                     <tr>
+                        <th class="text-center">
+                           <span>
+                              <i class="fas fa-cricket"></i>
+                           </span>
+                        </th>
+                        <th class="col-5">
+                           <span>
+                              <img src="./img/team/bd.png" alt="" />
+                              Bangladesh Premier League
+                           </span>
+                        </th>
+                        <th class="col-2">
+                           <div class="d-flex justify-content-evenly">
+                              <span>1</span>
+                              <span>X</span>
+                              <span>2</span>
+                           </div>
+                        </th>
+                        <th class="col-2">
+                           <div class="d-flex justify-content-evenly">
+                              <span>1</span>
+                              <span>Team Wins</span>
+                              <span>2</span>
+                           </div>
+                        </th>
+                        <th class="col-2">
+                           <div class="d-flex justify-content-evenly">
+                              <span>O</span>
+                              <span>Total</span>
+                              <span>U</span>
+                           </div>
+                        </th>
+                        <th class="col-1 text-center">+</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td class="text-center">
+                           <a href="">
+                              <i class="fal fa-thumbtack"></i>
+                           </a>
+                           <a href="">
+                              <i class="fal fa-star"></i>
+                           </a>
+                        </td>
+                        <td>
+                           <p>
+                              Chattogram Challengers
+                              <span class="float-end">161</span>
+                           </p>
+                           <p>
+                              Sylhet Sunrisers
+                              <span class="float-end">23/1</span>
+                           </p>
+                           <p>
+                              <span class="ms-0">45:00 Half time</span>
+                              <span class="float-end">
+                                 <a href="" class="me-2">
+                                    <i class="fal fa-tv"></i>
+                                 </a>
+                                 <a href="" class="me-2">
+                                    <i class="fal fa-chart-bar"></i>
+                                 </a>
+                                 <a
+                                    data-bs-toggle="collapse"
+                                    href="#tableCcollapse"
+                                    role="button"
+                                    aria-expanded="false"
+                                    aria-controls="tableCcollapse"
+                                 >
+                                    <i class="fas fa-caret-down"></i>
+                                 </a>
+                              </span>
+                           </p>
+                        </td>
+                        <td>
+                           <div class="d-flex justify-content-evenly w-100">
+                              <button>3.25</button>
+                              <button>25</button>
+                              <button>1.3</button>
+                           </div>
+                        </td>
+                        <td>
+                           <div class="d-flex justify-content-evenly w-100">
+                              <button>3.25</button>
+                              <button>25</button>
+                              <button>1.3</button>
+                           </div>
+                        </td>
+                        <td>
+                           <div class="d-flex justify-content-evenly w-100">
+                              <button>3.25</button>
+                              <button>25</button>
+                              <button>1.3</button>
+                           </div>
+                        </td>
+                        <td><button>+17</button></td>
+                        <div>
+                           <tr class="collapse" id="tableCcollapse">
+                              <td class="text-center"></td>
+                              <td>
+                                 <p>
+                                    First Half
+                                    <span class="float-end">161</span>
+                                 </p>
+                              </td>
+                              <td>
+                                 <div
+                                    class="d-flex justify-content-evenly w-100"
+                                 >
+                                    <button>3.25</button>
+                                    <button>25</button>
+                                    <button>1.3</button>
+                                 </div>
+                              </td>
+                              <td>
+                                 <div
+                                    class="d-flex justify-content-evenly w-100"
+                                 >
+                                    <button>3.25</button>
+                                    <button>25</button>
+                                    <button>1.3</button>
+                                 </div>
+                              </td>
+                              <td>
+                                 <div
+                                    class="d-flex justify-content-evenly w-100"
+                                 >
+                                    <button>3.25</button>
+                                    <button>25</button>
+                                    <button>1.3</button>
+                                 </div>
+                              </td>
+                              <td><button>+17</button></td>
+                           </tr>
+                           <tr class="collapse" id="tableCcollapse">
+                              <td class="text-center"></td>
+                              <td>
+                                 <p>
+                                    Second Half
+                                    <span class="float-end">161</span>
+                                 </p>
+                              </td>
+                              <td>
+                                 <div
+                                    class="d-flex justify-content-evenly w-100"
+                                 >
+                                    <button>3.25</button>
+                                    <button>25</button>
+                                    <button>1.3</button>
+                                 </div>
+                              </td>
+                              <td>
+                                 <div
+                                    class="d-flex justify-content-evenly w-100"
+                                 >
+                                    <button>3.25</button>
+                                    <button>25</button>
+                                    <button>1.3</button>
+                                 </div>
+                              </td>
+                              <td>
+                                 <div
+                                    class="d-flex justify-content-evenly w-100"
+                                 >
+                                    <button>3.25</button>
+                                    <button>25</button>
+                                    <button>1.3</button>
+                                 </div>
+                              </td>
+                              <td><button>+17</button></td>
+                           </tr>
+                        </div>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+      </div>
+
+      <!-- bootstrap -->
+      <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+      <script src="./assets/bootstrap/masonry.pkgd.min.js"></script>
+      <!-- jquery cdn -->
+      <script src="./assets/jquery/jquery-3.6.0.min.js"></script>
+      <!-- SKITTER SLIDER -->
+      <script src="./assets/plugins/skitter-master/jquery.skitter.min.js"></script>
+      <script src="./assets/plugins/skitter-master/jquery.easing.1.3.js"></script>
+      <!-- owl carousel -->
+      <script src="./assets/plugins/owlcarousel/owl.carousel.min.js"></script>
+      <!-- counter up -->
+      <script src="./assets/plugins/counterup/jquery.waypoints.min.js"></script>
+      <script src="./assets/plugins/counterup/jquery.counterup.min.js"></script>
+      <!-- aos animation -->
+      <script src="./assets/plugins/aos/aos.js"></script>
+      <!-- fancy box -->
+      <script src="./assets/plugins/fancybox/jquery.fancybox.min.js"></script>
+      <!-- custom script -->
+      <script src="./js/script.js"></script>
+   </body>
+</html>
