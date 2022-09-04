@@ -9,7 +9,7 @@
   --bgDark2: #323546;
   --borderColor: #e4e6eb;
   --gray: #5e627f;
-  --textColor: #435059;
+  --textColor: #3f3164;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -24,7 +24,7 @@ body {
   font-family: "Rajdhani", sans-serif;
   font-family: "DM Sans", sans-serif;
   font-family: "Jost", sans-serif;
-  color: var(--black);
+  color: var(--gray);
   background: var(--white);
   font-weight: 400;
   font-size: 15px;
@@ -177,17 +177,57 @@ i {
 
 .navbar {
   padding: 0px 15px;
+  background: var(--white);
 }
 
 .navbar .navbar-brand {
   font-size: 24px;
-  color: var(--white);
-  font-weight: 700;
+  color: var(--textColor);
+  font-weight: 600;
   display: inline-block;
 }
 
 .navbar .navbar-brand img {
   width: 80px;
+}
+
+.navbar .navbar-toggler {
+  position: absolute;
+  right: 15px;
+  top: 12px;
+}
+
+.navbar .navbar-toggler i {
+  color: var(--primary);
+  font-size: 18px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.navbar .navbar-toggler i:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-toggler:focus {
+  -webkit-box-shadow: 0 0 0 0rem;
+          box-shadow: 0 0 0 0rem;
+}
+
+.navbar .nav-item {
+  margin: 15px 15px;
+  padding: 5px 0;
+}
+
+.navbar .nav-item .nav-link {
+  color: var(--gray);
+  text-transform: capitalize;
+  font-weight: 500;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.navbar .nav-item .nav-link.active, .navbar .nav-item .nav-link:hover {
+  color: var(--primary);
 }
 
 .navbar .dropdown {
@@ -209,7 +249,7 @@ i {
 }
 
 .navbar .dropdown .dropdown-menu a {
-  color: var(--black);
+  color: var(--gray);
   text-transform: capitalize;
   font-weight: 400;
   -webkit-transition: 0.4s;
@@ -251,46 +291,6 @@ i {
   top: 0;
 }
 
-.navbar .navbar-toggler {
-  position: absolute;
-  right: 15px;
-  top: 12px;
-}
-
-.navbar .navbar-toggler i {
-  color: var(--primary);
-  font-size: 18px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.navbar .navbar-toggler i:hover {
-  color: var(--primary);
-}
-
-.navbar .navbar-toggler:focus {
-  -webkit-box-shadow: 0 0 0 0rem;
-          box-shadow: 0 0 0 0rem;
-}
-
-.navbar .nav-item {
-  margin: 15px 15px;
-  padding: 5px 0;
-}
-
-.navbar .nav-item .nav-link {
-  color: var(--white);
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 400;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.navbar .nav-item .nav-link.active, .navbar .nav-item .nav-link:hover {
-  color: var(--primary);
-}
-
 .navbar .navbar-text .btn-custom {
   width: 120px;
   height: 40px;
@@ -309,7 +309,7 @@ i {
   width: 40px;
   height: 40px;
   text-align: center;
-  color: var(--white);
+  color: var(--primary);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -352,7 +352,7 @@ i {
   width: 40px;
   height: 40px;
   text-align: center;
-  color: var(--white);
+  color: var(--primary);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -599,7 +599,7 @@ i {
 }
 
 .section-bottom-shape {
-  margin-top: -335px;
+  margin-top: -320px;
 }
 
 .about-section {
@@ -625,7 +625,8 @@ i {
 }
 
 .category-section {
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .category-section .category-box {
@@ -664,6 +665,78 @@ i {
 
 .popular-listings .header-text p {
   margin: auto;
+}
+
+.popular-listings .box {
+  background: var(--white);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.popular-listings .img-box {
+  position: relative;
+}
+
+.popular-listings .img-box .save {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+  background: var(--primary);
+  color: var(--white);
+  text-align: center;
+  padding-top: 3px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.popular-listings .img-box .save:hover {
+  background: var(--primary2);
+}
+
+.popular-listings .img-box .price {
+  position: absolute;
+  right: 20px;
+  bottom: -30px;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  text-align: center;
+  font-size: 24px;
+  padding-top: 12px;
+  font-weight: 500;
+  color: var(--white);
+  background: var(--primary);
+}
+
+.popular-listings .text-box {
+  padding: 30px 20px 15px 20px;
+  color: var(--gray);
+}
+
+.popular-listings .text-box .title {
+  color: var(--textColor);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.popular-listings .text-box .fa-check-circle {
+  color: var(--primary);
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.popular-listings .text-box .address {
+  font-size: 13px;
+  margin-bottom: 0;
+  color: var(--gray);
+}
+
+.popular-listings .text-box .address i {
+  font-size: 14px;
 }
 
 .modal,
@@ -2308,7 +2381,7 @@ i {
 .footer-section .footer-box .navbar-brand {
   font-size: 24px;
   color: var(--bgDark);
-  font-weight: 700;
+  font-weight: 600;
   display: inline-block;
 }
 
@@ -2322,7 +2395,7 @@ i {
 }
 
 .footer-section .footer-box h5 {
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .footer-section .footer-box a {
@@ -2354,12 +2427,12 @@ i {
 
 .footer-section .footer-box .social-links a {
   display: inline-block;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   text-align: center;
   margin-right: 10px;
-  border-radius: 3px;
-  padding-top: 8px;
+  border-radius: 5px;
+  padding-top: 10px;
   background: var(--primary);
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -2370,7 +2443,7 @@ i {
 }
 
 .footer-section .footer-box .social-links a:hover {
-  background: var(--bgDark);
+  background: var(--primary2);
 }
 
 .footer-section .footer-box .input-group {
@@ -2406,7 +2479,7 @@ i {
 }
 
 .footer-section .footer-box .input-group button:hover {
-  background: var(--bgDark);
+  background: var(--primary2);
 }
 
 .footer-section .footer-bottom {
@@ -2417,6 +2490,12 @@ i {
 
 .footer-section .footer-bottom .copyright a {
   color: var(--primary);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.footer-section .footer-bottom .copyright a:hover {
+  color: var(--primary2);
 }
 
 .footer-section .footer-bottom .language {
@@ -2427,6 +2506,12 @@ i {
 .footer-section .footer-bottom .language a {
   color: var(--primary);
   margin-right: 15px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.footer-section .footer-bottom .language a:hover {
+  color: var(--primary2);
 }
 
 .rtl .footer-section .footer-box .input-group .form-control {

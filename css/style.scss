@@ -9,7 +9,7 @@
    --bgDark2: #323546;
    --borderColor: #e4e6eb;
    --gray: #5e627f;
-   --textColor: #435059;
+   --textColor: #3f3164;
    --shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -22,7 +22,7 @@ body {
    font-family: "Rajdhani", sans-serif;
    font-family: "DM Sans", sans-serif;
    font-family: "Jost", sans-serif;
-   color: var(--black);
+   color: var(--gray);
    background: var(--white);
    font-weight: 400;
    font-size: 15px;
@@ -158,15 +158,48 @@ i {
 // navbar
 .navbar {
    padding: 0px 15px;
+   background: var(--white);
    .navbar-brand {
       font-size: 24px;
-      color: var(--white);
-      font-weight: 700;
+      color: var(--textColor);
+      font-weight: 600;
       display: inline-block;
       img {
          width: 80px;
       }
    }
+
+   .navbar-toggler {
+      position: absolute;
+      right: 15px;
+      top: 12px;
+      i {
+         color: var(--primary);
+         font-size: 18px;
+         transition: 0.4s;
+         &:hover {
+            color: var(--primary);
+         }
+      }
+      &:focus {
+         box-shadow: 0 0 0 0rem;
+      }
+   }
+   .nav-item {
+      margin: 15px 15px;
+      padding: 5px 0;
+      .nav-link {
+         color: var(--gray);
+         text-transform: capitalize;
+         font-weight: 500;
+         transition: 0.4s;
+         &.active,
+         &:hover {
+            color: var(--primary);
+         }
+      }
+   }
+
    .dropdown {
       cursor: pointer;
       .dropdown-menu {
@@ -180,7 +213,7 @@ i {
          transition: 0.3s;
          margin-top: 11px;
          a {
-            color: var(--black);
+            color: var(--gray);
             text-transform: capitalize;
             font-weight: 400;
             transition: 0.4s;
@@ -224,38 +257,6 @@ i {
       }
    }
 
-   .navbar-toggler {
-      position: absolute;
-      right: 15px;
-      top: 12px;
-      i {
-         color: var(--primary);
-         font-size: 18px;
-         transition: 0.4s;
-         &:hover {
-            color: var(--primary);
-         }
-      }
-      &:focus {
-         box-shadow: 0 0 0 0rem;
-      }
-   }
-   .nav-item {
-      margin: 15px 15px;
-      padding: 5px 0;
-      .nav-link {
-         color: var(--white);
-         text-transform: uppercase;
-         font-size: 14px;
-         font-weight: 400;
-         transition: 0.4s;
-         &.active,
-         &:hover {
-            color: var(--primary);
-         }
-      }
-   }
-
    .navbar-text {
       .btn-custom {
          width: 120px;
@@ -277,7 +278,7 @@ i {
             width: 40px;
             height: 40px;
             text-align: center;
-            color: var(--white);
+            color: var(--primary);
             transition: 0.4s;
             i {
                font-size: 18px;
@@ -314,7 +315,7 @@ i {
             width: 40px;
             height: 40px;
             text-align: center;
-            color: var(--white);
+            color: var(--primary);
             transition: 0.4s;
             i {
                font-size: 18px;
@@ -523,7 +524,7 @@ i {
 }
 
 .section-bottom-shape {
-   margin-top: -335px;
+   margin-top: -320px;
 }
 
 // about section
@@ -549,7 +550,8 @@ i {
 }
 
 .category-section {
-   padding: 100px 0;
+   padding-top: 100px;
+   padding-bottom: 100px;
    .category-box {
       box-shadow: 0 8px 16px 0 rgba(205, 190, 255, 0.2);
       text-align: center;
@@ -580,6 +582,67 @@ i {
    background: var(--bgLight);
    .header-text p {
       margin: auto;
+   }
+   .box {
+      background: var(--white);
+      border-radius: 5px;
+      overflow: hidden;
+   }
+   .img-box {
+      position: relative;
+      .save {
+         position: absolute;
+         top: 20px;
+         left: 20px;
+         width: 35px;
+         height: 35px;
+         border-radius: 100px;
+         background: var(--primary);
+         color: var(--white);
+         text-align: center;
+         padding-top: 3px;
+         transition: 0.4s;
+         &:hover {
+            background: var(--primary2);
+         }
+      }
+      .price {
+         position: absolute;
+         right: 20px;
+         bottom: -30px;
+         display: inline-block;
+         width: 60px;
+         height: 60px;
+         border-radius: 100px;
+         text-align: center;
+         font-size: 24px;
+         padding-top: 12px;
+         font-weight: 500;
+         color: var(--white);
+         background: var(--primary);
+      }
+   }
+   .text-box {
+      padding: 30px 20px 15px 20px;
+      color: var(--gray);
+      .title {
+         color: var(--textColor);
+         font-size: 18px;
+         font-weight: 600;
+      }
+      .fa-check-circle {
+         color: var(--primary);
+         display: inline-block;
+         margin-bottom: 10px;
+      }
+      .address {
+         font-size: 13px;
+         margin-bottom: 0;
+         color: var(--gray);
+         i {
+            font-size: 14px;
+         }
+      }
    }
 }
 
@@ -1904,7 +1967,7 @@ i {
       .navbar-brand {
          font-size: 24px;
          color: var(--bgDark);
-         font-weight: 700;
+         font-weight: 600;
          display: inline-block;
          img {
             width: 80px;
@@ -1915,7 +1978,7 @@ i {
          margin-bottom: 30px;
       }
       h5 {
-         text-transform: uppercase;
+         text-transform: capitalize;
       }
       a {
          text-decoration: none;
@@ -1941,19 +2004,19 @@ i {
       .social-links {
          a {
             display: inline-block;
-            width: 35px;
-            height: 35px;
+            width: 40px;
+            height: 40px;
             text-align: center;
             margin-right: 10px;
-            border-radius: 3px;
-            padding-top: 8px;
+            border-radius: 5px;
+            padding-top: 10px;
             background: var(--primary);
             i {
                color: var(--white);
             }
             transition: 0.4s;
             &:hover {
-               background: var(--bgDark);
+               background: var(--primary2);
             }
          }
       }
@@ -1981,7 +2044,7 @@ i {
             border-radius: 3px;
             transition: 0.4s;
             &:hover {
-               background: var(--bgDark);
+               background: var(--primary2);
             }
          }
       }
@@ -1993,6 +2056,10 @@ i {
       .copyright {
          a {
             color: var(--primary);
+            transition: 0.4s;
+            &:hover {
+               color: var(--primary2);
+            }
          }
       }
       .language {
@@ -2001,6 +2068,10 @@ i {
          a {
             color: var(--primary);
             margin-right: 15px;
+            transition: 0.4s;
+            &:hover {
+               color: var(--primary2);
+            }
          }
       }
    }
