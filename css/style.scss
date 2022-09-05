@@ -113,7 +113,11 @@ i {
    }
    &:hover {
       background: var(--primary2);
+      color: var(--white);
    }
+}
+a.btn-custom {
+   padding: 14px;
 }
 
 .form-check {
@@ -449,7 +453,7 @@ i {
 
 // home section
 .home-section {
-   height: 90vh;
+   height: 100vh;
    background: var(--black);
    background: url(../img/hero-bg.jpg);
    background-size: cover;
@@ -478,7 +482,7 @@ i {
    }
    .search-bar {
       background: var(--white);
-      box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.1);
+      // box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.1);
       padding: 30px;
       border-radius: 10px;
       margin: 50px 100px 0 100px;
@@ -492,8 +496,8 @@ i {
          .form-control {
             height: 50px;
             border-radius: 5px;
-            background-color: var(--white);
-            border: 1px solid var(--borderColor);
+            background-color: var(--bgLight);
+            border: 1px solid var(--bgLight);
             padding: 8px;
             padding-left: 20px;
             font-weight: normal;
@@ -553,7 +557,7 @@ i {
    padding-top: 100px;
    padding-bottom: 100px;
    .category-box {
-      box-shadow: 0 8px 16px 0 rgba(205, 190, 255, 0.2);
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
       text-align: center;
       padding: 30px;
       border-radius: 10px;
@@ -580,12 +584,9 @@ i {
 .popular-listings {
    padding: 100px 0;
    background: var(--bgLight);
-   .header-text p {
-      margin: auto;
-   }
    .box {
       background: var(--white);
-      border-radius: 5px;
+      border-radius: 10px;
       overflow: hidden;
    }
    .img-box {
@@ -627,8 +628,12 @@ i {
       color: var(--gray);
       .title {
          color: var(--textColor);
-         font-size: 18px;
+         font-size: 24px;
          font-weight: 600;
+         transition: 0.4s;
+         &:hover {
+            color: var(--primary);
+         }
       }
       .fa-check-circle {
          color: var(--primary);
@@ -641,6 +646,31 @@ i {
          color: var(--gray);
          i {
             font-size: 14px;
+         }
+      }
+   }
+}
+
+// newsletter section
+.newsletter-section {
+   padding: 100px 0;
+   background: var(--bgLight);
+   .input-group {
+      max-width: 600px;
+      margin: auto;
+      .form-control {
+         border: none;
+         padding: 15px;
+         height: 50px;
+         border: 1px solid var(--bgLight);
+         border-right: 0;
+         caret-color: var(--primary);
+         &:focus {
+            color: #212529;
+            background-color: #fff;
+            border-color: var(--primary);
+            outline: 0;
+            box-shadow: 0 0 0 0rem rgba(13, 110, 253, 0.25);
          }
       }
    }
@@ -1884,12 +1914,11 @@ i {
 
 .banner-section {
    padding: 174px 0 100px 0;
-   background: url(../img/wp4430320.jpg);
+   background: var(--bgLight);
    background-position: center;
    background-size: cover;
    h3 {
       text-transform: capitalize;
-      color: var(--white);
    }
 }
 
@@ -2130,15 +2159,7 @@ i {
 // blog section
 .blog-section {
    padding: 100px 0;
-   margin-bottom: 100px;
-   .box {
-      background: var(--bgDark);
-      border-radius: 15px;
-      overflow: hidden;
-      position: relative;
-      bottom: 0;
-      transition: 0.4s;
-      padding: 30px;
+   .blog-box {
       .img-box {
          img {
             border-radius: 10px;
@@ -2151,11 +2172,11 @@ i {
          margin-top: 15px;
          .title {
             display: block;
-            font-size: 18px;
+            font-size: 24px;
             margin-bottom: 5px;
-            font-family: "Raleway", sans-serif;
-            font-weight: 700;
-            color: var(--white);
+            font-family: "Jost", sans-serif;
+            font-weight: 600;
+            color: var(--textColor);
             transition: 0.4s;
             &:hover {
                color: var(--primary);
@@ -2163,7 +2184,7 @@ i {
          }
          .category {
             background: var(--primary);
-            color: var(--black);
+            color: var(--white);
             font-size: 12px;
             text-transform: uppercase;
             font-weight: 500;
@@ -2451,13 +2472,14 @@ i {
    padding: 5px 0;
    .page-link {
       border: none;
-      background: var(--white);
-      color: var(--bgDark);
+      background: var(--bgLight);
+      color: var(--gray);
       text-align: center;
-      padding: 7 16px;
+      padding: 9px 16px;
+      min-width: 40px;
+      height: 40px;
       margin: 0 10px;
-      border-radius: 3px !important;
-      box-shadow: var(--shadow);
+      border-radius: 100px !important;
       font-size: 14px;
       font-weight: 500;
       transition: 0.4s;
@@ -2468,7 +2490,7 @@ i {
       color: var(--white);
    }
    .page-item.disabled .page-link {
-      background: var(--white);
+      background: var(--bgLight);
       color: var(--bgDark);
    }
    .page-link:focus {

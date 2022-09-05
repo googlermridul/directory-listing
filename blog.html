@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="icon" type="image/x-icon" href="./img/fav.png" />
 
-      <title>ICO | Blogs</title>
+      <title>Directory Listing | Home</title>
       <!-- bootstrap 5 -->
       <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
       <!-- SKITTER SLIDER -->
@@ -43,8 +43,8 @@
    <body class="">
       <!-- navbar -->
       <nav class="navbar navbar-expand-md fixed-top">
-         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">ICO</a>
+         <div class="container">
+            <a class="navbar-brand" href="index.html">Listing</a>
             <button
                class="navbar-toggler p-0"
                type="button"
@@ -54,10 +54,10 @@
                aria-expanded="false"
                aria-label="Toggle navigation"
             >
-               <i class="fal fa-bars"></i>
+               <i class="far fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-               <ul class="navbar-nav">
+               <ul class="navbar-nav mx-auto">
                   <li class="nav-item">
                      <a class="nav-link active" href="index.html">Home</a>
                   </li>
@@ -101,37 +101,16 @@
                </ul>
             </div>
             <div class="navbar-text">
-               <button onclick="darkMode()" class="btn-custom light night-mode">
-                  <i class="fal fa-moon"></i>
-               </button>
                <!-- user panel -->
                <div class="dropdown user-dropdown d-inline-block">
                   <button class="dropdown-toggle">
-                     <i class="fal fa-user"></i>
+                     <i class="far fa-user"></i>
                   </button>
                   <ul class="dropdown-menu">
                      <li>
-                        <a class="dropdown-item" href="deposit.html">
+                        <a class="dropdown-item" href="#">
                            <i class="fal fa-hand-holding-usd"></i>
                            make a deposit
-                        </a>
-                     </li>
-                     <li>
-                        <a class="dropdown-item" href="bet-history.html">
-                           <i class="fal fa-history"></i>
-                           bet history
-                        </a>
-                     </li>
-                     <li>
-                        <a class="dropdown-item" href="account-setting.html">
-                           <i class="fal fa-cog"></i>
-                           account settings
-                        </a>
-                     </li>
-                     <li>
-                        <a class="dropdown-item" href="support.html">
-                           <i class="far fa-user-headset"></i>
-                           Support
                         </a>
                      </li>
                      <li>
@@ -152,12 +131,24 @@
                            personal profile
                         </a>
                      </li>
+                     <li>
+                        <a class="dropdown-item" href="#">
+                           <i class="fal fa-history"></i>
+                           bet history
+                        </a>
+                     </li>
+                     <li>
+                        <a class="dropdown-item" href="#">
+                           <i class="fal fa-cog"></i>
+                           account settings
+                        </a>
+                     </li>
                   </ul>
                </div>
                <!-- notification panel -->
                <div class="notification-panel">
                   <button class="dropdown-toggle">
-                     <i class="fal fa-bell"></i>
+                     <i class="far fa-bell"></i>
                      <span class="count">34</span>
                   </button>
                   <ul class="notification-dropdown">
@@ -176,10 +167,7 @@
                               <i class="fal fa-bell"></i>
                               <div class="text">
                                  <p>Notification</p>
-                                 <span
-                                    >Lorem ipsum dolor sit amet. asdfasdffdsf
-                                    sdf sdf ds d dd fd f
-                                 </span>
+                                 <span>Lorem ipsum dolor sit amet. </span>
                               </div>
                            </a>
                         </li>
@@ -216,6 +204,14 @@
                      </div>
                   </ul>
                </div>
+               <!-- login register button -->
+               <button
+                  class="btn-custom"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+               >
+                  Sign In
+               </button>
             </div>
          </div>
       </nav>
@@ -233,95 +229,161 @@
          </div>
       </section>
 
-      <!-- blog details -->
-      <section class="blog-details blog-list">
+      <!-- blog section -->
+      <section class="blog-section">
          <div class="container">
-            <div class="row gy-5 g-lg-5">
-               <div class="col-lg-8">
-                  <div class="blog-box row">
-                     <div class="col-md-6 img-box">
+            <div class="row g-4 gy-5">
+               <div class="col-lg-4 col-md-6">
+                  <div class="blog-box">
+                     <div class="img-box">
                         <img
-                           src="./img/blog/blog-1.jpg"
                            class="img-fluid"
+                           src="./img/blog/blog-1.jpg"
                            alt=""
                         />
                      </div>
-                     <div class="col-md-6 text-box">
-                        <span class="category">Learn and earn</span>
-                        <a href="blog-details.html" class="title">
-                           Learn about UI8 coin and earn an All-Access Pass
+                     <div class="text-box">
+                        <span class="category">Drink & Food</span>
+                        <a href="blog-details.html" class="title"
+                           >Best Luxury Switzerland Tours & Travel Packages
                         </a>
                         <div class="date-author">
                            <span class="author">
-                              <i class="fas fa-dot-circle"></i>Moderator
+                              <i class="fad fa-user-alt"></i>Moderator
                            </span>
-                           <span class="float-end">20 January 2021</span>
+                           <span class="float-end">
+                              <i class="fad fa-calendar-alt"></i>Apr 21, 2021
+                           </span>
                         </div>
-                        <p>
-                           Lorem ipsum dolor sit amet consectetur adipisicing
-                           elit. Alias pariatur eum fuga corporis aperiam sit.
-                        </p>
-                        <a href="blog-details.html" class="read-more"
-                           >Read more</a
-                        >
                      </div>
                   </div>
-                  <div class="blog-box row">
-                     <div class="col-md-6 img-box">
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <div class="blog-box">
+                     <div class="img-box">
                         <img
+                           class="img-fluid"
                            src="./img/blog/blog-2.jpg"
-                           class="img-fluid"
                            alt=""
                         />
                      </div>
-                     <div class="col-md-6 text-box">
-                        <span class="category">Learn and earn</span>
-                        <a href="blog-details.html" class="title">
-                           Learn about UI8 coin and earn an All-Access Pass
+                     <div class="text-box">
+                        <span class="category">Drink & Food</span>
+                        <a href="blog-details.html" class="title"
+                           >5 Bangkok Restaurants That Spotlight Sustainability
                         </a>
                         <div class="date-author">
                            <span class="author">
-                              <i class="fas fa-dot-circle"></i>Moderator
+                              <i class="fad fa-user-alt"></i>Moderator
                            </span>
-                           <span class="float-end">20 January 2021</span>
+                           <span class="float-end">
+                              <i class="fad fa-calendar-alt"></i>Apr 21, 2021
+                           </span>
                         </div>
-                        <p>
-                           Lorem ipsum dolor sit amet consectetur adipisicing
-                           elit. Alias pariatur eum fuga corporis aperiam sit.
-                        </p>
-                        <a href="blog-details.html" class="read-more"
-                           >Read more</a
-                        >
                      </div>
                   </div>
-                  <div class="blog-box row">
-                     <div class="col-md-6 img-box">
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <div class="blog-box">
+                     <div class="img-box">
                         <img
-                           src="./img/blog/blog-1.jpg"
                            class="img-fluid"
+                           src="./img/blog/blog-4.jpg"
                            alt=""
                         />
                      </div>
-                     <div class="col-md-6 text-box">
-                        <span class="category">Learn and earn</span>
+                     <div class="text-box">
+                        <span class="category">Shopping</span>
                         <a href="blog-details.html" class="title">
-                           Learn about UI8 coin and earn an All-Access Pass
+                           10 Most Amazing Shopping Malls in the World
                         </a>
                         <div class="date-author">
                            <span class="author">
-                              <i class="fas fa-dot-circle"></i>Moderator
+                              <i class="fad fa-user-alt"></i>Moderator
                            </span>
-                           <span class="float-end">20 January 2021</span>
+                           <span class="float-end">
+                              <i class="fad fa-calendar-alt"></i>Apr 21, 2021
+                           </span>
                         </div>
-                        <p>
-                           Lorem ipsum dolor sit amet consectetur adipisicing
-                           elit. Alias pariatur eum fuga corporis aperiam sit.
-                        </p>
-                        <a href="blog-details.html" class="read-more"
-                           >Read more</a
-                        >
                      </div>
                   </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <div class="blog-box">
+                     <div class="img-box">
+                        <img
+                           class="img-fluid"
+                           src="./img/blog/blog-1.jpg"
+                           alt=""
+                        />
+                     </div>
+                     <div class="text-box">
+                        <span class="category">Drink & Food</span>
+                        <a href="blog-details.html" class="title"
+                           >Best Luxury Switzerland Tours & Travel Packages
+                        </a>
+                        <div class="date-author">
+                           <span class="author">
+                              <i class="fad fa-user-alt"></i>Moderator
+                           </span>
+                           <span class="float-end">
+                              <i class="fad fa-calendar-alt"></i>Apr 21, 2021
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <div class="blog-box">
+                     <div class="img-box">
+                        <img
+                           class="img-fluid"
+                           src="./img/blog/blog-2.jpg"
+                           alt=""
+                        />
+                     </div>
+                     <div class="text-box">
+                        <span class="category">Drink & Food</span>
+                        <a href="blog-details.html" class="title"
+                           >5 Bangkok Restaurants That Spotlight Sustainability
+                        </a>
+                        <div class="date-author">
+                           <span class="author">
+                              <i class="fad fa-user-alt"></i>Moderator
+                           </span>
+                           <span class="float-end">
+                              <i class="fad fa-calendar-alt"></i>Apr 21, 2021
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <div class="blog-box">
+                     <div class="img-box">
+                        <img
+                           class="img-fluid"
+                           src="./img/blog/blog-4.jpg"
+                           alt=""
+                        />
+                     </div>
+                     <div class="text-box">
+                        <span class="category">Shopping</span>
+                        <a href="blog-details.html" class="title">
+                           10 Most Amazing Shopping Malls in the World
+                        </a>
+                        <div class="date-author">
+                           <span class="author">
+                              <i class="fad fa-user-alt"></i>Moderator
+                           </span>
+                           <span class="float-end">
+                              <i class="fad fa-calendar-alt"></i>Apr 21, 2021
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12">
                   <nav aria-label="Page navigation example">
                      <ul class="pagination justify-content-center">
                         <li class="page-item disabled">
@@ -342,67 +404,33 @@
                      </ul>
                   </nav>
                </div>
-               <div class="col-lg-4">
-                  <div class="side-box">
-                     <form action="">
-                        <h5>Search</h5>
-                        <div class="input-group">
-                           <input
-                              type="email"
-                              class="form-control"
-                              placeholder="search"
-                           />
-                           <button><i class="fal fa-search"></i></button>
-                        </div>
-                     </form>
-                  </div>
-                  <div class="side-box">
-                     <h5>categories</h5>
-                     <ul class="links">
-                        <li><a href="">Albums</a></li>
-                        <li><a href="">Dress</a></li>
-                        <li><a href="">Events</a></li>
-                        <li><a href="">Festivals</a></li>
-                     </ul>
-                  </div>
-                  <div class="side-box">
-                     <h5>tags</h5>
-                     <ul class="links">
-                        <li><a href="">Albums</a></li>
-                        <li><a href="">Dress</a></li>
-                        <li><a href="">Events</a></li>
-                        <li><a href="">Festivals</a></li>
-                     </ul>
-                  </div>
-               </div>
             </div>
          </div>
       </section>
-      <!-- FOOTER SECTION -->
+
+      <!-- footer section -->
       <footer class="footer-section">
          <div class="container">
             <div class="row">
                <div class="col-md-6 col-lg-3">
                   <div class="footer-box">
-                     <a class="navbar-brand" href="#"> ICO </a>
+                     <a class="navbar-brand" href="#"> Listing </a>
                      <p>
                         Duis aute irure dolor in reprehenderit in voluptate
-                        velit esse cillum dolore
+                        velit esse cillum dolore Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore
                      </p>
-                     <ul>
-                        <li>
-                           <i class="far fa-phone-alt"></i>
-                           <span>+880 654 321 23</span>
-                        </li>
-                        <li>
-                           <i class="far fa-envelope"></i>
-                           <span>contact@bugfinder.net</span>
-                        </li>
-                        <li>
-                           <i class="far fa-map-marker-alt"></i>
-                           <span>457 Morningview, New York USA</span>
-                        </li>
-                     </ul>
+                     <div class="social-links">
+                        <a href="#">
+                           <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                           <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="#">
+                           <i class="fab fa-twitter"></i>
+                        </a>
+                     </div>
                   </div>
                </div>
                <div class="col-md-6 col-lg-3 ps-lg-5">
@@ -444,6 +472,7 @@
                            <a href="#">Privacy</a>
                         </li>
                         <li>
+                           <!-- <img src="./img/icon/arrow-orange.png" alt="" /> -->
                            <a href="#">Terms & condition</a>
                         </li>
                      </ul>
@@ -451,30 +480,21 @@
                </div>
                <div class="col-md-6 col-lg-3">
                   <div class="footer-box">
-                     <h5>subscribe newsletter</h5>
-                     <div class="input-group mb-3">
-                        <input
-                           type="email"
-                           class="form-control"
-                           placeholder="Enter Email"
-                           aria-label="Subscribe Newsletter"
-                           aria-describedby="basic-addon"
-                        />
-                        <button>
-                           <i class="fas fa-paper-plane"></i>
-                        </button>
-                     </div>
-                     <div class="social-links">
-                        <a href="#">
-                           <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="#">
-                           <i class="fab fa-discord"></i>
-                        </a>
-                        <a href="#">
-                           <i class="fab fa-twitter"></i>
-                        </a>
-                     </div>
+                     <h5>get in touch</h5>
+                     <ul>
+                        <li>
+                           <i class="far fa-phone-alt"></i>
+                           <span>+880 654 321 23</span>
+                        </li>
+                        <li>
+                           <i class="far fa-envelope"></i>
+                           <span>contact@bugfinder.net</span>
+                        </li>
+                        <li>
+                           <i class="far fa-map-marker-alt"></i>
+                           <span>457 Morningview, New York USA</span>
+                        </li>
+                     </ul>
                   </div>
                </div>
             </div>
@@ -482,7 +502,8 @@
                <div class="row">
                   <div class="col-md-6">
                      <p class="copyright">
-                        Copyright © 2022 <a href="">ICO</a> All Rights Reserved.
+                        Copyright © 2022 <a href="">Listing</a> All Rights
+                        Reserved.
                      </p>
                   </div>
                   <div class="col-md-6 language">
