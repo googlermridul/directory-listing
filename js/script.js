@@ -6,6 +6,19 @@ window.addEventListener("load", () => {
    }, 1000);
 });
 
+// add bg to nav
+window.addEventListener("scroll", function () {
+   let scrollpos = window.scrollY;
+   const header = document.querySelector("nav");
+   const headerHeight = header.offsetHeight;
+
+   if (scrollpos >= headerHeight) {
+      header.classList.add("active");
+   } else {
+      header.classList.remove("active");
+   }
+});
+
 // active nav item
 const navItem = document.getElementsByClassName("nav-link");
 for (const element of navItem) {
@@ -37,18 +50,10 @@ const darkMode = () => {
    document.body.classList.toggle("dark-mode");
 };
 
+console.log("b" + "a" + +"a" + "a");
+
 $(document).ready(function () {
-   $(function () {
-      $(".custom-select").customselect();
-   });
-   // SKITTER SLIDER
-   $(function () {
-      $(".skitter-large").skitter({
-         dots: false,
-         interval: 3000,
-         stop_over: false,
-      });
-   });
+   $(".js-example-basic-single").select2();
 
    // owl carousel
    $(".testimonials").owlCarousel({

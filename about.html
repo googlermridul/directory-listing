@@ -5,15 +5,11 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="icon" type="image/x-icon" href="./img/fav.png" />
-
-      <title>ICO | Support</title>
+      <title>Directory Listing | About</title>
       <!-- bootstrap 5 -->
       <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
-      <!-- SKITTER SLIDER -->
-      <link
-         rel="stylesheet"
-         href="./assets/plugins/skitter-master/skitter.css"
-      />
+      <!-- select 2 -->
+      <link rel="stylesheet" href="./assets/plugins/select2/select2.min.css" />
       <!-- owl carousel -->
       <link rel="stylesheet" href="./assets/plugins/owlcarousel/animate.css" />
       <link
@@ -40,11 +36,11 @@
       <!-- custom css -->
       <link rel="stylesheet" href="./css/style.css" />
    </head>
-   <body>
+   <body class="">
       <!-- navbar -->
       <nav class="navbar navbar-expand-md fixed-top">
-         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">ICO</a>
+         <div class="container">
+            <a class="navbar-brand" href="index.html">Listing</a>
             <button
                class="navbar-toggler p-0"
                type="button"
@@ -54,10 +50,10 @@
                aria-expanded="false"
                aria-label="Toggle navigation"
             >
-               <i class="fal fa-bars"></i>
+               <i class="far fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-               <ul class="navbar-nav">
+               <ul class="navbar-nav mx-auto">
                   <li class="nav-item">
                      <a class="nav-link active" href="index.html">Home</a>
                   </li>
@@ -101,37 +97,16 @@
                </ul>
             </div>
             <div class="navbar-text">
-               <button onclick="darkMode()" class="btn-custom light night-mode">
-                  <i class="fal fa-moon"></i>
-               </button>
                <!-- user panel -->
                <div class="dropdown user-dropdown d-inline-block">
                   <button class="dropdown-toggle">
-                     <i class="fal fa-user"></i>
+                     <i class="far fa-user"></i>
                   </button>
                   <ul class="dropdown-menu">
                      <li>
-                        <a class="dropdown-item" href="deposit.html">
+                        <a class="dropdown-item" href="#">
                            <i class="fal fa-hand-holding-usd"></i>
                            make a deposit
-                        </a>
-                     </li>
-                     <li>
-                        <a class="dropdown-item" href="bet-history.html">
-                           <i class="fal fa-history"></i>
-                           bet history
-                        </a>
-                     </li>
-                     <li>
-                        <a class="dropdown-item" href="account-setting.html">
-                           <i class="fal fa-cog"></i>
-                           account settings
-                        </a>
-                     </li>
-                     <li>
-                        <a class="dropdown-item" href="support.html">
-                           <i class="far fa-user-headset"></i>
-                           Support
                         </a>
                      </li>
                      <li>
@@ -152,12 +127,24 @@
                            personal profile
                         </a>
                      </li>
+                     <li>
+                        <a class="dropdown-item" href="#">
+                           <i class="fal fa-history"></i>
+                           bet history
+                        </a>
+                     </li>
+                     <li>
+                        <a class="dropdown-item" href="#">
+                           <i class="fal fa-cog"></i>
+                           account settings
+                        </a>
+                     </li>
                   </ul>
                </div>
                <!-- notification panel -->
                <div class="notification-panel">
                   <button class="dropdown-toggle">
-                     <i class="fal fa-bell"></i>
+                     <i class="far fa-bell"></i>
                      <span class="count">34</span>
                   </button>
                   <ul class="notification-dropdown">
@@ -176,10 +163,7 @@
                               <i class="fal fa-bell"></i>
                               <div class="text">
                                  <p>Notification</p>
-                                 <span
-                                    >Lorem ipsum dolor sit amet. asdfasdffdsf
-                                    sdf sdf ds d dd fd f
-                                 </span>
+                                 <span>Lorem ipsum dolor sit amet. </span>
                               </div>
                            </a>
                         </li>
@@ -216,17 +200,27 @@
                      </div>
                   </ul>
                </div>
+               <!-- login register button -->
+               <button
+                  class="btn-custom"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+               >
+                  Sign In
+               </button>
             </div>
          </div>
       </nav>
 
       <!-- banner section -->
       <section class="banner-section">
-         <div class="container">
-            <div class="row">
-               <div class="col">
-                  <div class="header-text text-center">
-                     <h3>know about us</h3>
+         <div class="overlay">
+            <div class="container">
+               <div class="row">
+                  <div class="col">
+                     <div class="header-text text-center">
+                        <h3>Know About us</h3>
+                     </div>
                   </div>
                </div>
             </div>
@@ -236,36 +230,43 @@
       <!-- about section -->
       <section class="about-section">
          <div class="container">
-            <div class="row align-items-center">
+            <div class="row g-5 align-items-center">
                <div class="col-lg-6">
                   <div class="img-box">
-                     <img src="./img/about.png" alt="" class="img-fluid" />
+                     <img
+                        src="./img/about-img-2.png"
+                        class="img-fluid rounded"
+                        alt=""
+                     />
                   </div>
                </div>
                <div class="col-lg-6">
-                  <div class="header-text">
-                     <h5>A Next-Level Sports ICO</h5>
-                     <h2>Know about us</h2>
+                  <div class="text-box">
+                     <div class="header-text">
+                        <h5>About us</h5>
+                        <h3>Short story about us</h3>
+                     </div>
+                     <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Vero animi eaque nesciunt iusto quidem numquam
+                        consequuntur vel deleniti, aperiam aliquid, iure illo,
+                        impedit cum accusamus magni dolorum libero a expedita!
+                        <br />
+                        <br />
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Amet hic dicta quibusdam rem adipisci laudantium
+                        voluptatem rerum sunt dignissimos! Officiis sed minus
+                        nihil cum maiores, assumenda omnis suscipit corrupti
+                        eveniet.
+                     </p>
+                     <ul>
+                        <li>
+                           <i class="fal fa-check"></i>
+                           Lorem ipsum dolor sit amet consectetur adipisicing
+                           elit.
+                        </li>
+                     </ul>
                   </div>
-                  <p>
-                     Our platform has been designed from the ground up to be
-                     tailored to the unique form of ICO and settlement offered
-                     by the blockchain. Follow these simple steps and make
-                     profits! Our platform has been designed from the ground up
-                     to be tailored to the unique form of ICO and settlement
-                     offered by the blockchain. Follow these simple steps and
-                     make profits! <br />
-                     <br />
-                     Our platform has been designed from the ground up to be
-                     tailored to the unique form of ICO and settlement offered
-                     by the blockchain. Follow these simple steps and make
-                     profits!
-                     <br />
-                     Our platform has been designed from the ground up to be
-                     tailored to the unique form of ICO and settlement offered
-                     by the blockchain. Follow these simple steps and make
-                     profits!
-                  </p>
                </div>
             </div>
          </div>
@@ -275,14 +276,12 @@
       <section class="testimonial-section">
          <div class="container">
             <div class="row">
-               <div class="col">
-                  <div class="header-text mb-5 text-center">
-                     <h5>testimonials</h5>
-                     <h3>what clients say</h3>
-                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Deleniti impedit molestias ipsa quo deserunt ipsam
-                        eveniet temporibus cupiditate natus praesentium?
+               <div class="col-12">
+                  <div class="header-text text-center mb-5">
+                     <h3>customer feedback</h3>
+                     <p class="mx-auto">
+                        Explore the greates places in the city. You won’t be
+                        disappointed.
                      </p>
                   </div>
                </div>
@@ -364,31 +363,43 @@
          </div>
       </section>
 
-      <!-- FOOTER SECTION -->
+      <!-- service section -->
+      <!-- <section class="service-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="header-text text-center mb-xxl-5">
+                     <h5>services</h5>
+                     <h2>our services</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section> -->
+
+      <!-- footer section -->
       <footer class="footer-section">
          <div class="container">
             <div class="row">
                <div class="col-md-6 col-lg-3">
                   <div class="footer-box">
-                     <a class="navbar-brand" href="#"> ICO </a>
+                     <a class="navbar-brand" href="#"> Listing </a>
                      <p>
                         Duis aute irure dolor in reprehenderit in voluptate
-                        velit esse cillum dolore
+                        velit esse cillum dolore Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore
                      </p>
-                     <ul>
-                        <li>
-                           <i class="far fa-phone-alt"></i>
-                           <span>+880 654 321 23</span>
-                        </li>
-                        <li>
-                           <i class="far fa-envelope"></i>
-                           <span>contact@bugfinder.net</span>
-                        </li>
-                        <li>
-                           <i class="far fa-map-marker-alt"></i>
-                           <span>457 Morningview, New York USA</span>
-                        </li>
-                     </ul>
+                     <div class="social-links">
+                        <a href="#">
+                           <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                           <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="#">
+                           <i class="fab fa-twitter"></i>
+                        </a>
+                     </div>
                   </div>
                </div>
                <div class="col-md-6 col-lg-3 ps-lg-5">
@@ -430,6 +441,7 @@
                            <a href="#">Privacy</a>
                         </li>
                         <li>
+                           <!-- <img src="./img/icon/arrow-orange.png" alt="" /> -->
                            <a href="#">Terms & condition</a>
                         </li>
                      </ul>
@@ -437,30 +449,21 @@
                </div>
                <div class="col-md-6 col-lg-3">
                   <div class="footer-box">
-                     <h5>subscribe newsletter</h5>
-                     <div class="input-group mb-3">
-                        <input
-                           type="email"
-                           class="form-control"
-                           placeholder="Enter Email"
-                           aria-label="Subscribe Newsletter"
-                           aria-describedby="basic-addon"
-                        />
-                        <button>
-                           <i class="fas fa-paper-plane"></i>
-                        </button>
-                     </div>
-                     <div class="social-links">
-                        <a href="#">
-                           <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="#">
-                           <i class="fab fa-discord"></i>
-                        </a>
-                        <a href="#">
-                           <i class="fab fa-twitter"></i>
-                        </a>
-                     </div>
+                     <h5>get in touch</h5>
+                     <ul>
+                        <li>
+                           <i class="far fa-phone-alt"></i>
+                           <span>+880 654 321 23</span>
+                        </li>
+                        <li>
+                           <i class="far fa-envelope"></i>
+                           <span>contact@bugfinder.net</span>
+                        </li>
+                        <li>
+                           <i class="far fa-map-marker-alt"></i>
+                           <span>457 Morningview, New York USA</span>
+                        </li>
+                     </ul>
                   </div>
                </div>
             </div>
@@ -468,7 +471,8 @@
                <div class="row">
                   <div class="col-md-6">
                      <p class="copyright">
-                        Copyright © 2022 <a href="">ICO</a> All Rights Reserved.
+                        Copyright © 2022 <a href="">Listing</a> All Rights
+                        Reserved.
                      </p>
                   </div>
                   <div class="col-md-6 language">
@@ -481,7 +485,6 @@
                      <a href="">Japanese</a>
                      <a href="">Italian</a>
                      <a href="">Chinese</a>
-                     <a href="">German</a>
                   </div>
                </div>
             </div>
@@ -493,9 +496,8 @@
       <script src="./assets/bootstrap/masonry.pkgd.min.js"></script>
       <!-- jquery cdn -->
       <script src="./assets/jquery/jquery-3.6.0.min.js"></script>
-      <!-- SKITTER SLIDER -->
-      <script src="./assets/plugins/skitter-master/jquery.skitter.min.js"></script>
-      <script src="./assets/plugins/skitter-master/jquery.easing.1.3.js"></script>
+      <!-- select 2 -->
+      <script src="./assets/plugins/select2/select2.min.js"></script>
       <!-- owl carousel -->
       <script src="./assets/plugins/owlcarousel/owl.carousel.min.js"></script>
       <!-- counter up -->

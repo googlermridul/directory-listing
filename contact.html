@@ -6,14 +6,11 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="icon" type="image/x-icon" href="./img/fav.png" />
 
-      <title>ICO | Contact</title>
+      <title>Directory Listing | Home</title>
       <!-- bootstrap 5 -->
       <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
-      <!-- SKITTER SLIDER -->
-      <link
-         rel="stylesheet"
-         href="./assets/plugins/skitter-master/skitter.css"
-      />
+      <!-- select 2 -->
+      <link rel="stylesheet" href="./assets/plugins/select2/select2.min.css" />
       <!-- owl carousel -->
       <link rel="stylesheet" href="./assets/plugins/owlcarousel/animate.css" />
       <link
@@ -43,8 +40,8 @@
    <body class="">
       <!-- navbar -->
       <nav class="navbar navbar-expand-md fixed-top">
-         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">ICO</a>
+         <div class="container">
+            <a class="navbar-brand" href="index.html">Listing</a>
             <button
                class="navbar-toggler p-0"
                type="button"
@@ -54,10 +51,10 @@
                aria-expanded="false"
                aria-label="Toggle navigation"
             >
-               <i class="fal fa-bars"></i>
+               <i class="far fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-               <ul class="navbar-nav">
+               <ul class="navbar-nav mx-auto">
                   <li class="nav-item">
                      <a class="nav-link active" href="index.html">Home</a>
                   </li>
@@ -101,37 +98,16 @@
                </ul>
             </div>
             <div class="navbar-text">
-               <button onclick="darkMode()" class="btn-custom light night-mode">
-                  <i class="fal fa-moon"></i>
-               </button>
                <!-- user panel -->
                <div class="dropdown user-dropdown d-inline-block">
                   <button class="dropdown-toggle">
-                     <i class="fal fa-user"></i>
+                     <i class="far fa-user"></i>
                   </button>
                   <ul class="dropdown-menu">
                      <li>
-                        <a class="dropdown-item" href="deposit.html">
+                        <a class="dropdown-item" href="#">
                            <i class="fal fa-hand-holding-usd"></i>
                            make a deposit
-                        </a>
-                     </li>
-                     <li>
-                        <a class="dropdown-item" href="bet-history.html">
-                           <i class="fal fa-history"></i>
-                           bet history
-                        </a>
-                     </li>
-                     <li>
-                        <a class="dropdown-item" href="account-setting.html">
-                           <i class="fal fa-cog"></i>
-                           account settings
-                        </a>
-                     </li>
-                     <li>
-                        <a class="dropdown-item" href="support.html">
-                           <i class="far fa-user-headset"></i>
-                           Support
                         </a>
                      </li>
                      <li>
@@ -152,12 +128,24 @@
                            personal profile
                         </a>
                      </li>
+                     <li>
+                        <a class="dropdown-item" href="#">
+                           <i class="fal fa-history"></i>
+                           bet history
+                        </a>
+                     </li>
+                     <li>
+                        <a class="dropdown-item" href="#">
+                           <i class="fal fa-cog"></i>
+                           account settings
+                        </a>
+                     </li>
                   </ul>
                </div>
                <!-- notification panel -->
                <div class="notification-panel">
                   <button class="dropdown-toggle">
-                     <i class="fal fa-bell"></i>
+                     <i class="far fa-bell"></i>
                      <span class="count">34</span>
                   </button>
                   <ul class="notification-dropdown">
@@ -176,10 +164,7 @@
                               <i class="fal fa-bell"></i>
                               <div class="text">
                                  <p>Notification</p>
-                                 <span
-                                    >Lorem ipsum dolor sit amet. asdfasdffdsf
-                                    sdf sdf ds d dd fd f
-                                 </span>
+                                 <span>Lorem ipsum dolor sit amet. </span>
                               </div>
                            </a>
                         </li>
@@ -216,17 +201,27 @@
                      </div>
                   </ul>
                </div>
+               <!-- login register button -->
+               <button
+                  class="btn-custom"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+               >
+                  Sign In
+               </button>
             </div>
          </div>
       </nav>
 
       <!-- banner section -->
       <section class="banner-section">
-         <div class="container">
-            <div class="row">
-               <div class="col">
-                  <div class="header-text text-center">
-                     <h3>Contact us</h3>
+         <div class="overlay">
+            <div class="container">
+               <div class="row">
+                  <div class="col">
+                     <div class="header-text text-center">
+                        <h3>Contact us</h3>
+                     </div>
                   </div>
                </div>
             </div>
@@ -236,61 +231,18 @@
       <!-- contact section -->
       <div class="contact-section">
          <div class="container">
-            <div class="row gy-5 g-lg-5 align-items-center">
+            <div class="row gy-5 g-lg-5 align-items-top">
                <div class="col-lg-6">
-                  <div class="text-box">
+                  <form action="" class="">
                      <div class="header-text">
                         <h5>contact us</h5>
-                        <h3>Get In Touch With us</h3>
+                        <h3>Leave us your info</h3>
                         <p>
                            Give us a call or drop by anytime, we endeavour to
                            answer all enquiries within 24 hours on business
                            days. We will be happy to answer your questions.
                         </p>
                      </div>
-                     <div class="row">
-                        <div class="info-box col-md-6">
-                           <div class="icon-box">
-                              <i class="fal fa-map-marker-alt"></i>
-                           </div>
-                           <div class="text">
-                              <h5>Address</h5>
-                              <p>22 Baker Street, London</p>
-                           </div>
-                        </div>
-                        <div class="info-box col-md-6">
-                           <div class="icon-box">
-                              <i class="fal fa-building"></i>
-                           </div>
-                           <div class="text">
-                              <h5>House</h5>
-                              <p>22 Baker Street, London</p>
-                           </div>
-                        </div>
-                        <div class="info-box col-md-6">
-                           <div class="icon-box">
-                              <i class="fal fa-envelope"></i>
-                           </div>
-                           <div class="text">
-                              <h5>Email</h5>
-                              <p>hello@website.com</p>
-                           </div>
-                        </div>
-                        <div class="info-box col-md-6">
-                           <div class="icon-box">
-                              <i class="fal fa-phone-alt"></i>
-                           </div>
-                           <div class="text">
-                              <h5>Phone</h5>
-                              <p>+44-20-4526-2356</p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-6">
-                  <form action="" class="">
-                     <h4>just drop us a line</h4>
                      <div class="row g-3">
                         <div class="input-box col-md-6">
                            <input
@@ -331,35 +283,80 @@
                      </div>
                   </form>
                </div>
+               <div class="col-lg-1"></div>
+               <div class="col-lg-5">
+                  <div class="text-box">
+                     <div class="header-text"></div>
+                     <div class="header-text">
+                        <h3>Get In Touch</h3>
+                        <p>
+                           Give us a call or drop by anytime, we endeavour to
+                           answer all enquiries within 24 hours on business
+                           days. We will be happy to answer your questions.
+                        </p>
+                     </div>
+                     <div class="row">
+                        <div class="info-box col-md-12">
+                           <div class="icon-box">
+                              <i class="fal fa-map-marker-alt"></i>
+                           </div>
+                           <div class="text">
+                              <h5>Address</h5>
+                              <p>
+                                 4 apt. Flawing Street. The Grand Avenue. <br />
+                                 Liverpool, UK 33342
+                              </p>
+                           </div>
+                        </div>
+                        <div class="info-box col-md-12">
+                           <div class="icon-box">
+                              <i class="fal fa-envelope"></i>
+                           </div>
+                           <div class="text">
+                              <h5>Email</h5>
+                              <p>hello@website.com</p>
+                              <p>hello2@website.com</p>
+                           </div>
+                        </div>
+                        <div class="info-box col-md-12">
+                           <div class="icon-box">
+                              <i class="fal fa-phone-alt"></i>
+                           </div>
+                           <div class="text">
+                              <h5>Phone</h5>
+                              <p>+44-20-4526-2356</p>
+                              <p>+44-20-4526-2353</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
       </div>
-
-      <!-- FOOTER SECTION -->
+      <!-- footer section -->
       <footer class="footer-section">
          <div class="container">
             <div class="row">
                <div class="col-md-6 col-lg-3">
                   <div class="footer-box">
-                     <a class="navbar-brand" href="#"> ICO </a>
+                     <a class="navbar-brand" href="#"> Listing </a>
                      <p>
                         Duis aute irure dolor in reprehenderit in voluptate
-                        velit esse cillum dolore
+                        velit esse cillum dolore Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore
                      </p>
-                     <ul>
-                        <li>
-                           <i class="far fa-phone-alt"></i>
-                           <span>+880 654 321 23</span>
-                        </li>
-                        <li>
-                           <i class="far fa-envelope"></i>
-                           <span>contact@bugfinder.net</span>
-                        </li>
-                        <li>
-                           <i class="far fa-map-marker-alt"></i>
-                           <span>457 Morningview, New York USA</span>
-                        </li>
-                     </ul>
+                     <div class="social-links">
+                        <a href="#">
+                           <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                           <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="#">
+                           <i class="fab fa-twitter"></i>
+                        </a>
+                     </div>
                   </div>
                </div>
                <div class="col-md-6 col-lg-3 ps-lg-5">
@@ -401,6 +398,7 @@
                            <a href="#">Privacy</a>
                         </li>
                         <li>
+                           <!-- <img src="./img/icon/arrow-orange.png" alt="" /> -->
                            <a href="#">Terms & condition</a>
                         </li>
                      </ul>
@@ -408,30 +406,21 @@
                </div>
                <div class="col-md-6 col-lg-3">
                   <div class="footer-box">
-                     <h5>subscribe newsletter</h5>
-                     <div class="input-group mb-3">
-                        <input
-                           type="email"
-                           class="form-control"
-                           placeholder="Enter Email"
-                           aria-label="Subscribe Newsletter"
-                           aria-describedby="basic-addon"
-                        />
-                        <button>
-                           <i class="fas fa-paper-plane"></i>
-                        </button>
-                     </div>
-                     <div class="social-links">
-                        <a href="#">
-                           <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="#">
-                           <i class="fab fa-discord"></i>
-                        </a>
-                        <a href="#">
-                           <i class="fab fa-twitter"></i>
-                        </a>
-                     </div>
+                     <h5>get in touch</h5>
+                     <ul>
+                        <li>
+                           <i class="far fa-phone-alt"></i>
+                           <span>+880 654 321 23</span>
+                        </li>
+                        <li>
+                           <i class="far fa-envelope"></i>
+                           <span>contact@bugfinder.net</span>
+                        </li>
+                        <li>
+                           <i class="far fa-map-marker-alt"></i>
+                           <span>457 Morningview, New York USA</span>
+                        </li>
+                     </ul>
                   </div>
                </div>
             </div>
@@ -439,7 +428,8 @@
                <div class="row">
                   <div class="col-md-6">
                      <p class="copyright">
-                        Copyright © 2022 <a href="">ICO</a> All Rights Reserved.
+                        Copyright © 2022 <a href="">Listing</a> All Rights
+                        Reserved.
                      </p>
                   </div>
                   <div class="col-md-6 language">
@@ -452,7 +442,6 @@
                      <a href="">Japanese</a>
                      <a href="">Italian</a>
                      <a href="">Chinese</a>
-                     <a href="">German</a>
                   </div>
                </div>
             </div>
@@ -464,9 +453,8 @@
       <script src="./assets/bootstrap/masonry.pkgd.min.js"></script>
       <!-- jquery cdn -->
       <script src="./assets/jquery/jquery-3.6.0.min.js"></script>
-      <!-- SKITTER SLIDER -->
-      <script src="./assets/plugins/skitter-master/jquery.skitter.min.js"></script>
-      <script src="./assets/plugins/skitter-master/jquery.easing.1.3.js"></script>
+      <!-- select 2 -->
+      <script src="./assets/plugins/select2/select2.min.js"></script>
       <!-- owl carousel -->
       <script src="./assets/plugins/owlcarousel/owl.carousel.min.js"></script>
       <!-- counter up -->
