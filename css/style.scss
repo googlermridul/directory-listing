@@ -12,6 +12,7 @@
    --textColor: #3f3164;
    --shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
    --bgGradient: #e85f4c;
+   --gold: #ffc100;
 }
 
 * {
@@ -535,7 +536,7 @@ a.btn-custom {
             border-right: 1px solid var(--borderColor);
          }
          .input-group-prepend {
-            padding: 39px 15px;
+            padding: 29px 15px;
             text-align: center;
          }
          label {
@@ -545,7 +546,7 @@ a.btn-custom {
          }
          .form-select,
          .form-control {
-            height: 100px;
+            height: 80px;
             border-radius: 5px;
             background-color: var(--white);
             border: 1px solid var(--white);
@@ -579,14 +580,14 @@ a.btn-custom {
          width: 83%;
       }
       .select2-container--default .select2-selection--single {
-         height: 100px;
+         height: 80px;
          background: var(--white);
          border: 1px solid var(--white);
       }
       .select2-container--default
          .select2-selection--single
          .select2-selection__rendered {
-         line-height: 100px;
+         line-height: 80px;
          padding-left: 0;
       }
       .btn-custom {
@@ -638,6 +639,7 @@ a.btn-custom {
    .text-box {
       ul {
          list-style: none;
+         padding-left: 0;
          i {
             background: var(--primary);
             color: var(--white);
@@ -645,7 +647,11 @@ a.btn-custom {
             height: 25px;
             border-radius: 5px;
             margin-right: 5px;
+            padding-top: 5px;
             text-align: center;
+         }
+         li {
+            margin-bottom: 15px;
          }
       }
    }
@@ -704,15 +710,15 @@ a.btn-custom {
 
 .popular-listings {
    background-color: var(--white);
-   background: url(../img/Switzerland-4K-4k-wallpaper-4K-mountains-sky-house.jpg);
+   background: url(../img/pablo-acevedo-111046-unsplash.jpg);
    background-size: cover;
-   background-position: center top;
+   background-position: center;
    .overlay {
       padding: 100px 0;
-      background: rgba(255, 255, 255, 0.95);
+      background: rgba(255, 255, 255, 0.9);
    }
    .box {
-      background: var(--bgLight);
+      background: var(--white);
       border-radius: 10px;
       overflow: hidden;
       // box-shadow: 0px 20px 50px rgba(206, 210, 225, 0.24);
@@ -752,8 +758,16 @@ a.btn-custom {
       }
    }
    .text-box {
-      padding: 20px 15px 15px 15px;
+      padding: 15px;
       color: var(--gray);
+      .review {
+         margin-bottom: 10px;
+         font-size: 12px;
+         i {
+            font-size: 12px;
+            color: var(--gold);
+         }
+      }
       .title {
          color: var(--textColor);
          font-size: 18px;
@@ -819,11 +833,9 @@ a.btn-custom {
 .modal,
 .login-section {
    height: 100vh;
-   overflow-x: hidden;
-   .text-box {
-      background: url(../img/banner2.jpg);
-      background-size: cover;
-   }
+   background: url(../img/Switzerland-4K-4k-wallpaper-4K-mountains-sky-house.jpg);
+   background-size: cover;
+   background-position: center;
    .overlay {
       background-color: rgba(0, 0, 0, 0.4);
       display: flex;
@@ -861,6 +873,9 @@ a.btn-custom {
    form {
       max-width: 500px;
       margin: auto;
+      background: var(--white);
+      padding: 50px;
+      border-radius: 10px;
       .input-box {
          label {
             margin-bottom: 0px;
@@ -869,19 +884,18 @@ a.btn-custom {
          .form-select,
          .form-control {
             height: 50px;
-            border-radius: 0px;
-            background-color: transparent;
-            border: none;
-            border-bottom: 1px solid var(--borderColor);
+            border-radius: 5px;
+            background-color: var(--bgLight);
+            border: 1px solid var(--bgLight);
             padding: 10px;
-            padding-left: 1px;
-            padding-right: 1px;
+            padding-left: 15px;
+            padding-right: 15px;
             caret-color: var(--primary);
             color: var(--black);
             &:focus {
                color: var(--black);
                box-shadow: 0 0 0 0rem var(--white);
-               border-bottom: 1px solid var(--primary);
+               border: 1px solid var(--primary);
             }
             &::placeholder {
                color: var(--gray);
@@ -911,11 +925,11 @@ a.btn-custom {
                color: var(--gray);
             }
             .form-check-input {
-               border-radius: 0px;
-               border: 1px solid var(--primary);
+               border-radius: 3px;
+               border: 1px solid var(--gray);
                cursor: pointer;
                background-color: transparent;
-               margin-top: 2px;
+               margin-top: 3px;
                &:checked {
                   background-color: var(--primary);
                   border-color: var(--primary);
@@ -1932,6 +1946,7 @@ a.btn-custom {
    }
 }
 
+// banner section
 .banner-section {
    background-image: url(../img/Switzerland-4K-4k-wallpaper-4K-mountains-sky-house.jpg);
    background-size: cover;
@@ -1944,6 +1959,8 @@ a.btn-custom {
    h3 {
       text-transform: capitalize;
       color: var(--white);
+      letter-spacing: 2px;
+      word-spacing: 5px;
    }
 }
 
@@ -1954,19 +1971,17 @@ a.btn-custom {
       background: none;
       border: none;
       margin: 15px 0;
-      box-shadow: var(--shadow);
-      background: var(--white);
+      background: var(--bgLight);
       border-radius: 5px;
    }
    .accordion-button {
-      background: var(--white);
+      background: var(--bgLight);
       border-radius: 5px !important;
       padding-left: 0px;
       font-size: 18px;
-      font-weight: 600;
-      padding: 15px;
+      font-weight: 500;
+      padding: 25px;
       padding-right: 40px;
-      text-transform: uppercase;
       color: var(--bgDark);
       &:focus {
          z-index: 3;
@@ -1979,13 +1994,13 @@ a.btn-custom {
          background-size: cover;
          position: absolute;
          right: 15px;
-         height: 24px;
-         width: 24px;
+         height: 16px;
+         width: 16px;
          background-position: center;
       }
    }
    .accordion-body {
-      padding: 15px;
+      padding: 15px 25px;
       padding-top: 5px;
    }
    .accordion-button:not(.collapsed) {
@@ -2190,7 +2205,8 @@ a.btn-custom {
    background-size: cover;
    background-position: center;
    .blog-box {
-      box-shadow: 0px 20px 50px rgba(206, 210, 225, 0.24);
+      // box-shadow: 0px 20px 50px rgba(206, 210, 225, 0.24);
+      background: var(--white);
       border-radius: 10px;
       overflow: hidden;
       &:hover {
@@ -2211,7 +2227,7 @@ a.btn-custom {
          padding: 20px 15px 15px 15px;
          .title {
             display: block;
-            font-size: 24px;
+            font-size: 18px;
             margin-bottom: 5px;
             font-family: "Jost", sans-serif;
             font-weight: 600;

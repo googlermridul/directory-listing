@@ -12,6 +12,7 @@
   --textColor: #3f3164;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   --bgGradient: #e85f4c;
+  --gold: #ffc100;
 }
 
 * {
@@ -596,7 +597,7 @@ a.btn-custom {
 }
 
 .home-section .search-bar .input-box .input-group-prepend {
-  padding: 39px 15px;
+  padding: 29px 15px;
   text-align: center;
 }
 
@@ -608,7 +609,7 @@ a.btn-custom {
 
 .home-section .search-bar .input-box .form-select,
 .home-section .search-bar .input-box .form-control {
-  height: 100px;
+  height: 80px;
   border-radius: 5px;
   background-color: var(--white);
   border: 1px solid var(--white);
@@ -666,7 +667,7 @@ a.btn-custom {
 }
 
 .home-section .search-bar .select2-container--default .select2-selection--single {
-  height: 100px;
+  height: 80px;
   background: var(--white);
   border: 1px solid var(--white);
 }
@@ -674,7 +675,7 @@ a.btn-custom {
 .home-section .search-bar .select2-container--default
 .select2-selection--single
 .select2-selection__rendered {
-  line-height: 100px;
+  line-height: 80px;
   padding-left: 0;
 }
 
@@ -728,6 +729,7 @@ a.btn-custom {
 
 .about-section .text-box ul {
   list-style: none;
+  padding-left: 0;
 }
 
 .about-section .text-box ul i {
@@ -737,7 +739,12 @@ a.btn-custom {
   height: 25px;
   border-radius: 5px;
   margin-right: 5px;
+  padding-top: 5px;
   text-align: center;
+}
+
+.about-section .text-box ul li {
+  margin-bottom: 15px;
 }
 
 .category-section {
@@ -805,18 +812,18 @@ a.btn-custom {
 
 .popular-listings {
   background-color: var(--white);
-  background: url(../img/Switzerland-4K-4k-wallpaper-4K-mountains-sky-house.jpg);
+  background: url(../img/pablo-acevedo-111046-unsplash.jpg);
   background-size: cover;
-  background-position: center top;
+  background-position: center;
 }
 
 .popular-listings .overlay {
   padding: 100px 0;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .popular-listings .box {
-  background: var(--bgLight);
+  background: var(--white);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -861,8 +868,18 @@ a.btn-custom {
 }
 
 .popular-listings .text-box {
-  padding: 20px 15px 15px 15px;
+  padding: 15px;
   color: var(--gray);
+}
+
+.popular-listings .text-box .review {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.popular-listings .text-box .review i {
+  font-size: 12px;
+  color: var(--gold);
 }
 
 .popular-listings .text-box .title {
@@ -939,13 +956,9 @@ a.btn-custom {
 .modal,
 .login-section {
   height: 100vh;
-  overflow-x: hidden;
-}
-
-.modal .text-box,
-.login-section .text-box {
-  background: url(../img/banner2.jpg);
+  background: url(../img/Switzerland-4K-4k-wallpaper-4K-mountains-sky-house.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .modal .overlay,
@@ -1001,6 +1014,9 @@ a.btn-custom {
 .login-section form {
   max-width: 500px;
   margin: auto;
+  background: var(--white);
+  padding: 50px;
+  border-radius: 10px;
 }
 
 .modal form .input-box label,
@@ -1014,13 +1030,12 @@ a.btn-custom {
 .login-section form .input-box .form-select,
 .login-section form .input-box .form-control {
   height: 50px;
-  border-radius: 0px;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid var(--borderColor);
+  border-radius: 5px;
+  background-color: var(--bgLight);
+  border: 1px solid var(--bgLight);
   padding: 10px;
-  padding-left: 1px;
-  padding-right: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
   caret-color: var(--primary);
   color: var(--black);
 }
@@ -1032,7 +1047,7 @@ a.btn-custom {
   color: var(--black);
   -webkit-box-shadow: 0 0 0 0rem var(--white);
           box-shadow: 0 0 0 0rem var(--white);
-  border-bottom: 1px solid var(--primary);
+  border: 1px solid var(--primary);
 }
 
 .modal form .input-box .form-select::-webkit-input-placeholder,
@@ -1100,11 +1115,11 @@ a.btn-custom {
 
 .modal form .links .form-check .form-check-input,
 .login-section form .links .form-check .form-check-input {
-  border-radius: 0px;
-  border: 1px solid var(--primary);
+  border-radius: 3px;
+  border: 1px solid var(--gray);
   cursor: pointer;
   background-color: transparent;
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
 .modal form .links .form-check .form-check-input:checked,
@@ -2363,6 +2378,8 @@ a.btn-custom {
 .banner-section h3 {
   text-transform: capitalize;
   color: var(--white);
+  letter-spacing: 2px;
+  word-spacing: 5px;
 }
 
 .faq-section {
@@ -2373,21 +2390,18 @@ a.btn-custom {
   background: none;
   border: none;
   margin: 15px 0;
-  -webkit-box-shadow: var(--shadow);
-          box-shadow: var(--shadow);
-  background: var(--white);
+  background: var(--bgLight);
   border-radius: 5px;
 }
 
 .faq-section .accordion-button {
-  background: var(--white);
+  background: var(--bgLight);
   border-radius: 5px !important;
   padding-left: 0px;
   font-size: 18px;
-  font-weight: 600;
-  padding: 15px;
+  font-weight: 500;
+  padding: 25px;
   padding-right: 40px;
-  text-transform: uppercase;
   color: var(--bgDark);
 }
 
@@ -2404,13 +2418,13 @@ a.btn-custom {
   background-size: cover;
   position: absolute;
   right: 15px;
-  height: 24px;
-  width: 24px;
+  height: 16px;
+  width: 16px;
   background-position: center;
 }
 
 .faq-section .accordion-body {
-  padding: 15px;
+  padding: 15px 25px;
   padding-top: 5px;
 }
 
@@ -2658,8 +2672,7 @@ a.btn-custom {
 }
 
 .blog-section .blog-box {
-  -webkit-box-shadow: 0px 20px 50px rgba(206, 210, 225, 0.24);
-          box-shadow: 0px 20px 50px rgba(206, 210, 225, 0.24);
+  background: var(--white);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -2686,7 +2699,7 @@ a.btn-custom {
 
 .blog-section .blog-box .text-box .title {
   display: block;
-  font-size: 24px;
+  font-size: 18px;
   margin-bottom: 5px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
