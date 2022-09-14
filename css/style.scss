@@ -1,16 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&family=DM+Sans:wght@400;500;700&family=Jost:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&family=Rajdhani:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap");
+
 :root {
    --primary: #234dd5;
+   // --primary: #ff5529;
    --secondary: #e85f4c;
    --white: #fff;
    --black: #141720;
    --bgLight: #f7f7f8;
-   --bgDark: #2f2d52;
+   --bgDark: #353535;
    --bgDark2: #323546;
    --borderColor: #e4e6eb;
-   --gray: #5e627f;
-   --textColor: #3f3164;
-   --shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+   --gray: #727272;
+   --textColor: #353535;
+   --shadow: 0px 2px 16.8px 3.2px rgba(0, 38, 66, 0.08);
    --bgGradient: #e85f4c;
    --gold: #ffc100;
 }
@@ -21,13 +23,11 @@
    box-sizing: border-box;
 }
 body {
-   font-family: "Rajdhani", sans-serif;
    font-family: "DM Sans", sans-serif;
-   font-family: "Jost", sans-serif;
    color: var(--gray);
    background: var(--white);
    font-weight: 400;
-   font-size: 15px;
+   font-size: 16px;
 }
 .rtl {
    direction: rtl;
@@ -52,9 +52,8 @@ h2,
 h3,
 h4,
 h5 {
-   font-family: "Poppins", sans-serif;
-   font-family: "Jost", sans-serif;
-   font-weight: 600;
+   font-family: "DM Serif Display", serif;
+   font-weight: 400;
    color: var(--textColor);
    margin-bottom: 15px;
 }
@@ -102,11 +101,11 @@ i {
    height: 50px;
    display: inline-block;
    text-align: center;
-   text-transform: capitalize;
+   text-transform: uppercase;
    font-weight: 500;
+   font-size: 14px;
    background: var(--primary);
    color: var(--white);
-   // box-shadow: 0px 0px 0px 6px rgba(255, 255, 255, 0.1);
    border: none;
    border-radius: 5px;
    transition: 0.4s;
@@ -155,7 +154,6 @@ a.btn-custom {
    h3,
    h2 {
       text-transform: capitalize;
-      font-family: "Birthstone Bounce", cursive;
       letter-spacing: 2px;
       word-spacing: 5px;
    }
@@ -168,10 +166,10 @@ a.btn-custom {
 .navbar {
    padding: 0px 15px;
    transition: 0.4s;
-   // background: rgba(255, 255, 255, 0.1);
-   // border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+   background: var(--white);
    &.active {
       background: var(--white);
+      box-shadow: var(--shadow);
       .navbar-brand {
          color: var(--primary);
       }
@@ -184,9 +182,10 @@ a.btn-custom {
       }
    }
    .navbar-brand {
-      font-size: 24px;
-      color: var(--white);
-      font-weight: 600;
+      font-size: 32px;
+      color: var(--primary);
+      font-family: "DM Serif Display", serif;
+      font-weight: 400;
       display: inline-block;
       img {
          width: 80px;
@@ -213,9 +212,9 @@ a.btn-custom {
       margin: 15px 15px;
       padding: 5px 0;
       .nav-link {
-         color: var(--white);
+         color: var(--gray);
          text-transform: capitalize;
-         font-weight: 500;
+         font-weight: 400;
          transition: 0.4s;
          // &.active,
          &:hover {
@@ -304,7 +303,7 @@ a.btn-custom {
             width: 40px;
             height: 40px;
             text-align: center;
-            color: var(--white);
+            color: var(--primary);
             transition: 0.4s;
             i {
                font-size: 18px;
@@ -340,7 +339,7 @@ a.btn-custom {
             width: 40px;
             height: 40px;
             text-align: center;
-            color: var(--white);
+            color: var(--primary);
             transition: 0.4s;
             i {
                font-size: 18px;
@@ -475,9 +474,9 @@ a.btn-custom {
    //    rgb(47, 50, 212) 0%,
    //    rgb(113, 66, 247) 100%
    // );
-   background: url(../img/Switzerland-4K-4k-wallpaper-4K-mountains-sky-house.jpg);
+   background: url(../img/pexels-darya-sannikova-2422386.jpg);
    background-size: cover;
-   background-position: center top;
+   background-position: center;
    background-repeat: no-repeat;
    overflow: hidden;
    .overlay {
@@ -503,14 +502,12 @@ a.btn-custom {
          font-weight: 500;
          text-transform: capitalize;
          margin-bottom: 30px;
-         // font-family: "Birthstone Bounce", cursive;
       }
       h1 {
          color: var(--white);
          font-size: 80px;
          font-weight: 500;
          text-transform: capitalize;
-         font-family: "Birthstone Bounce", cursive;
          span {
             color: var(--white);
             position: relative;
@@ -527,7 +524,7 @@ a.btn-custom {
    }
    .search-bar {
       background: var(--white);
-      box-shadow: 0px 20px 50px rgba(206, 210, 225, 0.24);
+      box-shadow: var(--shadow);
       padding: 0px;
       border-radius: 5px;
       margin: 50px 100px 0 100px;
@@ -657,27 +654,40 @@ a.btn-custom {
    }
 }
 
+// how it works
+.how-it-works {
+   padding: 100px 0;
+   .box {
+      text-align: center;
+      .icon-box {
+         margin-bottom: 30px;
+      }
+      p {
+         max-width: 300px;
+         margin: auto;
+      }
+   }
+}
+
 .category-section {
    padding: 100px 0;
    background-color: var(--white);
-   background: url(../img/map-bg.jpg);
-   background-size: cover;
-   background-position: center;
+   // background: url(../img/map-bg.jpg);
+   // background-size: cover;
+   // background-position: center;
    .category-box {
-      background: var(--bgLight);
-      background: #f4f6fa;
-      // box-shadow: 0px 4px 4px rgba(100, 109, 152, 0.06);
+      background: var(--white);
+      box-shadow: var(--shadow);
       text-align: left;
-      padding: 30px;
-      border-radius: 5px;
+      border-radius: 10px;
+      padding: 20px 30px;
       display: flex;
       position: relative;
       border-bottom: 2px solid var(--white);
       transition: 0.4s;
       .icon-box {
          margin-right: 15px;
-         background: var(--white);
-         background: rgba(13, 136, 255, 0.15);
+         background: #ffded5;
          min-width: 50px;
          height: 50px;
          border-radius: 5px;
@@ -709,20 +719,20 @@ a.btn-custom {
 }
 
 .popular-listings {
-   background-color: var(--white);
-   background: url(../img/pablo-acevedo-111046-unsplash.jpg);
-   background-size: cover;
-   background-position: center;
+   background-color: var(--bgLight);
+   // background: url(../img/pablo-acevedo-111046-unsplash.jpg);
+   // background-size: cover;
+   // background-position: center;
    .overlay {
       padding: 100px 0;
-      background: rgba(255, 255, 255, 0.9);
+      background: var(--bgLight);
    }
-   .box {
-      background: var(--white);
-      border-radius: 10px;
-      overflow: hidden;
-      // box-shadow: 0px 20px 50px rgba(206, 210, 225, 0.24);
-   }
+}
+.listing-box {
+   background: var(--white);
+   border-radius: 10px;
+   overflow: hidden;
+   box-shadow: var(--shadow);
    .img-box {
       position: relative;
       .save {
@@ -788,6 +798,49 @@ a.btn-custom {
          color: var(--gray);
          i {
             font-size: 14px;
+         }
+      }
+   }
+}
+
+.listing-section {
+   .search-bar {
+      .input-box {
+         label {
+            margin-bottom: 0px;
+            text-transform: capitalize;
+         }
+         .form-select,
+         .form-control {
+            height: 50px;
+            border-radius: 5px;
+            background-color: var(--bgLight);
+            border: 1px solid var(--bgLight);
+            padding: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            caret-color: var(--primary);
+            color: var(--black);
+            &:focus {
+               color: var(--black);
+               box-shadow: 0 0 0 0rem var(--white);
+               border: 1px solid var(--primary);
+            }
+            &::placeholder {
+               color: var(--gray);
+            }
+         }
+         .form-select {
+            background-image: url(../img/icon/downward-arrow.png);
+            border: 1px solid transparent;
+            option {
+               background: var(--black);
+               color: var(--gray);
+            }
+         }
+         textarea.form-control {
+            height: 150px;
+            border-radius: 10px;
          }
       }
    }
@@ -2205,7 +2258,7 @@ a.btn-custom {
    background-size: cover;
    background-position: center;
    .blog-box {
-      // box-shadow: 0px 20px 50px rgba(206, 210, 225, 0.24);
+      box-shadow: var(--shadow);
       background: var(--white);
       border-radius: 10px;
       overflow: hidden;
@@ -2229,7 +2282,6 @@ a.btn-custom {
             display: block;
             font-size: 18px;
             margin-bottom: 5px;
-            font-family: "Jost", sans-serif;
             font-weight: 600;
             color: var(--textColor);
             transition: 0.4s;
@@ -2663,7 +2715,7 @@ a.btn-custom {
    // }
    .review-box {
       background: var(--white);
-      // box-shadow: 0px 20px 50px rgba(206, 210, 225, 0.24);
+      box-shadow: var(--shadow);
       padding: 30px;
       border-radius: 10px;
       position: relative;
@@ -2697,6 +2749,9 @@ a.btn-custom {
          }
       }
    }
+   .owl-carousel .owl-stage-outer {
+      padding: 15px 0;
+   }
    .owl-dots {
       display: block;
       text-align: center;
@@ -2719,6 +2774,83 @@ a.btn-custom {
       h5,
       p {
          color: var(--white);
+      }
+   }
+}
+
+// pricing section
+.pricing-section {
+   padding: 100px 0;
+   background: var(--white);
+   position: relative;
+   overflow: hidden;
+   .flower {
+      position: absolute;
+      width: 300px;
+      right: -150px;
+      top: 0;
+   }
+   .box {
+      text-align: center;
+      padding: 30px 0;
+      background: var(--white);
+      box-shadow: var(--shadow);
+      border-radius: 10px;
+      .icon-box {
+         margin-bottom: 30px;
+         i {
+            font-size: 28px;
+            background: var(--bgLight);
+            color: var(--primary);
+            width: 80px;
+            height: 80px;
+            border-radius: 100px;
+            padding-top: 20px;
+            border: 8px solid var(--white);
+            outline: 1px solid var(--primary);
+         }
+      }
+      .text-box {
+         h5 {
+            text-transform: capitalize;
+         }
+         h2 {
+            margin-bottom: 0;
+            span {
+               font-size: 32px;
+            }
+         }
+         ul {
+            padding-left: 0;
+            display: inline-block;
+            text-align: left;
+            width: 100%;
+            padding: 15px 30px;
+            margin-bottom: 0;
+            list-style: none;
+            text-transform: capitalize;
+            li {
+               margin-bottom: 15px;
+               i {
+                  font-size: 16px;
+                  margin-right: 5px;
+               }
+            }
+         }
+         button {
+            display: block;
+            text-align: center;
+            margin: auto;
+         }
+      }
+   }
+}
+.rtl .pricing-section {
+   .box .text-box ul {
+      text-align: right;
+      li i {
+         margin-right: 0;
+         margin-left: 5px;
       }
    }
 }

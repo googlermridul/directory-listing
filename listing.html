@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="icon" type="image/x-icon" href="./img/fav.png" />
 
-      <title>Directory Listing | Home</title>
+      <title>Directory Listing | Listings</title>
       <!-- bootstrap 5 -->
       <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
       <!-- select 2 -->
@@ -33,6 +33,10 @@
       <link
          rel="stylesheet"
          href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+      />
+      <link
+         rel="stylesheet"
+         href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
       />
       <!-- custom css -->
       <link rel="stylesheet" href="./css/style.css" />
@@ -220,7 +224,7 @@
                <div class="row">
                   <div class="col">
                      <div class="header-text text-center">
-                        <h3>Contact us</h3>
+                        <h3>Best Listings</h3>
                      </div>
                   </div>
                </div>
@@ -228,112 +232,182 @@
          </div>
       </section>
 
-      <!-- contact section -->
-      <div class="contact-section">
-         <div class="container">
-            <div class="row gy-5 g-lg-5 align-items-top">
-               <div class="col-lg-6">
-                  <form action="" class="">
-                     <div class="header-text">
-                        <h5>contact us</h5>
-                        <h3>Leave us your info</h3>
-                        <p>
-                           Give us a call or drop by anytime, we endeavour to
-                           answer all enquiries within 24 hours on business
-                           days. We will be happy to answer your questions.
-                        </p>
-                     </div>
-                     <div class="row g-3">
-                        <div class="input-box col-md-6">
+      <section class="listing-section">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-lg-6 my-5">
+                  <div class="search-bar">
+                     <div class="row g-3 mb-5">
+                        <div class="input-box col-lg-3">
                            <input
-                              class="form-control"
                               type="text"
-                              placeholder="Full name"
-                           />
-                        </div>
-                        <div class="input-box col-md-6">
-                           <input
                               class="form-control"
-                              type="email"
                               placeholder="Email address"
                            />
                         </div>
-                        <div class="input-box col-12">
-                           <select
-                              class="form-select"
-                              aria-label="Default select example"
-                           >
-                              <option selected>Subject</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                           </select>
-                        </div>
-                        <div class="input-box col-12">
-                           <textarea
+                        <div class="input-box col-lg-3">
+                           <input
+                              type="text"
                               class="form-control"
-                              cols="30"
-                              rows="3"
-                              placeholder="Your message"
-                           ></textarea>
+                              placeholder="Password"
+                           />
                         </div>
-                        <div class="input-box col-12">
-                           <button class="btn-custom">submit</button>
+                        <div class="input-box col-lg-3">
+                           <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Password"
+                           />
+                        </div>
+                        <div class="input-box col-lg-3">
+                           <button class="btn-custom w-100">Search</button>
                         </div>
                      </div>
-                  </form>
-               </div>
-               <div class="col-lg-1"></div>
-               <div class="col-lg-5">
-                  <div class="text-box">
-                     <div class="header-text"></div>
-                     <div class="header-text">
-                        <h3>Get In Touch</h3>
-                        <p>
-                           Give us a call or drop by anytime, we endeavour to
-                           answer all enquiries within 24 hours on business
-                           days. We will be happy to answer your questions.
-                        </p>
-                     </div>
-                     <div class="row">
-                        <div class="info-box col-md-12">
-                           <div class="icon-box">
-                              <i class="fal fa-map-marker-alt"></i>
+                  </div>
+
+                  <div class="row g-4">
+                     <div class="col-lg-4 col-md-6">
+                        <div class="listing-box">
+                           <div class="img-box">
+                              <img
+                                 class="img-fluid"
+                                 src="./img/item/16.jpg"
+                                 alt=""
+                              />
+                              <button class="save">
+                                 <i class="fal fa-heart"></i>
+                              </button>
+                              <span class="price"> $49 </span>
                            </div>
-                           <div class="text">
-                              <h5>Address</h5>
-                              <p>
-                                 4 apt. Flawing Street. The Grand Avenue. <br />
-                                 Liverpool, UK 33342
+                           <div class="text-box">
+                              <div class="review">
+                                 <span>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
+                                 </span>
+                                 <span>(45 reviews)</span>
+                              </div>
+                              <a class="title" href=""> Wize Shopping Mall </a>
+                              <p>Biggest shopping amll in NY</p>
+                              <p class="address">
+                                 <i class="fal fa-map-marker-alt"></i>
+                                 75 Prince St, NY, USA
                               </p>
                            </div>
                         </div>
-                        <div class="info-box col-md-12">
-                           <div class="icon-box">
-                              <i class="fal fa-envelope"></i>
+                     </div>
+                     <div class="col-lg-4 col-md-6">
+                        <div class="listing-box">
+                           <div class="img-box">
+                              <img
+                                 class="img-fluid"
+                                 src="./img/item/28.jpg"
+                                 alt=""
+                              />
+                              <button class="save">
+                                 <i class="fal fa-heart"></i>
+                              </button>
+                              <span class="price"> $49 </span>
                            </div>
-                           <div class="text">
-                              <h5>Email</h5>
-                              <p>hello@website.com</p>
-                              <p>hello2@website.com</p>
+                           <div class="text-box">
+                              <div class="review">
+                                 <span>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
+                                 </span>
+                                 <span>(45 reviews)</span>
+                              </div>
+                              <a class="title" href=""> Wize Shopping Mall </a>
+                              <p>Biggest shopping amll in NY</p>
+                              <p class="address">
+                                 <i class="fal fa-map-marker-alt"></i>
+                                 75 Prince St, NY, USA
+                              </p>
                            </div>
                         </div>
-                        <div class="info-box col-md-12">
-                           <div class="icon-box">
-                              <i class="fal fa-phone-alt"></i>
+                     </div>
+                     <div class="col-lg-4 col-md-6">
+                        <div class="listing-box">
+                           <div class="img-box">
+                              <img
+                                 class="img-fluid"
+                                 src="./img/item/28.jpg"
+                                 alt=""
+                              />
+                              <button class="save">
+                                 <i class="fal fa-heart"></i>
+                              </button>
+                              <span class="price"> $49 </span>
                            </div>
-                           <div class="text">
-                              <h5>Phone</h5>
-                              <p>+44-20-4526-2356</p>
-                              <p>+44-20-4526-2353</p>
+                           <div class="text-box">
+                              <div class="review">
+                                 <span>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
+                                 </span>
+                                 <span>(45 reviews)</span>
+                              </div>
+                              <a class="title" href=""> Wize Shopping Mall </a>
+                              <p>Biggest shopping amll in NY</p>
+                              <p class="address">
+                                 <i class="fal fa-map-marker-alt"></i>
+                                 75 Prince St, NY, USA
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6">
+                        <div class="listing-box">
+                           <div class="img-box">
+                              <img
+                                 class="img-fluid"
+                                 src="./img/item/9.jpg"
+                                 alt=""
+                              />
+                              <button class="save">
+                                 <i class="fal fa-heart"></i>
+                              </button>
+                              <span class="price"> $49 </span>
+                           </div>
+                           <div class="text-box">
+                              <div class="review">
+                                 <span>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
+                                 </span>
+                                 <span>(45 reviews)</span>
+                              </div>
+                              <a class="title" href=""> Wize Shopping Mall </a>
+                              <p>Biggest shopping amll in NY</p>
+                              <p class="address">
+                                 <i class="fal fa-map-marker-alt"></i>
+                                 75 Prince St, NY, USA
+                              </p>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
+               <div class="col-lg-6">
+                  <!-- <img src="./img/blog/g-map.jpg" alt="" class="img-fluid" /> -->
+                  <div style="height: 100%" id="map"></div>
+               </div>
             </div>
          </div>
-      </div>
+      </section>
+
       <!-- footer section -->
       <footer class="footer-section">
          <div class="container">
@@ -464,7 +538,16 @@
       <script src="./assets/plugins/aos/aos.js"></script>
       <!-- fancy box -->
       <script src="./assets/plugins/fancybox/jquery.fancybox.min.js"></script>
+      <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
       <!-- custom script -->
       <script src="./js/script.js"></script>
+      <script>
+         var map = L.map("map").setView([51.505, -0.09], 13);
+         L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+            maxZoom: 19,
+            attribution: "© OpenStreetMap",
+         }).addTo(map);
+         var marker = L.marker([51.5, -0.09]).addTo(map);
+      </script>
    </body>
 </html>
