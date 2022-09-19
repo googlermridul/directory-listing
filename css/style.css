@@ -985,22 +985,9 @@ a.btn-custom {
   background: var(--primary);
 }
 
-.listing-box .img-box .price {
-  position: absolute;
-  right: 10px;
-  bottom: -50px;
-  display: inline-block;
-  width: 60px;
-  border-radius: 5px;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--primary);
-  background: var(--white);
-}
-
 .listing-box .text-box {
   padding: 15px;
+  position: relative;
   color: var(--gray);
 }
 
@@ -1014,6 +1001,29 @@ a.btn-custom {
   color: var(--gold);
 }
 
+.listing-box .text-box p {
+  margin-bottom: 5px;
+}
+
+.listing-box .text-box .author {
+  font-size: 14px;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  display: inline-block;
+  color: var(--gray);
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+
+.listing-box .text-box .author i {
+  font-size: 14px;
+}
+
+.listing-box .text-box .author:hover {
+  color: var(--primary);
+}
+
 .listing-box .text-box .title {
   font-family: "Poppins", sans-serif;
   color: var(--textColor);
@@ -1021,10 +1031,6 @@ a.btn-custom {
   font-weight: 600;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-}
-
-.listing-box .text-box .title:hover {
-  color: var(--primary);
 }
 
 .listing-box .text-box .fa-check-circle {
@@ -1097,6 +1103,8 @@ a.btn-custom {
 .listing-details .btn-light {
   background: none !important;
   border: none !important;
+  width: 40px;
+  font-size: 12px;
 }
 
 .listing-details .info-box {
@@ -1127,14 +1135,10 @@ a.btn-custom {
 
 .listing-details .info-box .title {
   color: var(--textColor);
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 600;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-}
-
-.listing-details .info-box .title:hover {
-  color: var(--primary);
 }
 
 .listing-details .info-box .fa-check-circle {
@@ -1491,6 +1495,7 @@ a.btn-custom {
 .listing-details .side-bar .creator-box .btn-custom {
   height: 40px;
   border-radius: 100px;
+  padding: 10px;
 }
 
 .listing-details .side-bar .side-box {
