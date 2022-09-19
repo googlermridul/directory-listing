@@ -21,19 +21,13 @@
          rel="stylesheet"
          href="./assets/plugins/owlcarousel/owl.theme.default.min.css"
       />
-      <!-- aos animation -->
-      <link rel="stylesheet" href="./assets/plugins/aos/aos.css" />
-      <!-- fancy box -->
+      <!-- range slider -->
       <link
          rel="stylesheet"
-         href="./assets/plugins/fancybox/jquery.fancybox.min.css"
+         href="./assets/plugins/rangeslider/range-slider.css"
       />
       <!-- font awesome 5 -->
       <script src="./assets/fontawesome/fontawesomepro.js"></script>
-      <link
-         rel="stylesheet"
-         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
-      />
       <link
          rel="stylesheet"
          href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
@@ -43,7 +37,7 @@
    </head>
    <body class="">
       <!-- navbar -->
-      <nav class="navbar navbar-expand-md fixed-top">
+      <nav class="navbar navbar-expand-lg fixed-top">
          <div class="container">
             <a class="navbar-brand" href="index.html">Listing</a>
             <button
@@ -69,35 +63,13 @@
                      <a class="nav-link" href="pricing.html">Pricing</a>
                   </li>
                   <li class="nav-item">
+                     <a class="nav-link" href="listing.html">Listing</a>
+                  </li>
+                  <li class="nav-item">
                      <a class="nav-link" href="blog.html">Blogs</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle"> Dropdown </a>
-                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                           <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li class="dropdown dropdown2">
-                           <a class="dropdown-item dropdown-toggle"
-                              >Dropdown 2
-                           </a>
-                           <ul class="dropdown-menu dropdown-menu2">
-                              <li>
-                                 <a class="dropdown-item" href="#">Action 1</a>
-                              </li>
-                              <li>
-                                 <a class="dropdown-item" href="#">Action 2</a>
-                              </li>
-                              <li>
-                                 <a class="dropdown-item" href="#">Action 3</a>
-                              </li>
-                           </ul>
-                        </li>
-                     </ul>
                   </li>
                </ul>
             </div>
@@ -235,39 +207,190 @@
       <section class="listing-section">
          <div class="container-fluid">
             <div class="row">
-               <div class="col-lg-6 my-5">
-                  <div class="search-bar">
-                     <div class="row g-3 mb-5">
-                        <div class="input-box col-lg-3">
+               <div class="col-xl-2 col-lg-4 my-4">
+                  <div class="filter-area">
+                     <!-- INPUT FIELD -->
+                     <div class="filter-box">
+                        <h5>search</h5>
+                        <div class="input-group mb-3">
                            <input
-                              type="text"
+                              type="email"
                               class="form-control"
-                              placeholder="Email address"
+                              placeholder="search"
                            />
                         </div>
-                        <div class="input-box col-lg-3">
-                           <input
-                              type="text"
-                              class="form-control"
-                              placeholder="Password"
-                           />
+                        <div class="input-group mb-3">
+                           <select
+                              class="js-example-basic-single form-control"
+                              name="state"
+                           >
+                              <option value="Audi">Select Region</option>
+                              <option value="Bmw">Bmw</option>
+                              <option value="Cadillac">Cadillac</option>
+                              <option value="Dodge">Dodge</option>
+                              <option value="Ferrari">Ferrari</option>
+                              <option value="Hennessey">Hennessey</option>
+                              <option value="Jaguar">Jaguar</option>
+                           </select>
                         </div>
-                        <div class="input-box col-lg-3">
-                           <input
-                              type="text"
-                              class="form-control"
-                              placeholder="Password"
-                           />
-                        </div>
-                        <div class="input-box col-lg-3">
-                           <button class="btn-custom w-100">Search</button>
+                        <div class="input-group">
+                           <select
+                              class="js-example-basic-single form-control"
+                              name="state"
+                           >
+                              <option value="Audi">Select Region</option>
+                              <option value="Bmw">Bmw</option>
+                              <option value="Cadillac">Cadillac</option>
+                              <option value="Dodge">Dodge</option>
+                              <option value="Ferrari">Ferrari</option>
+                              <option value="Hennessey">Hennessey</option>
+                              <option value="Jaguar">Jaguar</option>
+                           </select>
                         </div>
                      </div>
+                     <!-- PRICE RANGE -->
+                     <div class="filter-box">
+                        <h5>Filter by price</h5>
+                        <div class="input-box">
+                           <input
+                              type="text"
+                              class="js-range-slider"
+                              name="my_range"
+                              value=""
+                           />
+                           <label for="customRange1" class="form-label mt-3">
+                              $10 — $1,200</label
+                           >
+                        </div>
+                     </div>
+                     <div class="filter-box">
+                        <h5>Filter by Ratings</h5>
+                        <div class="check-box">
+                           <div class="form-check">
+                              <input
+                                 class="form-check-input"
+                                 type="checkbox"
+                                 value=""
+                                 id="check1"
+                              />
+                              <label class="form-check-label" for="check1">
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                              </label>
+                           </div>
+                           <div class="form-check">
+                              <input
+                                 class="form-check-input"
+                                 type="checkbox"
+                                 value=""
+                                 id="check2"
+                              />
+                              <label class="form-check-label" for="check2">
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                              </label>
+                           </div>
+                           <div class="form-check">
+                              <input
+                                 class="form-check-input"
+                                 type="checkbox"
+                                 value=""
+                                 id="check3"
+                              />
+                              <label class="form-check-label" for="check3">
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                              </label>
+                           </div>
+                           <div class="form-check">
+                              <input
+                                 class="form-check-input"
+                                 type="checkbox"
+                                 value=""
+                                 id="check4"
+                              />
+                              <label class="form-check-label" for="check4">
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                              </label>
+                           </div>
+                           <div class="form-check">
+                              <input
+                                 class="form-check-input"
+                                 type="checkbox"
+                                 value=""
+                                 id="check5"
+                              />
+                              <label class="form-check-label" for="check5">
+                                 <i class="fas fa-star"></i>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- SEARCH BY CATEGORIES -->
+                     <div class="filter-box">
+                        <h5>Categories</h5>
+                        <div class="check-box">
+                           <div class="form-check">
+                              <input
+                                 class="form-check-input"
+                                 type="checkbox"
+                                 value=""
+                                 id="categoryCheck1"
+                              />
+                              <label
+                                 class="form-check-label"
+                                 for="categoryCheck1"
+                              >
+                                 Premium Services
+                              </label>
+                           </div>
+                           <div class="form-check">
+                              <input
+                                 class="form-check-input"
+                                 type="checkbox"
+                                 value=""
+                                 id="categoryCheck2"
+                              />
+                              <label
+                                 class="form-check-label"
+                                 for="categoryCheck2"
+                              >
+                                 Verified Services
+                              </label>
+                           </div>
+                           <div class="form-check">
+                              <input
+                                 class="form-check-input"
+                                 type="checkbox"
+                                 value=""
+                                 id="categoryCheck3"
+                              />
+                              <label
+                                 class="form-check-label"
+                                 for="categoryCheck3"
+                              >
+                                 Trending Services
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                     <button class="btn-custom w-100">submit</button>
                   </div>
-
+               </div>
+               <div class="col-xl-6 col-lg-8 my-4">
                   <div class="row g-4">
                      <div class="col-lg-4 col-md-6">
-                        <div class="listing-box">
+                        <div
+                           class="listing-box listing-map-box"
+                           onclick="changeLatLong(51.509865, -0.118092, 'Wize Shopping Mall')"
+                        >
                            <div class="img-box">
                               <img
                                  class="img-fluid"
@@ -290,17 +413,23 @@
                                  </span>
                                  <span>(45 reviews)</span>
                               </div>
-                              <a class="title" href=""> Wize Shopping Mall </a>
+                              <h5 class="title">Wize Shopping Mall</h5>
                               <p>Biggest shopping amll in NY</p>
                               <p class="address">
                                  <i class="fal fa-map-marker-alt"></i>
                                  75 Prince St, NY, USA
                               </p>
+                              <a href="listing-details.html" class="btn-custom"
+                                 >View details</a
+                              >
                            </div>
                         </div>
                      </div>
                      <div class="col-lg-4 col-md-6">
-                        <div class="listing-box">
+                        <div
+                           class="listing-box listing-map-box"
+                           onclick="changeLatLong(41.902782, 12.496366, 'Wize Shopping Mall 2')"
+                        >
                            <div class="img-box">
                               <img
                                  class="img-fluid"
@@ -323,17 +452,23 @@
                                  </span>
                                  <span>(45 reviews)</span>
                               </div>
-                              <a class="title" href=""> Wize Shopping Mall </a>
+                              <h5 class="title">Wize Shopping Mall</h5>
                               <p>Biggest shopping amll in NY</p>
                               <p class="address">
                                  <i class="fal fa-map-marker-alt"></i>
                                  75 Prince St, NY, USA
                               </p>
+                              <a href="listing-details.html" class="btn-custom"
+                                 >View details</a
+                              >
                            </div>
                         </div>
                      </div>
                      <div class="col-lg-4 col-md-6">
-                        <div class="listing-box">
+                        <div
+                           class="listing-box listing-map-box"
+                           onclick="changeLatLong(40.416775, -3.703790, 'Wize Shopping Mall 3')"
+                        >
                            <div class="img-box">
                               <img
                                  class="img-fluid"
@@ -356,17 +491,23 @@
                                  </span>
                                  <span>(45 reviews)</span>
                               </div>
-                              <a class="title" href=""> Wize Shopping Mall </a>
+                              <h5 class="title">Wize Shopping Mall</h5>
                               <p>Biggest shopping amll in NY</p>
                               <p class="address">
                                  <i class="fal fa-map-marker-alt"></i>
                                  75 Prince St, NY, USA
                               </p>
+                              <a href="listing-details.html" class="btn-custom"
+                                 >View details</a
+                              >
                            </div>
                         </div>
                      </div>
                      <div class="col-lg-4 col-md-6">
-                        <div class="listing-box">
+                        <div
+                           class="listing-box listing-map-box"
+                           onclick="changeLatLong(39.925533, 32.866287, 'Wize Shopping Mall 4')"
+                        >
                            <div class="img-box">
                               <img
                                  class="img-fluid"
@@ -389,20 +530,43 @@
                                  </span>
                                  <span>(45 reviews)</span>
                               </div>
-                              <a class="title" href=""> Wize Shopping Mall </a>
+                              <h5 class="title">Wize Shopping Mall</h5>
                               <p>Biggest shopping amll in NY</p>
                               <p class="address">
                                  <i class="fal fa-map-marker-alt"></i>
                                  75 Prince St, NY, USA
                               </p>
+                              <a href="listing-details.html" class="btn-custom"
+                                 >View details</a
+                              >
                            </div>
                         </div>
                      </div>
                   </div>
+
+                  <nav aria-label="Page navigation example mt-5">
+                     <ul class="pagination justify-content-center mt-5">
+                        <li class="page-item disabled">
+                           <a class="page-link">Previous</a>
+                        </li>
+                        <li class="page-item active">
+                           <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                           <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                           <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                           <a class="page-link" href="#">Next</a>
+                        </li>
+                     </ul>
+                  </nav>
                </div>
-               <div class="col-lg-6">
+               <div class="col-xl-4 col-lg-12">
                   <!-- <img src="./img/blog/g-map.jpg" alt="" class="img-fluid" /> -->
-                  <div style="height: 100%" id="map"></div>
+                  <div class="h-100" id="map"></div>
                </div>
             </div>
          </div>
@@ -524,30 +688,19 @@
 
       <!-- bootstrap -->
       <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
-      <script src="./assets/bootstrap/masonry.pkgd.min.js"></script>
       <!-- jquery cdn -->
       <script src="./assets/jquery/jquery-3.6.0.min.js"></script>
       <!-- select 2 -->
       <script src="./assets/plugins/select2/select2.min.js"></script>
       <!-- owl carousel -->
       <script src="./assets/plugins/owlcarousel/owl.carousel.min.js"></script>
-      <!-- counter up -->
-      <script src="./assets/plugins/counterup/jquery.waypoints.min.js"></script>
-      <script src="./assets/plugins/counterup/jquery.counterup.min.js"></script>
-      <!-- aos animation -->
-      <script src="./assets/plugins/aos/aos.js"></script>
-      <!-- fancy box -->
-      <script src="./assets/plugins/fancybox/jquery.fancybox.min.js"></script>
+      <!-- range slider -->
+      <script src="./assets/plugins/rangeslider/range-slider.min.js"></script>
+      <!-- leaflet js -->
       <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
+      <!-- social share -->
+      <script src="./assets/plugins/socialjs/socialSharing.js"></script>
       <!-- custom script -->
       <script src="./js/script.js"></script>
-      <script>
-         var map = L.map("map").setView([51.505, -0.09], 13);
-         L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-            maxZoom: 19,
-            attribution: "© OpenStreetMap",
-         }).addTo(map);
-         var marker = L.marker([51.5, -0.09]).addTo(map);
-      </script>
    </body>
 </html>

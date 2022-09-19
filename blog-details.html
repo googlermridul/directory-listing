@@ -6,14 +6,11 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="icon" type="image/x-icon" href="./img/fav.png" />
 
-      <title>ICO | Blog Details</title>
+      <title>Directory Listing | Home</title>
       <!-- bootstrap 5 -->
       <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
-      <!-- SKITTER SLIDER -->
-      <link
-         rel="stylesheet"
-         href="./assets/plugins/skitter-master/skitter.css"
-      />
+      <!-- select 2 -->
+      <link rel="stylesheet" href="./assets/plugins/select2/select2.min.css" />
       <!-- owl carousel -->
       <link rel="stylesheet" href="./assets/plugins/owlcarousel/animate.css" />
       <link
@@ -24,27 +21,21 @@
          rel="stylesheet"
          href="./assets/plugins/owlcarousel/owl.theme.default.min.css"
       />
-      <!-- aos animation -->
-      <link rel="stylesheet" href="./assets/plugins/aos/aos.css" />
-      <!-- fancy box -->
+      <!-- range slider -->
       <link
          rel="stylesheet"
-         href="./assets/plugins/fancybox/jquery.fancybox.min.css"
+         href="./assets/plugins/rangeslider/range-slider.css"
       />
       <!-- font awesome 5 -->
       <script src="./assets/fontawesome/fontawesomepro.js"></script>
-      <link
-         rel="stylesheet"
-         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
-      />
       <!-- custom css -->
       <link rel="stylesheet" href="./css/style.css" />
    </head>
    <body class="">
       <!-- navbar -->
-      <nav class="navbar navbar-expand-md fixed-top">
-         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">ICO</a>
+      <nav class="navbar navbar-expand-lg fixed-top">
+         <div class="container">
+            <a class="navbar-brand" href="index.html">Listing</a>
             <button
                class="navbar-toggler p-0"
                type="button"
@@ -54,10 +45,10 @@
                aria-expanded="false"
                aria-label="Toggle navigation"
             >
-               <i class="fal fa-bars"></i>
+               <i class="far fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-               <ul class="navbar-nav">
+               <ul class="navbar-nav mx-auto">
                   <li class="nav-item">
                      <a class="nav-link active" href="index.html">Home</a>
                   </li>
@@ -68,70 +59,27 @@
                      <a class="nav-link" href="pricing.html">Pricing</a>
                   </li>
                   <li class="nav-item">
+                     <a class="nav-link" href="listing.html">Listing</a>
+                  </li>
+                  <li class="nav-item">
                      <a class="nav-link" href="blog.html">Blogs</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="contact.html">Contact</a>
                   </li>
-                  <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle"> Dropdown </a>
-                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                           <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li class="dropdown dropdown2">
-                           <a class="dropdown-item dropdown-toggle"
-                              >Dropdown 2
-                           </a>
-                           <ul class="dropdown-menu dropdown-menu2">
-                              <li>
-                                 <a class="dropdown-item" href="#">Action 1</a>
-                              </li>
-                              <li>
-                                 <a class="dropdown-item" href="#">Action 2</a>
-                              </li>
-                              <li>
-                                 <a class="dropdown-item" href="#">Action 3</a>
-                              </li>
-                           </ul>
-                        </li>
-                     </ul>
-                  </li>
                </ul>
             </div>
             <div class="navbar-text">
-               <button onclick="darkMode()" class="btn-custom light night-mode">
-                  <i class="fal fa-moon"></i>
-               </button>
                <!-- user panel -->
                <div class="dropdown user-dropdown d-inline-block">
                   <button class="dropdown-toggle">
-                     <i class="fal fa-user"></i>
+                     <i class="far fa-user"></i>
                   </button>
                   <ul class="dropdown-menu">
                      <li>
-                        <a class="dropdown-item" href="deposit.html">
+                        <a class="dropdown-item" href="#">
                            <i class="fal fa-hand-holding-usd"></i>
                            make a deposit
-                        </a>
-                     </li>
-                     <li>
-                        <a class="dropdown-item" href="bet-history.html">
-                           <i class="fal fa-history"></i>
-                           bet history
-                        </a>
-                     </li>
-                     <li>
-                        <a class="dropdown-item" href="account-setting.html">
-                           <i class="fal fa-cog"></i>
-                           account settings
-                        </a>
-                     </li>
-                     <li>
-                        <a class="dropdown-item" href="support.html">
-                           <i class="far fa-user-headset"></i>
-                           Support
                         </a>
                      </li>
                      <li>
@@ -152,12 +100,24 @@
                            personal profile
                         </a>
                      </li>
+                     <li>
+                        <a class="dropdown-item" href="#">
+                           <i class="fal fa-history"></i>
+                           bet history
+                        </a>
+                     </li>
+                     <li>
+                        <a class="dropdown-item" href="#">
+                           <i class="fal fa-cog"></i>
+                           account settings
+                        </a>
+                     </li>
                   </ul>
                </div>
                <!-- notification panel -->
                <div class="notification-panel">
                   <button class="dropdown-toggle">
-                     <i class="fal fa-bell"></i>
+                     <i class="far fa-bell"></i>
                      <span class="count">34</span>
                   </button>
                   <ul class="notification-dropdown">
@@ -176,10 +136,7 @@
                               <i class="fal fa-bell"></i>
                               <div class="text">
                                  <p>Notification</p>
-                                 <span
-                                    >Lorem ipsum dolor sit amet. asdfasdffdsf
-                                    sdf sdf ds d dd fd f
-                                 </span>
+                                 <span>Lorem ipsum dolor sit amet. </span>
                               </div>
                            </a>
                         </li>
@@ -216,6 +173,14 @@
                      </div>
                   </ul>
                </div>
+               <!-- login register button -->
+               <button
+                  class="btn-custom"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+               >
+                  Sign In
+               </button>
             </div>
          </div>
       </nav>
@@ -235,118 +200,152 @@
          </div>
       </section>
 
-      <!-- blog details -->
-      <section class="blog-details blog-list">
+      <!-- blog section -->
+      <section class="blog-section blog-page">
          <div class="container">
-            <div class="row gy-5 g-lg-5">
+            <div class="row g-lg-5">
                <div class="col-lg-8">
-                  <div class="blog-box row">
-                     <div class="col-md-12 img-box">
+                  <div class="blog-box">
+                     <div class="img-box">
                         <img
-                           src="./img/blog/blog-1.jpg"
                            class="img-fluid"
+                           src="./img/blog/blog-1.jpg"
                            alt=""
                         />
+                        <span class="category">Drink &amp; Food</span>
                      </div>
-                     <div class="col-md-12 text-box">
-                        <span class="category">Learn and earn</span>
-                        <a href="blog-details.html" class="title">
-                           Learn about UI8 coin and earn an All-Access Pass
-                        </a>
-                        <div class="date-author">
+                     <div class="text-box">
+                        <div class="date-author mb-3">
                            <span class="author">
-                              <i class="fas fa-dot-circle"></i>Moderator
+                              <i class="fad fa-pencil"></i>Moderator
                            </span>
-                           <span class="float-end">20 January 2021</span>
+                           <span class="float-end">
+                              <i
+                                 class="fad fa-calendar-alt"
+                                 aria-hidden="true"
+                              ></i
+                              >Apr 21, 2021
+                           </span>
                         </div>
+                        <a href="blog-details.html" class="title"
+                           >Best Luxury Switzerland Tours &amp; Travel Packages
+                        </a>
                         <p>
-                           Lorem ipsum dolor sit amet consectetur adipisicing
-                           elit. Lorem ipsum dolor sit amet consectetur
-                           adipisicing elit. Deserunt quas, asperiores sed
-                           itaque officiis quae est nulla dolores voluptatem
-                           accusantium quisquam tempore quasi, nihil totam
-                           perspiciatis! Dicta nesciunt suscipit maxime. Alias
-                           pariatur eum fuga corporis aperiam sit.
+                           Lorem ipsum dolor sit amet consectetur, adipisicing
+                           elit. Sequi, consectetur excepturi ipsam obcaecati
+                           laudantium repellat quidem dolor! Quam, saepe
+                           aspernatur in delectus rerum et porro iste illum,
+                           atque voluptatem voluptatum. Lorem ipsum dolor sit
+                           amet consectetur, adipisicing elit. Minima eum
+                           reiciendis eos error provident magni ducimus
+                           doloremque consequatur doloribus praesentium,
+                           pariatur, adipisci, repellat ipsam dolorum quidem
+                           omnis corporis nobis illum. Lorem ipsum dolor sit
+                           amet consectetur, adipisicing elit. Sequi,
+                           consectetur excepturi ipsam obcaecati laudantium
+                           repellat quidem dolor! Quam, saepe aspernatur in
+                           delectus rerum et porro iste illum, atque voluptatem
+                           voluptatum. Lorem ipsum dolor sit amet consectetur,
+                           adipisicing elit. Minima eum reiciendis eos error
+                           provident magni ducimus doloremque consequatur
+                           doloribus praesentium, pariatur, adipisci, repellat
+                           ipsam dolorum quidem omnis corporis nobis illum.
+                           Lorem ipsum dolor sit amet consectetur, adipisicing
+                           elit. Sequi, consectetur excepturi ipsam obcaecati
+                           laudantium repellat quidem dolor! Quam, saepe
+                           aspernatur in delectus rerum et porro iste illum,
+                           atque voluptatem voluptatum. Lorem ipsum dolor sit
+                           amet consectetur, adipisicing elit. Minima eum
+                           reiciendis eos error provident magni ducimus
+                           doloremque consequatur doloribus praesentium,
+                           pariatur, adipisci, repellat ipsam dolorum quidem
+                           omnis corporis nobis illum.
                         </p>
                      </div>
                   </div>
                </div>
                <div class="col-lg-4">
-                  <h4>Related Posts</h4>
-                  <div class="related-post">
-                     <div class="img-box">
-                        <img
-                           class="img-fluid"
-                           src="./img/blog/blog-2.jpg"
-                           alt=""
-                        />
-                     </div>
-                     <div class="text-box">
-                        <span class="category">Learn and earn</span>
-                        <a href="blog-details.html" class="title">
-                           Learn about UI8 coin and earn an All-Access Pass
-                        </a>
-                     </div>
-                  </div>
-                  <div class="related-post">
-                     <div class="img-box">
-                        <img
-                           class="img-fluid"
-                           src="./img/blog/blog-1.jpg"
-                           alt=""
-                        />
-                     </div>
-                     <div class="text-box">
-                        <span class="category">Learn and earn</span>
-                        <a href="blog-details.html" class="title">
-                           Learn about UI8 coin and earn an All-Access Pass
-                        </a>
-                     </div>
-                  </div>
-                  <div class="related-post">
-                     <div class="img-box">
-                        <img
-                           class="img-fluid"
-                           src="./img/blog/blog-2.jpg"
-                           alt=""
-                        />
-                     </div>
-                     <div class="text-box">
-                        <span class="category">Learn and earn</span>
-                        <a href="blog-details.html" class="title">
-                           Learn about UI8 coin and earn an All-Access Pass
-                        </a>
+                  <div class="right-bar">
+                     <div class="side-box">
+                        <h4>Related Posts</h4>
+                        <div class="blog-box">
+                           <div class="img-box">
+                              <img
+                                 class="img-fluid"
+                                 src="./img/blog/blog-3.jpg"
+                                 alt=""
+                              />
+                              <span class="category">Drink &amp; Food</span>
+                           </div>
+                           <div class="text-box">
+                              <a href="blog-details.html" class="title"
+                                 >Best Luxury Switzerland Tours &amp; Travel
+                                 Packages
+                              </a>
+                           </div>
+                        </div>
+                        <div class="blog-box">
+                           <div class="img-box">
+                              <img
+                                 class="img-fluid"
+                                 src="./img/blog/blog-2.jpg"
+                                 alt=""
+                              />
+                              <span class="category">Drink &amp; Food</span>
+                           </div>
+                           <div class="text-box">
+                              <a href="blog-details.html" class="title"
+                                 >Best Luxury Switzerland Tours &amp; Travel
+                                 Packages
+                              </a>
+                           </div>
+                        </div>
+                        <div class="blog-box">
+                           <div class="img-box">
+                              <img
+                                 class="img-fluid"
+                                 src="./img/blog/blog-1.jpg"
+                                 alt=""
+                              />
+                              <span class="category">Drink &amp; Food</span>
+                           </div>
+                           <div class="text-box">
+                              <a href="blog-details.html" class="title"
+                                 >Best Luxury Switzerland Tours &amp; Travel
+                                 Packages
+                              </a>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
             </div>
          </div>
       </section>
-      <!-- FOOTER SECTION -->
+
+      <!-- footer section -->
       <footer class="footer-section">
          <div class="container">
             <div class="row">
                <div class="col-md-6 col-lg-3">
                   <div class="footer-box">
-                     <a class="navbar-brand" href="#"> ICO </a>
+                     <a class="navbar-brand" href="#"> Listing </a>
                      <p>
                         Duis aute irure dolor in reprehenderit in voluptate
-                        velit esse cillum dolore
+                        velit esse cillum dolore Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore
                      </p>
-                     <ul>
-                        <li>
-                           <i class="far fa-phone-alt"></i>
-                           <span>+880 654 321 23</span>
-                        </li>
-                        <li>
-                           <i class="far fa-envelope"></i>
-                           <span>contact@bugfinder.net</span>
-                        </li>
-                        <li>
-                           <i class="far fa-map-marker-alt"></i>
-                           <span>457 Morningview, New York USA</span>
-                        </li>
-                     </ul>
+                     <div class="social-links">
+                        <a href="#">
+                           <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                           <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="#">
+                           <i class="fab fa-twitter"></i>
+                        </a>
+                     </div>
                   </div>
                </div>
                <div class="col-md-6 col-lg-3 ps-lg-5">
@@ -388,6 +387,7 @@
                            <a href="#">Privacy</a>
                         </li>
                         <li>
+                           <!-- <img src="./img/icon/arrow-orange.png" alt="" /> -->
                            <a href="#">Terms & condition</a>
                         </li>
                      </ul>
@@ -395,30 +395,21 @@
                </div>
                <div class="col-md-6 col-lg-3">
                   <div class="footer-box">
-                     <h5>subscribe newsletter</h5>
-                     <div class="input-group mb-3">
-                        <input
-                           type="email"
-                           class="form-control"
-                           placeholder="Enter Email"
-                           aria-label="Subscribe Newsletter"
-                           aria-describedby="basic-addon"
-                        />
-                        <button>
-                           <i class="fas fa-paper-plane"></i>
-                        </button>
-                     </div>
-                     <div class="social-links">
-                        <a href="#">
-                           <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="#">
-                           <i class="fab fa-discord"></i>
-                        </a>
-                        <a href="#">
-                           <i class="fab fa-twitter"></i>
-                        </a>
-                     </div>
+                     <h5>get in touch</h5>
+                     <ul>
+                        <li>
+                           <i class="far fa-phone-alt"></i>
+                           <span>+880 654 321 23</span>
+                        </li>
+                        <li>
+                           <i class="far fa-envelope"></i>
+                           <span>contact@bugfinder.net</span>
+                        </li>
+                        <li>
+                           <i class="far fa-map-marker-alt"></i>
+                           <span>457 Morningview, New York USA</span>
+                        </li>
+                     </ul>
                   </div>
                </div>
             </div>
@@ -426,7 +417,8 @@
                <div class="row">
                   <div class="col-md-6">
                      <p class="copyright">
-                        Copyright © 2022 <a href="">ICO</a> All Rights Reserved.
+                        Copyright © 2022 <a href="">Listing</a> All Rights
+                        Reserved.
                      </p>
                   </div>
                   <div class="col-md-6 language">
@@ -439,7 +431,6 @@
                      <a href="">Japanese</a>
                      <a href="">Italian</a>
                      <a href="">Chinese</a>
-                     <a href="">German</a>
                   </div>
                </div>
             </div>
@@ -448,21 +439,18 @@
 
       <!-- bootstrap -->
       <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
-      <script src="./assets/bootstrap/masonry.pkgd.min.js"></script>
       <!-- jquery cdn -->
       <script src="./assets/jquery/jquery-3.6.0.min.js"></script>
-      <!-- SKITTER SLIDER -->
-      <script src="./assets/plugins/skitter-master/jquery.skitter.min.js"></script>
-      <script src="./assets/plugins/skitter-master/jquery.easing.1.3.js"></script>
+      <!-- select 2 -->
+      <script src="./assets/plugins/select2/select2.min.js"></script>
       <!-- owl carousel -->
       <script src="./assets/plugins/owlcarousel/owl.carousel.min.js"></script>
-      <!-- counter up -->
-      <script src="./assets/plugins/counterup/jquery.waypoints.min.js"></script>
-      <script src="./assets/plugins/counterup/jquery.counterup.min.js"></script>
-      <!-- aos animation -->
-      <script src="./assets/plugins/aos/aos.js"></script>
-      <!-- fancy box -->
-      <script src="./assets/plugins/fancybox/jquery.fancybox.min.js"></script>
+      <!-- range slider -->
+      <script src="./assets/plugins/rangeslider/range-slider.min.js"></script>
+      <!-- leaflet js -->
+      <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
+      <!-- social share -->
+      <script src="./assets/plugins/socialjs/socialSharing.js"></script>
       <!-- custom script -->
       <script src="./js/script.js"></script>
    </body>

@@ -1,10 +1,10 @@
 // pre loader
-const preloader = document.getElementById("preloader");
-window.addEventListener("load", () => {
-   setTimeout(() => {
-      preloader.style.cssText = `opacity: 0; visibility: hidden;`;
-   }, 1000);
-});
+// const preloader = document.getElementById("preloader");
+// window.addEventListener("load", () => {
+//    setTimeout(() => {
+//       preloader.style.cssText = `opacity: 0; visibility: hidden;`;
+//    }, 1000);
+// });
 
 // add bg to nav
 window.addEventListener("scroll", function () {
@@ -20,37 +20,25 @@ window.addEventListener("scroll", function () {
 });
 
 // active nav item
-const navItem = document.getElementsByClassName("nav-link");
-for (const element of navItem) {
+const shortNavItem = document.getElementsByClassName("short-nav-item");
+for (const element of shortNavItem) {
    element.addEventListener("click", () => {
-      for (const ele of navItem) {
+      for (const ele of shortNavItem) {
          ele.classList.remove("active");
       }
       element.classList.add("active");
    });
 }
 
-// input file preview
-const previewImage = (id) => {
-   document.getElementById(id).src = URL.createObjectURL(event.target.files[0]);
-};
-
-// toggle sidebar
-const toggleSidebar = (id) => {
-   const element = document.getElementById(id);
-   element.classList.toggle("active");
-};
-const removeClass = (id) => {
-   const element = document.getElementById(id);
-   element.classList.remove("active");
-};
-
-// dark mode
-const darkMode = () => {
-   document.body.classList.toggle("dark-mode");
-};
-
-console.log("b" + "a" + +"a" + "a");
+const listingMapBox = document.getElementsByClassName("listing-map-box");
+for (const element of listingMapBox) {
+   element.addEventListener("click", () => {
+      for (const ele of listingMapBox) {
+         ele.classList.remove("active");
+      }
+      element.classList.add("active");
+   });
+}
 
 $(document).ready(function () {
    $(".js-example-basic-single").select2();
@@ -75,11 +63,11 @@ $(document).ready(function () {
          },
       },
    });
-   $(".live-matches-slider").owlCarousel({
+   $(".products-slider").owlCarousel({
       loop: true,
       margin: 15,
-      nav: false,
-      dots: true,
+      nav: true,
+      dots: false,
       autoplay: true,
       autoplayTimeout: 3000,
       responsive: {
@@ -90,22 +78,26 @@ $(document).ready(function () {
             items: 2,
          },
          992: {
-            items: 2,
-         },
-         1200: {
-            items: 4,
+            items: 3,
          },
       },
    });
 
-   // AOS ANIMATION
-   // AOS.init();
+   // RANGE SLIDER
+   $(".js-range-slider").ionRangeSlider({
+      type: "double",
+      min: 0,
+      max: 1000,
+      from: 200,
+      to: 500,
+      grid: true,
+   });
 
-   // COUNTER UP
-   // $(".counter").counterUp({
-   //    delay: 10,
-   //    time: 3000,
-   // });
+   $("#shareBlock").socialSharingPlugin({
+      urlShare: window.location.href,
+      description: $("meta[name=description]").attr("content"),
+      title: $("title").text(),
+   });
 
    // SCROLL TOP
    $(".scroll-up").fadeOut();
@@ -118,11 +110,26 @@ $(document).ready(function () {
    });
 });
 
-// horizontal scroll
-const element = document.querySelector("#categories");
-element.addEventListener("wheel", (event) => {
-   event.preventDefault();
-   element.scrollBy({
-      left: event.deltaY < 0 ? -30 : 30,
-   });
-});
+// leaflet js
+const latLong = [48.8566, 2.3522];
+const leaflet = L.map("map");
+const map = leaflet.setView(latLong, 13);
+const changeLatLong = (lat, long, name) => {
+   latLong[0] = lat;
+   latLong[1] = long;
+   leaflet.setView(latLong, 13);
+   L.marker(latLong).addTo(map).bindPopup(name).openPopup();
+};
+
+L.tileLayer(
+   "https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=sxhLg9zZgwiGPxqkM7SM",
+   {
+      attribution:
+         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+   }
+).addTo(map);
+
+L.marker(latLong)
+   .addTo(map)
+   .bindPopup("A pretty CSS3 popup.<br> Easily customizable.")
+   .openPopup();

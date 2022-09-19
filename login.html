@@ -19,12 +19,10 @@
          rel="stylesheet"
          href="./assets/plugins/owlcarousel/owl.theme.default.min.css"
       />
-      <!-- aos animation -->
-      <link rel="stylesheet" href="./assets/plugins/aos/aos.css" />
-      <!-- fancy box -->
+      <!-- range slider -->
       <link
          rel="stylesheet"
-         href="./assets/plugins/fancybox/jquery.fancybox.min.css"
+         href="./assets/plugins/rangeslider/range-slider.css"
       />
       <!-- font awesome 5 -->
       <script src="./assets/fontawesome/fontawesomepro.js"></script>
@@ -32,6 +30,174 @@
       <link rel="stylesheet" href="./css/style.css" />
    </head>
    <body class="">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg fixed-top">
+         <div class="container">
+            <a class="navbar-brand" href="index.html">Listing</a>
+            <button
+               class="navbar-toggler p-0"
+               type="button"
+               data-bs-toggle="collapse"
+               data-bs-target="#navbarNav"
+               aria-controls="navbarNav"
+               aria-expanded="false"
+               aria-label="Toggle navigation"
+            >
+               <i class="far fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                     <a class="nav-link active" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="pricing.html">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="listing.html">Listing</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="blog.html">Blogs</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="navbar-text">
+               <!-- user panel -->
+               <div class="dropdown user-dropdown d-inline-block">
+                  <button class="dropdown-toggle">
+                     <i class="far fa-user"></i>
+                  </button>
+                  <ul class="dropdown-menu">
+                     <li>
+                        <a class="dropdown-item" href="#">
+                           <i class="fal fa-hand-holding-usd"></i>
+                           make a deposit
+                        </a>
+                     </li>
+                     <li>
+                        <a class="dropdown-item" href="#">
+                           <i class="fal fa-wallet"></i>
+                           withdraw funds
+                        </a>
+                     </li>
+                     <li>
+                        <a class="dropdown-item" href="#">
+                           <i class="fal fa-user-friends"></i>
+                           invite friends
+                        </a>
+                     </li>
+                     <li>
+                        <a class="dropdown-item" href="#">
+                           <i class="fal fa-user"></i>
+                           personal profile
+                        </a>
+                     </li>
+                     <li>
+                        <a class="dropdown-item" href="#">
+                           <i class="fal fa-history"></i>
+                           bet history
+                        </a>
+                     </li>
+                     <li>
+                        <a class="dropdown-item" href="#">
+                           <i class="fal fa-cog"></i>
+                           account settings
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <!-- notification panel -->
+               <div class="notification-panel">
+                  <button class="dropdown-toggle">
+                     <i class="far fa-bell"></i>
+                     <span class="count">34</span>
+                  </button>
+                  <ul class="notification-dropdown">
+                     <div class="dropdown-box">
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <i class="fal fa-bell"></i>
+                              <div class="text">
+                                 <p>Notification</p>
+                                 <span>Lorem ipsum dolor sit amet.</span>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <i class="fal fa-bell"></i>
+                              <div class="text">
+                                 <p>Notification</p>
+                                 <span>Lorem ipsum dolor sit amet. </span>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <i class="fal fa-bell"></i>
+                              <div class="text">
+                                 <p>Notification</p>
+                                 <span>Lorem ipsum dolor sit amet.</span>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <i class="fal fa-bell"></i>
+                              <div class="text">
+                                 <p>Notification</p>
+                                 <span>Lorem ipsum dolor sit amet.</span>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <i class="fal fa-bell"></i>
+                              <div class="text">
+                                 <p>Notification</p>
+                                 <span>Lorem ipsum dolor sit amet.</span>
+                              </div>
+                           </a>
+                        </li>
+                     </div>
+                     <div class="clear-all fixed-bottom">
+                        <a href="">Clear all</a>
+                     </div>
+                  </ul>
+               </div>
+               <!-- login register button -->
+               <button
+                  class="btn-custom"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+               >
+                  Sign In
+               </button>
+            </div>
+         </div>
+      </nav>
+
+      <!-- banner section -->
+      <section class="banner-section">
+         <div class="overlay">
+            <div class="container">
+               <div class="row">
+                  <div class="col">
+                     <div class="header-text text-center">
+                        <h3>Sign in</h3>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
       <section class="login-section">
          <div class="overlay h-100">
             <div class="container-fluid h-100">
@@ -93,20 +259,135 @@
             </div>
          </div>
       </section>
+
+      <!-- footer section -->
+      <footer class="footer-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6 col-lg-3">
+                  <div class="footer-box">
+                     <a class="navbar-brand" href="#"> Listing </a>
+                     <p>
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore
+                     </p>
+                     <div class="social-links">
+                        <a href="#">
+                           <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                           <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="#">
+                           <i class="fab fa-twitter"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-3 ps-lg-5">
+                  <div class="footer-box">
+                     <h5>Quick Links</h5>
+                     <ul>
+                        <li>
+                           <a href="#">Home</a>
+                        </li>
+                        <li>
+                           <a href="#">About</a>
+                        </li>
+                        <li>
+                           <a href="#">Services</a>
+                        </li>
+                        <li>
+                           <a href="#">Blog</a>
+                        </li>
+                        <li>
+                           <a href="#">Contact</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-3 ps-lg-5">
+                  <div class="footer-box">
+                     <h5>OUR Services</h5>
+                     <ul>
+                        <li>
+                           <a href="#">Support</a>
+                        </li>
+                        <li>
+                           <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                           <a href="#">About story</a>
+                        </li>
+                        <li>
+                           <a href="#">Privacy</a>
+                        </li>
+                        <li>
+                           <!-- <img src="./img/icon/arrow-orange.png" alt="" /> -->
+                           <a href="#">Terms & condition</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-3">
+                  <div class="footer-box">
+                     <h5>get in touch</h5>
+                     <ul>
+                        <li>
+                           <i class="far fa-phone-alt"></i>
+                           <span>+880 654 321 23</span>
+                        </li>
+                        <li>
+                           <i class="far fa-envelope"></i>
+                           <span>contact@bugfinder.net</span>
+                        </li>
+                        <li>
+                           <i class="far fa-map-marker-alt"></i>
+                           <span>457 Morningview, New York USA</span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="footer-bottom">
+               <div class="row">
+                  <div class="col-md-6">
+                     <p class="copyright">
+                        Copyright © 2022 <a href="">Listing</a> All Rights
+                        Reserved.
+                     </p>
+                  </div>
+                  <div class="col-md-6 language">
+                     <a href="">Bengali</a>
+                     <a href="">English</a>
+                     <a href="">Spanish</a>
+                     <a href="">Turkish</a>
+                     <a href="">Arabic</a>
+                     <a href="">Korean</a>
+                     <a href="">Japanese</a>
+                     <a href="">Italian</a>
+                     <a href="">Chinese</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+
       <!-- bootstrap -->
       <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
-      <script src="./assets/bootstrap/masonry.pkgd.min.js"></script>
       <!-- jquery cdn -->
       <script src="./assets/jquery/jquery-3.6.0.min.js"></script>
+      <!-- select 2 -->
+      <script src="./assets/plugins/select2/select2.min.js"></script>
       <!-- owl carousel -->
       <script src="./assets/plugins/owlcarousel/owl.carousel.min.js"></script>
-      <!-- counter up -->
-      <script src="./assets/plugins/counterup/jquery.waypoints.min.js"></script>
-      <script src="./assets/plugins/counterup/jquery.counterup.min.js"></script>
-      <!-- aos animation -->
-      <script src="./assets/plugins/aos/aos.js"></script>
-      <!-- fancy box -->
-      <script src="./assets/plugins/fancybox/jquery.fancybox.min.js"></script>
+      <!-- range slider -->
+      <script src="./assets/plugins/rangeslider/range-slider.min.js"></script>
+      <!-- leaflet js -->
+      <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
+      <!-- social share -->
+      <script src="./assets/plugins/socialjs/socialSharing.js"></script>
       <!-- custom script -->
       <script src="./js/script.js"></script>
    </body>

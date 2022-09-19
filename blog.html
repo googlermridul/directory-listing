@@ -21,25 +21,19 @@
          rel="stylesheet"
          href="./assets/plugins/owlcarousel/owl.theme.default.min.css"
       />
-      <!-- aos animation -->
-      <link rel="stylesheet" href="./assets/plugins/aos/aos.css" />
-      <!-- fancy box -->
+      <!-- range slider -->
       <link
          rel="stylesheet"
-         href="./assets/plugins/fancybox/jquery.fancybox.min.css"
+         href="./assets/plugins/rangeslider/range-slider.css"
       />
       <!-- font awesome 5 -->
       <script src="./assets/fontawesome/fontawesomepro.js"></script>
-      <link
-         rel="stylesheet"
-         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
-      />
       <!-- custom css -->
       <link rel="stylesheet" href="./css/style.css" />
    </head>
    <body class="">
       <!-- navbar -->
-      <nav class="navbar navbar-expand-md fixed-top">
+      <nav class="navbar navbar-expand-lg fixed-top">
          <div class="container">
             <a class="navbar-brand" href="index.html">Listing</a>
             <button
@@ -65,35 +59,13 @@
                      <a class="nav-link" href="pricing.html">Pricing</a>
                   </li>
                   <li class="nav-item">
+                     <a class="nav-link" href="listing.html">Listing</a>
+                  </li>
+                  <li class="nav-item">
                      <a class="nav-link" href="blog.html">Blogs</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle"> Dropdown </a>
-                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                           <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li class="dropdown dropdown2">
-                           <a class="dropdown-item dropdown-toggle"
-                              >Dropdown 2
-                           </a>
-                           <ul class="dropdown-menu dropdown-menu2">
-                              <li>
-                                 <a class="dropdown-item" href="#">Action 1</a>
-                              </li>
-                              <li>
-                                 <a class="dropdown-item" href="#">Action 2</a>
-                              </li>
-                              <li>
-                                 <a class="dropdown-item" href="#">Action 3</a>
-                              </li>
-                           </ul>
-                        </li>
-                     </ul>
                   </li>
                </ul>
             </div>
@@ -383,7 +355,7 @@
                   <div class="right-bar">
                      <div class="side-box">
                         <form action="">
-                           <h5>Search</h5>
+                           <h4>Search</h4>
                            <div class="input-group">
                               <input
                                  type="email"
@@ -395,7 +367,7 @@
                         </form>
                      </div>
                      <div class="side-box">
-                        <h5>categories</h5>
+                        <h4>categories</h4>
                         <ul class="links">
                            <li><a href="">Albums</a></li>
                            <li><a href="">Dress</a></li>
@@ -404,13 +376,64 @@
                         </ul>
                      </div>
                      <div class="side-box">
-                        <h5>tags</h5>
+                        <h4>tags</h4>
                         <ul class="links">
                            <li><a href="">Albums</a></li>
                            <li><a href="">Dress</a></li>
                            <li><a href="">Events</a></li>
                            <li><a href="">Festivals</a></li>
                         </ul>
+                     </div>
+                     <div class="side-box">
+                        <h4>Related Posts</h4>
+                        <div class="blog-box">
+                           <div class="img-box">
+                              <img
+                                 class="img-fluid"
+                                 src="./img/blog/blog-3.jpg"
+                                 alt=""
+                              />
+                              <span class="category">Drink &amp; Food</span>
+                           </div>
+                           <div class="text-box">
+                              <a href="blog-details.html" class="title"
+                                 >Best Luxury Switzerland Tours &amp; Travel
+                                 Packages
+                              </a>
+                           </div>
+                        </div>
+                        <div class="blog-box">
+                           <div class="img-box">
+                              <img
+                                 class="img-fluid"
+                                 src="./img/blog/blog-2.jpg"
+                                 alt=""
+                              />
+                              <span class="category">Drink &amp; Food</span>
+                           </div>
+                           <div class="text-box">
+                              <a href="blog-details.html" class="title"
+                                 >Best Luxury Switzerland Tours &amp; Travel
+                                 Packages
+                              </a>
+                           </div>
+                        </div>
+                        <div class="blog-box">
+                           <div class="img-box">
+                              <img
+                                 class="img-fluid"
+                                 src="./img/blog/blog-1.jpg"
+                                 alt=""
+                              />
+                              <span class="category">Drink &amp; Food</span>
+                           </div>
+                           <div class="text-box">
+                              <a href="blog-details.html" class="title"
+                                 >Best Luxury Switzerland Tours &amp; Travel
+                                 Packages
+                              </a>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -534,20 +557,18 @@
 
       <!-- bootstrap -->
       <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
-      <script src="./assets/bootstrap/masonry.pkgd.min.js"></script>
       <!-- jquery cdn -->
       <script src="./assets/jquery/jquery-3.6.0.min.js"></script>
       <!-- select 2 -->
       <script src="./assets/plugins/select2/select2.min.js"></script>
       <!-- owl carousel -->
       <script src="./assets/plugins/owlcarousel/owl.carousel.min.js"></script>
-      <!-- counter up -->
-      <script src="./assets/plugins/counterup/jquery.waypoints.min.js"></script>
-      <script src="./assets/plugins/counterup/jquery.counterup.min.js"></script>
-      <!-- aos animation -->
-      <script src="./assets/plugins/aos/aos.js"></script>
-      <!-- fancy box -->
-      <script src="./assets/plugins/fancybox/jquery.fancybox.min.js"></script>
+      <!-- range slider -->
+      <script src="./assets/plugins/rangeslider/range-slider.min.js"></script>
+      <!-- leaflet js -->
+      <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
+      <!-- social share -->
+      <script src="./assets/plugins/socialjs/socialSharing.js"></script>
       <!-- custom script -->
       <script src="./js/script.js"></script>
    </body>
