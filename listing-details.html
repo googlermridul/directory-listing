@@ -26,6 +26,13 @@
          rel="stylesheet"
          href="./assets/plugins/rangeslider/range-slider.css"
       />
+      <!-- magnific popup -->
+      <link
+         rel="stylesheet"
+         href="./assets/plugins/magnific-popup/magnific-popup.css"
+      />
+      <!-- xzoom -->
+      <link rel="stylesheet" href="./assets/plugins/xZoom/xzoom.min.css" />
       <!-- font awesome 5 -->
       <script src="./assets/fontawesome/fontawesomepro.js"></script>
       <link
@@ -911,14 +918,53 @@
                </div>
                <div class="modal-body">
                   <div class="row">
-                     <div class="col-lg-4">
-                        <img
+                     <div class="col-lg-5">
+                        <!-- <img
                            src="./img/product/Grilled-Beef-Steak-thumbnail.jpg"
                            alt=""
                            class="img-fluid rounded"
-                        />
+                        /> -->
+                        <div class="xzoom-container">
+                           <img
+                              class="xzoom5 img-fluid mb-3"
+                              id="xzoom-magnific"
+                              src="./img/product/product-1.jpg"
+                              xoriginal="./img/product/product-1.jpg"
+                           />
+                           <div class="xzoom-thumbs d-flex">
+                              <a href="./img/product/product-1.jpg"
+                                 ><img
+                                    class="xzoom-gallery5 img-fluid"
+                                    width=""
+                                    src="./img/product/product-1.jpg"
+                                    xpreview="./img/product/product-1.jpg"
+                                    title="The description goes here"
+                              /></a>
+                              <a href="./img/product/product-2.jpg"
+                                 ><img
+                                    class="xzoom-gallery5 img-fluid"
+                                    width=""
+                                    src="./img/product/product-2.jpg"
+                                    title="The description goes here"
+                              /></a>
+                              <a href="./img/product/product-3.jpg"
+                                 ><img
+                                    class="xzoom-gallery5 img-fluid"
+                                    width=""
+                                    src="./img/product/product-3.jpg"
+                                    title="The description goes here"
+                              /></a>
+                              <a href="./img/product/product-4.jpg"
+                                 ><img
+                                    class="xzoom-gallery5 img-fluid"
+                                    width=""
+                                    src="./img/product/product-4.jpg"
+                                    title="The description goes here"
+                              /></a>
+                           </div>
+                        </div>
                      </div>
-                     <div class="col-lg-8">
+                     <div class="col-lg-7">
                         <h5>Beaf Steak</h5>
                         <p>
                            Lorem ipsum dolor sit amet consectetur adipisicing
@@ -1099,6 +1145,10 @@
       <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
       <!-- social share -->
       <script src="./assets/plugins/socialjs/socialSharing.js"></script>
+      <!-- magnific popup -->
+      <script src="./assets/plugins/magnific-popup/magnific-popup.js"></script>
+      <!-- xzoom -->
+      <script src="./assets/plugins/xZoom/xzoom.min.js"></script>
       <!-- custom script -->
       <script src="./js/script.js"></script>
    </body>
