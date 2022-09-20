@@ -517,7 +517,7 @@ a.btn-custom {
             border-right: 1px solid var(--borderColor);
          }
          .input-group-prepend {
-            padding: 29px 15px;
+            padding: 29px 10px 29px 15px;
             text-align: center;
          }
          label {
@@ -558,7 +558,8 @@ a.btn-custom {
          }
       }
       .select2 {
-         width: 83%;
+         width: calc(100% - 41px) !important;
+         margin-left: auto;
       }
       .select2-container--default .select2-selection--single {
          height: 80px;
@@ -856,8 +857,9 @@ a.btn-custom {
          font-size: 14px;
          margin-bottom: 5px;
          margin-top: 15px;
+         font-weight: 500;
          display: inline-block;
-         color: var(--gray);
+         color: var(--primary);
          i {
             font-size: 14px;
          }
@@ -1351,51 +1353,14 @@ a.btn-custom {
    }
 }
 
+#claimBusiness,
 .product-query-modal {
-   .accordion-item {
-      background: none;
-      border: none;
-      // margin: 15px 0;
-      // background: var(--bgLight);
-      // border-radius: 5px;
-   }
-   .accordion-button {
+   .make-query {
       background: var(--white);
-      border-radius: 5px !important;
-      padding-left: 0px;
-      font-size: 18px;
-      font-weight: 500;
-      display: inline-block;
-      padding: 0px;
-      width: auto;
-      padding-right: 0px;
-      color: var(--primary);
-      &:focus {
-         z-index: 3;
-         border-color: var(--primary);
-         outline: 0;
-         box-shadow: 0 0 0 0rem rgba(13, 110, 253, 0.25);
-      }
-      &::after {
-         background-image: none;
-         background-size: cover;
-         position: absolute;
-         right: 15px;
-         height: 16px;
-         width: 16px;
-         background-position: center;
-      }
-   }
-   .accordion-body {
-      padding: 0;
-      padding-top: 15px;
-   }
-   .accordion-button:not(.collapsed) {
-      color: var(--primary);
-      box-shadow: none;
-      &::after {
-         background-image: none;
-      }
+      // box-shadow: var(--shadow);
+      border: 1px solid var(--borderColor);
+      padding: 15px;
+      border-radius: 10px;
    }
    .input-box {
       label {
@@ -2395,6 +2360,7 @@ a.btn-custom {
             position: relative;
             #shareBlock {
                position: absolute;
+               padding: 4px 0;
                top: -90%;
                left: 50%;
                transform: translate(-50%);

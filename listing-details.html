@@ -723,6 +723,131 @@
                            </form>
                         </div>
                      </div>
+                     <div id="listings" class="related-listing mb-5">
+                        <h4>Created Listings</h4>
+                        <div class="row g-4">
+                           <div class="col-lg-4 col-md-6">
+                              <div class="listing-box">
+                                 <div class="img-box">
+                                    <img
+                                       class="img-fluid"
+                                       src="./img/item/16.jpg"
+                                       alt=""
+                                    />
+                                    <button class="save">
+                                       <i class="fal fa-heart"></i>
+                                    </button>
+                                 </div>
+                                 <div class="text-box">
+                                    <div class="review">
+                                       <span>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star-half"></i>
+                                       </span>
+                                       <span>(45 reviews)</span>
+                                    </div>
+                                    <a
+                                       class="title"
+                                       href="listing-details.html"
+                                    >
+                                       Wize Shopping Mall
+                                    </a>
+                                    <p>Biggest shopping amll in NY</p>
+                                    <a class="author" href="profile.html">
+                                       John Wick</a
+                                    >
+                                    <p class="address">
+                                       <i class="fal fa-map-marker-alt"></i>
+                                       75 Prince St, NY, USA
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-4 col-md-6">
+                              <div class="listing-box">
+                                 <div class="img-box">
+                                    <img
+                                       class="img-fluid"
+                                       src="./img/item/16.jpg"
+                                       alt=""
+                                    />
+                                    <button class="save">
+                                       <i class="fal fa-heart"></i>
+                                    </button>
+                                 </div>
+                                 <div class="text-box">
+                                    <div class="review">
+                                       <span>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star-half"></i>
+                                       </span>
+                                       <span>(45 reviews)</span>
+                                    </div>
+                                    <a
+                                       class="title"
+                                       href="listing-details.html"
+                                    >
+                                       Wize Shopping Mall
+                                    </a>
+                                    <p>Biggest shopping amll in NY</p>
+                                    <a class="author" href="profile.html">
+                                       John Wick</a
+                                    >
+                                    <p class="address">
+                                       <i class="fal fa-map-marker-alt"></i>
+                                       75 Prince St, NY, USA
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-4 col-md-6">
+                              <div class="listing-box">
+                                 <div class="img-box">
+                                    <img
+                                       class="img-fluid"
+                                       src="./img/item/16.jpg"
+                                       alt=""
+                                    />
+                                    <button class="save">
+                                       <i class="fal fa-heart"></i>
+                                    </button>
+                                 </div>
+                                 <div class="text-box">
+                                    <div class="review">
+                                       <span>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star-half"></i>
+                                       </span>
+                                       <span>(45 reviews)</span>
+                                    </div>
+                                    <a
+                                       class="title"
+                                       href="listing-details.html"
+                                    >
+                                       Wize Shopping Mall
+                                    </a>
+                                    <p>Biggest shopping amll in NY</p>
+                                    <a class="author" href="profile.html">
+                                       John Wick</a
+                                    >
+                                    <p class="address">
+                                       <i class="fal fa-map-marker-alt"></i>
+                                       75 Prince St, NY, USA
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
                   <div class="col-lg-4">
                      <div class="side-bar">
@@ -881,8 +1006,12 @@
                                  alt=""
                               />
                               <div>
-                                 <h5>Claim this business</h5>
-                                 <button class="btn-custom">
+                                 <h5>Claim This Business</h5>
+                                 <button
+                                    class="btn-custom"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#claimBusiness"
+                                 >
                                     suggest an edit
                                  </button>
                               </div>
@@ -961,6 +1090,13 @@
                                     src="./img/product/product-4.jpg"
                                     title="The description goes here"
                               /></a>
+                              <a href="./img/product/product-4.jpg"
+                                 ><img
+                                    class="xzoom-gallery5 img-fluid"
+                                    width=""
+                                    src="./img/product/product-4.jpg"
+                                    title="The description goes here"
+                              /></a>
                            </div>
                         </div>
                      </div>
@@ -974,44 +1110,107 @@
                            magni.
                         </p>
                         <h4>$765</h4>
-                        <p class="text-success">In Stock</p>
-                        <form action="">
-                           <div class="row g-3">
-                              <div class="input-box col-12">
-                                 <input
-                                    class="form-control"
-                                    type="text"
-                                    placeholder="Full name"
-                                 />
+                        <!-- <p class="text-success">In Stock</p> -->
+                        <div class="make-query">
+                           <h5>Make Query</h5>
+                           <form action="">
+                              <div class="row g-3">
+                                 <div class="input-box col-12">
+                                    <input
+                                       class="form-control"
+                                       type="text"
+                                       placeholder="Full name"
+                                    />
+                                 </div>
+                                 <div class="input-box col-12">
+                                    <select
+                                       class="form-select"
+                                       aria-label="Default select example"
+                                    >
+                                       <option selected="">Subject</option>
+                                       <option value="1">One</option>
+                                       <option value="2">Two</option>
+                                       <option value="3">Three</option>
+                                    </select>
+                                 </div>
+                                 <div class="input-box col-12">
+                                    <textarea
+                                       class="form-control"
+                                       cols="30"
+                                       rows="3"
+                                       placeholder="Your message"
+                                    ></textarea>
+                                 </div>
+                                 <div class="input-box col-12">
+                                    <button class="btn-custom w-100">
+                                       send query
+                                    </button>
+                                 </div>
                               </div>
-                              <div class="input-box col-12">
-                                 <select
-                                    class="form-select"
-                                    aria-label="Default select example"
-                                 >
-                                    <option selected="">Subject</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                 </select>
-                              </div>
-                              <div class="input-box col-12">
-                                 <textarea
-                                    class="form-control"
-                                    cols="30"
-                                    rows="3"
-                                    placeholder="Your message"
-                                 ></textarea>
-                              </div>
-                              <div class="input-box col-12">
-                                 <button class="btn-custom w-100">
-                                    send query
-                                 </button>
-                              </div>
-                           </div>
-                        </form>
+                           </form>
+                        </div>
                      </div>
                   </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Modal -->
+      <div
+         class="modal fade"
+         id="claimBusiness"
+         tabindex="-1"
+         aria-labelledby="claimBusinessLabel"
+         aria-hidden="true"
+      >
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="claimBusinessLabel">
+                     Claim Business
+                  </h5>
+                  <button
+                     type="button"
+                     class="btn-close"
+                     data-bs-dismiss="modal"
+                     aria-label="Close"
+                  ></button>
+               </div>
+               <div class="modal-body">
+                  <form action="">
+                     <div class="row g-3">
+                        <div class="input-box col-12">
+                           <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Full name"
+                           />
+                        </div>
+                        <div class="input-box col-12">
+                           <select
+                              class="form-select"
+                              aria-label="Default select example"
+                           >
+                              <option selected="">Subject</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                           </select>
+                        </div>
+                        <div class="input-box col-12">
+                           <textarea
+                              class="form-control"
+                              cols="30"
+                              rows="3"
+                              placeholder="Your message"
+                           ></textarea>
+                        </div>
+                        <div class="input-box col-12">
+                           <button class="btn-custom w-100">submit</button>
+                        </div>
+                     </div>
+                  </form>
                </div>
             </div>
          </div>

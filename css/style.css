@@ -583,7 +583,7 @@ a.btn-custom {
 }
 
 .home-section .search-bar .input-box .input-group-prepend {
-  padding: 29px 15px;
+  padding: 29px 10px 29px 15px;
   text-align: center;
 }
 
@@ -649,7 +649,8 @@ a.btn-custom {
 }
 
 .home-section .search-bar .select2 {
-  width: 83%;
+  width: calc(100% - 41px) !important;
+  margin-left: auto;
 }
 
 .home-section .search-bar .select2-container--default .select2-selection--single {
@@ -1009,8 +1010,9 @@ a.btn-custom {
   font-size: 14px;
   margin-bottom: 5px;
   margin-top: 15px;
+  font-weight: 500;
   display: inline-block;
-  color: var(--gray);
+  color: var(--primary);
   position: absolute;
   top: 0;
   right: 15px;
@@ -1621,62 +1623,22 @@ a.btn-custom {
   border-radius: 10px;
 }
 
-.product-query-modal .accordion-item {
-  background: none;
-  border: none;
-}
-
-.product-query-modal .accordion-button {
+#claimBusiness .make-query,
+.product-query-modal .make-query {
   background: var(--white);
-  border-radius: 5px !important;
-  padding-left: 0px;
-  font-size: 18px;
-  font-weight: 500;
-  display: inline-block;
-  padding: 0px;
-  width: auto;
-  padding-right: 0px;
-  color: var(--primary);
+  border: 1px solid var(--borderColor);
+  padding: 15px;
+  border-radius: 10px;
 }
 
-.product-query-modal .accordion-button:focus {
-  z-index: 3;
-  border-color: var(--primary);
-  outline: 0;
-  -webkit-box-shadow: 0 0 0 0rem rgba(13, 110, 253, 0.25);
-          box-shadow: 0 0 0 0rem rgba(13, 110, 253, 0.25);
-}
-
-.product-query-modal .accordion-button::after {
-  background-image: none;
-  background-size: cover;
-  position: absolute;
-  right: 15px;
-  height: 16px;
-  width: 16px;
-  background-position: center;
-}
-
-.product-query-modal .accordion-body {
-  padding: 0;
-  padding-top: 15px;
-}
-
-.product-query-modal .accordion-button:not(.collapsed) {
-  color: var(--primary);
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.product-query-modal .accordion-button:not(.collapsed)::after {
-  background-image: none;
-}
-
+#claimBusiness .input-box label,
 .product-query-modal .input-box label {
   margin-bottom: 0px;
   text-transform: capitalize;
 }
 
+#claimBusiness .input-box .form-select,
+#claimBusiness .input-box .form-control,
 .product-query-modal .input-box .form-select,
 .product-query-modal .input-box .form-control {
   height: 50px;
@@ -1690,6 +1652,8 @@ a.btn-custom {
   color: var(--black);
 }
 
+#claimBusiness .input-box .form-select:focus,
+#claimBusiness .input-box .form-control:focus,
 .product-query-modal .input-box .form-select:focus,
 .product-query-modal .input-box .form-control:focus {
   color: var(--black);
@@ -1698,31 +1662,41 @@ a.btn-custom {
   border: 1px solid var(--primary);
 }
 
+#claimBusiness .input-box .form-select::-webkit-input-placeholder,
+#claimBusiness .input-box .form-control::-webkit-input-placeholder,
 .product-query-modal .input-box .form-select::-webkit-input-placeholder,
 .product-query-modal .input-box .form-control::-webkit-input-placeholder {
   color: var(--gray);
 }
 
+#claimBusiness .input-box .form-select:-ms-input-placeholder,
+#claimBusiness .input-box .form-control:-ms-input-placeholder,
 .product-query-modal .input-box .form-select:-ms-input-placeholder,
 .product-query-modal .input-box .form-control:-ms-input-placeholder {
   color: var(--gray);
 }
 
+#claimBusiness .input-box .form-select::-ms-input-placeholder,
+#claimBusiness .input-box .form-control::-ms-input-placeholder,
 .product-query-modal .input-box .form-select::-ms-input-placeholder,
 .product-query-modal .input-box .form-control::-ms-input-placeholder {
   color: var(--gray);
 }
 
+#claimBusiness .input-box .form-select::placeholder,
+#claimBusiness .input-box .form-control::placeholder,
 .product-query-modal .input-box .form-select::placeholder,
 .product-query-modal .input-box .form-control::placeholder {
   color: var(--gray);
 }
 
+#claimBusiness .input-box .form-select,
 .product-query-modal .input-box .form-select {
   background-image: url(../img/icon/downward-arrow.png);
   border: 1px solid transparent;
 }
 
+#claimBusiness .input-box textarea.form-control,
 .product-query-modal .input-box textarea.form-control {
   height: 150px;
   border-radius: 10px;
@@ -2885,6 +2859,7 @@ a.btn-custom {
 
 .profile-section .right-wrapper .button-group .share #shareBlock {
   position: absolute;
+  padding: 4px 0;
   top: -90%;
   left: 50%;
   -webkit-transform: translate(-50%);

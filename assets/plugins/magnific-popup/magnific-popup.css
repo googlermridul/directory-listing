@@ -20,7 +20,6 @@
    z-index: 1056;
    position: fixed;
    outline: none !important;
-   -webkit-backface-visibility: hidden;
 }
 
 .mfp-container {
@@ -370,9 +369,6 @@ img.mfp-img {
    }
    .mfp-img-mobile img.mfp-img {
       padding: 0;
-   }
-   .mfp-img-mobile .mfp-figure {
-      /* The shadow behind the image */
    }
    .mfp-img-mobile .mfp-figure:after {
       top: 0;
