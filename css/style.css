@@ -1816,26 +1816,40 @@ a.btn-custom {
   border-radius: 10px;
 }
 
-#cookieModal .cookie-img {
+#cookieAlert {
+  background: var(--white);
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+  position: fixed;
+  bottom: 15px;
+  left: 0;
+  margin: 15px;
+  max-width: 450px;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1057;
+}
+
+#cookieAlert .cookie-img {
   width: 32px;
 }
 
-#cookieModal .cookie-btns {
+#cookieAlert .cookie-btns {
   float: right;
 }
 
-#cookieModal .cookie-btns .btn-custom {
+#cookieAlert .cookie-btns .btn-custom {
   height: 40px;
   border-radius: 50px;
   padding: 10px;
 }
 
-#cookieModal .cookie-btns .close-btn {
+#cookieAlert .cookie-btns .close-btn {
   color: red;
   padding: 10px 20px;
 }
 
-.rtl #cookieModal .cookie-btns {
+.rtl #cookieAlert .cookie-btns {
   float: left;
 }
 

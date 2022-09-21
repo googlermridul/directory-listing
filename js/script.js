@@ -43,7 +43,7 @@ for (const element of listingMapBox) {
 $(document).ready(function () {
    $(".xzoom").xzoom();
 
-   $("#cookieModal").modal("show");
+   // $("#cookieModal").modal("show");
 
    $(".js-example-basic-single").select2();
 
