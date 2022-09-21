@@ -40,15 +40,6 @@ for (const element of listingMapBox) {
    });
 }
 
-// horizontal scroll
-const element = document.querySelector("#categories");
-element.addEventListener("wheel", (event) => {
-   event.preventDefault();
-   element.scrollBy({
-      left: event.deltaY < 0 ? -30 : 30,
-   });
-});
-
 $(document).ready(function () {
    $(".xzoom").xzoom();
 
@@ -143,6 +134,15 @@ $(document).ready(function () {
 
    $(document).on("click", ".listing-map-box", function () {
       setMapMarker(this);
+   });
+});
+
+// horizontal scroll
+const element = document.querySelector("#categories");
+element.addEventListener("wheel", (event) => {
+   event.preventDefault();
+   element.scrollBy({
+      left: event.deltaY < 0 ? -30 : 30,
    });
 });
 

@@ -3057,6 +3057,7 @@ a.btn-custom {
 
 .profile-info-section {
   margin-bottom: 100px;
+  overflow-x: hidden;
 }
 
 .profile-info-section .followers {
@@ -3321,6 +3322,9 @@ a.btn-custom {
     top: -100px;
     left: 0;
     width: 168px;
+  }
+  .rtl .profile-section .right-wrapper .button-group .share:hover #shareBlock {
+    left: 50px;
   }
 }
 
