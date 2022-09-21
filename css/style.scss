@@ -848,12 +848,14 @@ a.btn-custom {
       width: 100%;
       display: block;
       border-radius: 5px;
-      margin: 15px 0;
       color: var(--bgDark);
       i {
          margin: 0 5px;
       }
    }
+}
+.rtl .category-filter-section .categories {
+   direction: ltr;
 }
 
 .popular-listings {
@@ -1490,6 +1492,28 @@ a.btn-custom {
          height: 150px;
          border-radius: 10px;
       }
+   }
+}
+#cookieModal {
+   .cookie-img {
+      width: 32px;
+   }
+   .cookie-btns {
+      float: right;
+      .btn-custom {
+         height: 40px;
+         border-radius: 50px;
+         padding: 10px;
+      }
+      .close-btn {
+         color: red;
+         padding: 10px 20px;
+      }
+   }
+}
+.rtl #cookieModal {
+   .cookie-btns {
+      float: left;
    }
 }
 
