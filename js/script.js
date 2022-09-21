@@ -40,6 +40,15 @@ for (const element of listingMapBox) {
    });
 }
 
+// horizontal scroll
+const element = document.querySelector("#categories");
+element.addEventListener("wheel", (event) => {
+   event.preventDefault();
+   element.scrollBy({
+      left: event.deltaY < 0 ? -30 : 30,
+   });
+});
+
 $(document).ready(function () {
    $(".xzoom").xzoom();
 
@@ -85,6 +94,20 @@ $(document).ready(function () {
       },
    });
 
+   // $(".xzoom-thumbs").owlCarousel({
+   //    loop: true,
+   //    margin: 15,
+   //    nav: true,
+   //    dots: false,
+   //    autoplay: true,
+   //    autoplayTimeout: 3000,
+   //    responsive: {
+   //       0: {
+   //          items: 4,
+   //       },
+   //    },
+   // });
+
    // RANGE SLIDER
    $(".js-range-slider").ionRangeSlider({
       type: "double",
@@ -99,16 +122,6 @@ $(document).ready(function () {
       urlShare: window.location.href,
       description: $("meta[name=description]").attr("content"),
       title: $("title").text(),
-   });
-
-   // SCROLL TOP
-   $(".scroll-up").fadeOut();
-   $(window).scroll(function () {
-      if ($(this).scrollTop() > 100) {
-         $(".scroll-up").fadeIn();
-      } else {
-         $(".scroll-up").fadeOut();
-      }
    });
 
    // leaflet js
