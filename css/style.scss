@@ -208,7 +208,7 @@ a.btn-custom {
       color: var(--primary);
       display: inline-block;
       img {
-         width: 80px;
+         width: 170px;
       }
    }
 
@@ -760,14 +760,43 @@ a.btn-custom {
          border-radius: 5px;
          min-width: 40px;
          height: 40px;
+         border-bottom: 2px solid var(--white);
          text-transform: capitalize;
          font-weight: 500;
          font-size: 18px;
          margin: 10px;
+         transition: 0.4s;
+         &:hover,
+         &.active {
+            border-bottom: 2px solid var(--primary);
+            color: var(--primary);
+         }
       }
       &::-webkit-scrollbar {
          width: 0px;
          height: 0px;
+      }
+      .owl-stage-outer {
+         z-index: 1;
+         padding: 0 33px;
+      }
+      .owl-nav {
+         position: absolute;
+         left: 0;
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+         .owl-next,
+         .owl-prev {
+            background: var(--primary);
+            color: var(--white);
+            border-radius: 100px;
+            z-index: 2;
+            span {
+               font-size: 24px;
+               line-height: 1;
+            }
+         }
       }
    }
    .category-box {
@@ -1856,7 +1885,7 @@ a.btn-custom {
          font-weight: 600;
          display: inline-block;
          img {
-            width: 80px;
+            width: 170px;
          }
       }
       p {
@@ -2537,7 +2566,8 @@ a.btn-custom {
 
 .profile-info-section {
    margin-bottom: 100px;
-   overflow-x: hidden;
+   // overflow-x: hidden;
+   // overflow-y: visible;
    .followers {
       background: var(--white);
       border-radius: 10px;

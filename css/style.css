@@ -235,7 +235,7 @@ a.btn-custom {
 }
 
 .navbar .navbar-brand img {
-  width: 80px;
+  width: 170px;
 }
 
 .navbar .navbar-toggler {
@@ -883,15 +883,54 @@ a.btn-custom {
   border-radius: 5px;
   min-width: 40px;
   height: 40px;
+  border-bottom: 2px solid var(--white);
   text-transform: capitalize;
   font-weight: 500;
   font-size: 18px;
   margin: 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.category-filter-section .categories button:hover, .category-filter-section .categories button.active {
+  border-bottom: 2px solid var(--primary);
+  color: var(--primary);
 }
 
 .category-filter-section .categories::-webkit-scrollbar {
   width: 0px;
   height: 0px;
+}
+
+.category-filter-section .categories .owl-stage-outer {
+  z-index: 1;
+  padding: 0 33px;
+}
+
+.category-filter-section .categories .owl-nav {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.category-filter-section .categories .owl-nav .owl-next,
+.category-filter-section .categories .owl-nav .owl-prev {
+  background: var(--primary);
+  color: var(--white);
+  border-radius: 100px;
+  z-index: 2;
+}
+
+.category-filter-section .categories .owl-nav .owl-next span,
+.category-filter-section .categories .owl-nav .owl-prev span {
+  font-size: 24px;
+  line-height: 1;
 }
 
 .category-filter-section .category-box {
@@ -2258,7 +2297,7 @@ a.btn-custom {
 }
 
 .footer-section .footer-box .navbar-brand img {
-  width: 80px;
+  width: 170px;
 }
 
 .footer-section .footer-box p {
@@ -3057,7 +3096,6 @@ a.btn-custom {
 
 .profile-info-section {
   margin-bottom: 100px;
-  overflow-x: hidden;
 }
 
 .profile-info-section .followers {

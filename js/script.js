@@ -85,19 +85,28 @@ $(document).ready(function () {
       },
    });
 
-   // $(".xzoom-thumbs").owlCarousel({
-   //    loop: true,
-   //    margin: 15,
-   //    nav: true,
-   //    dots: false,
-   //    autoplay: true,
-   //    autoplayTimeout: 3000,
-   //    responsive: {
-   //       0: {
-   //          items: 4,
-   //       },
-   //    },
-   // });
+   $(".categories-alphabet").owlCarousel({
+      loop: false,
+      margin: 0,
+      nav: true,
+      dots: false,
+      autoplay: false,
+      autoplayTimeout: 3000,
+      responsive: {
+         0: {
+            items: 5,
+         },
+         768: {
+            items: 10,
+         },
+         992: {
+            items: 15,
+         },
+         1200: {
+            items: 20,
+         },
+      },
+   });
 
    // RANGE SLIDER
    $(".js-range-slider").ionRangeSlider({
