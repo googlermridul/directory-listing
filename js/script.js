@@ -43,6 +43,8 @@ for (const element of listingMapBox) {
 $(document).ready(function () {
    $(".xzoom").xzoom();
 
+   $("#cookieModal").modal("show");
+
    $(".js-example-basic-single").select2();
 
    // owl carousel
