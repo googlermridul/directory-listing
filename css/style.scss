@@ -1130,6 +1130,7 @@ a.btn-custom {
          }
       }
    }
+   .amenities-box,
    .products,
    .video-box,
    .description-box,
@@ -1142,6 +1143,14 @@ a.btn-custom {
    }
    .video-box iframe {
       min-height: 350px;
+   }
+   .amenity-box {
+      text-align: center;
+      i {
+         color: var(--primary);
+         font-size: 24px;
+         margin-bottom: 15px;
+      }
    }
    .add-review {
       background: var(--white);
@@ -1647,6 +1656,44 @@ a.btn-custom {
    #map {
       min-height: 500px;
    }
+}
+// .leaflet-popup-content {
+//    background: red;
+// }
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+   background: var(--bgLight);
+}
+.leaflet-container a.leaflet-popup-close-button {
+   background: var(--white);
+   width: 25px;
+   height: 25px;
+   padding: 1px;
+   border-radius: 100px;
+   margin: 15px;
+}
+.leaflet-popup-content {
+   width: 200px !important;
+   margin: 0 !important;
+   img {
+      width: 100%;
+      margin-bottom: 10px;
+      // border-top-right-radius: 10px;
+      // border-top-left-radius: 10px;
+      border-radius: 10px;
+   }
+   a {
+      color: var(--primary);
+      display: inline-block;
+      margin-bottom: 5px;
+   }
+   div {
+      padding: 10px;
+   }
+}
+.leaflet-popup-content p {
+   margin: 0;
+   padding: 0;
 }
 
 // newsletter section

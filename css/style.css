@@ -1343,6 +1343,7 @@ a.btn-custom {
   color: red;
 }
 
+.listing-details .amenities-box,
 .listing-details .products,
 .listing-details .video-box,
 .listing-details .description-box,
@@ -1357,6 +1358,16 @@ a.btn-custom {
 
 .listing-details .video-box iframe {
   min-height: 350px;
+}
+
+.listing-details .amenity-box {
+  text-align: center;
+}
+
+.listing-details .amenity-box i {
+  color: var(--primary);
+  font-size: 24px;
+  margin-bottom: 15px;
 }
 
 .listing-details .add-review {
@@ -2001,6 +2012,46 @@ a.btn-custom {
 
 .listing-section #map {
   min-height: 500px;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: var(--bgLight);
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+  background: var(--white);
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+  border-radius: 100px;
+  margin: 20px;
+}
+
+.leaflet-popup-content {
+  width: 200px !important;
+  margin: 0 !important;
+}
+
+.leaflet-popup-content img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.leaflet-popup-content a {
+  color: var(--primary);
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.leaflet-popup-content div {
+  padding: 10px;
+}
+
+.leaflet-popup-content p {
+  margin: 0;
+  padding: 0;
 }
 
 .newsletter-section {

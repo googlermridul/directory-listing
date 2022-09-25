@@ -133,19 +133,41 @@ $(document).ready(function () {
       "https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=sxhLg9zZgwiGPxqkM7SM"
    ).addTo(map);
 
-   async function setMapMarker(selector) {
+   $(".listing-map-box").each(function (index, selector) {
+      setMapMarker(this, true);
+   });
+
+   $(document).on("click", ".listing-map-box", function () {
+      setMapMarker(this, false);
+   });
+
+   function setMapMarker(selector, isNew = false) {
       let lat = $(selector).data("lat");
       let long = $(selector).data("long");
       let title = $(selector).data("title");
-      await leaflet.setView([lat, long], 13);
-      await L.marker([lat, long]).addTo(map).bindPopup(title).openPopup();
+      let address = $(selector).data("address");
+      let image = $(selector).data("image");
+      let route = $(selector).data("route");
+      leaflet.setView([lat, long], 13);
+      if (isNew) {
+         new L.marker([lat, long]).addTo(map).bindPopup(`<div>
+<img class="" src="${image}"/>
+<a href="${route}" target="_blank">${title}</a>
+<p>${address}</p>
+</div>`);
+      } else {
+         L.marker([lat, long])
+            .addTo(map)
+            .bindPopup(
+               `<div>
+<img class="" src="${image}"/>
+<a href="${route}" target="_blank">${title}</a>
+<p>${address}</p>
+</div>`
+            )
+            .openPopup();
+      }
    }
-
-   setMapMarker($(".listing-map-box:first"));
-
-   $(document).on("click", ".listing-map-box", function () {
-      setMapMarker(this);
-   });
 });
 
 // horizontal scroll
@@ -252,6 +274,7 @@ element.addEventListener("wheel", (event) => {
                      }
                      counter = 0;
                   }
+
                   xzoom.openzoom(event);
                });
          });
@@ -303,6 +326,7 @@ element.addEventListener("wheel", (event) => {
                      }
                      counter = 0;
                   }
+
                   xzoom.openzoom(event);
                });
          });
