@@ -439,6 +439,7 @@ a.btn-custom {
   overflow-y: scroll;
   width: 100%;
   height: 100%;
+  max-height: 285px;
 }
 
 .navbar .navbar-text .notification-panel .dropdown-box::-webkit-scrollbar {
@@ -457,7 +458,7 @@ a.btn-custom {
   -webkit-box-shadow: var(--shadow);
           box-shadow: var(--shadow);
   width: 275px;
-  height: 325px;
+  max-height: 325px;
   overflow: hidden;
   padding-bottom: 40px;
   padding-top: 0;
@@ -474,6 +475,8 @@ a.btn-custom {
 
 .navbar .navbar-text .notification-panel .notification-dropdown li {
   border-bottom: 1px solid var(--borderColor);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .navbar .navbar-text .notification-panel .notification-dropdown li a {
@@ -505,12 +508,17 @@ a.btn-custom {
   color: var(--textColor);
 }
 
+.navbar .navbar-text .notification-panel .notification-dropdown li:hover {
+  background: var(--bgLight);
+}
+
 .navbar .navbar-text .notification-panel .notification-dropdown .text {
   width: calc(100% - 50px);
   margin-left: auto;
 }
 
 .navbar .navbar-text .notification-panel .notification-dropdown .clear-all {
+  background: var(--white);
   color: var(--primary);
   text-transform: capitalize;
   border-top: 1px solid var(--borderColor);
@@ -1218,14 +1226,29 @@ a.btn-custom {
   margin-bottom: 10px;
 }
 
+.listing-details .info-box .website,
 .listing-details .info-box .address {
-  font-size: 13px;
+  font-size: 15px;
   margin-bottom: 0;
   color: var(--gray);
 }
 
+.listing-details .info-box .website i,
 .listing-details .info-box .address i {
   font-size: 16px;
+  color: var(--primary);
+  width: 20px;
+}
+
+.listing-details .info-box .website a,
+.listing-details .info-box .address a {
+  color: var(--gray);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.listing-details .info-box .website a:hover,
+.listing-details .info-box .address a:hover {
   color: var(--primary);
 }
 
@@ -2021,11 +2044,11 @@ a.btn-custom {
 
 .leaflet-container a.leaflet-popup-close-button {
   background: var(--white);
-  width: 30px;
-  height: 30px;
-  padding: 3px;
+  width: 25px;
+  height: 25px;
+  padding: 1px;
   border-radius: 100px;
-  margin: 20px;
+  margin: 15px;
 }
 
 .leaflet-popup-content {

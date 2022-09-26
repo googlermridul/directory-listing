@@ -88,7 +88,7 @@ $(document).ready(function () {
    });
 
    $(".categories-alphabet").owlCarousel({
-      loop: false,
+      loop: true,
       margin: 0,
       nav: true,
       dots: false,
@@ -133,6 +133,16 @@ $(document).ready(function () {
       "https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=sxhLg9zZgwiGPxqkM7SM"
    ).addTo(map);
 
+   L.control
+      .fullscreen({
+         position: "topright",
+         content: null,
+         forceSeparateButton: true,
+         forcePseudoFullscreen: true,
+         fullscreenElement: false,
+      })
+      .addTo(map);
+
    $(".listing-map-box").each(function (index, selector) {
       setMapMarker(this, true);
    });
@@ -145,7 +155,7 @@ $(document).ready(function () {
       let lat = $(selector).data("lat");
       let long = $(selector).data("long");
       let title = $(selector).data("title");
-      let address = $(selector).data("address");
+      let location = $(selector).data("location");
       let image = $(selector).data("image");
       let route = $(selector).data("route");
       leaflet.setView([lat, long], 13);
@@ -153,7 +163,7 @@ $(document).ready(function () {
          new L.marker([lat, long]).addTo(map).bindPopup(`<div>
 <img class="" src="${image}"/>
 <a href="${route}" target="_blank">${title}</a>
-<p>${address}</p>
+<p><i class="fas fa-map-marker-alt fa-fw text-dark"></i> ${location}</p>
 </div>`);
       } else {
          L.marker([lat, long])
@@ -162,7 +172,7 @@ $(document).ready(function () {
                `<div>
 <img class="" src="${image}"/>
 <a href="${route}" target="_blank">${title}</a>
-<p>${address}</p>
+<p><i class="fas fa-map-marker-alt fa-fw text-dark"></i> ${location}</p>
 </div>`
             )
             .openPopup();
@@ -170,14 +180,14 @@ $(document).ready(function () {
    }
 });
 
-// horizontal scroll
-const element = document.querySelector("#categories");
-element.addEventListener("wheel", (event) => {
-   event.preventDefault();
-   element.scrollBy({
-      left: event.deltaY < 0 ? -30 : 30,
-   });
-});
+// // horizontal scroll
+// const element = document.querySelector("#categories");
+// element.addEventListener("wheel", (event) => {
+//    event.preventDefault();
+//    element.scrollBy({
+//       left: event.deltaY < 0 ? -30 : 30,
+//    });
+// });
 
 (function ($) {
    $(document).ready(function () {

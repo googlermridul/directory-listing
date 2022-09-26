@@ -1,411 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="icon" type="image/x-icon" href="./img/fav.png" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/x-icon" href="./img/fav.png"/>
 
-      <title>Directory Listing | Listings</title>
-      <!-- bootstrap 5 -->
-      <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
-      <!-- select 2 -->
-      <link rel="stylesheet" href="./assets/plugins/select2/select2.min.css" />
-      <!-- owl carousel -->
-      <link rel="stylesheet" href="./assets/plugins/owlcarousel/animate.css" />
-      <link
-         rel="stylesheet"
-         href="./assets/plugins/owlcarousel/owl.carousel.min.css"
-      />
-      <link
-         rel="stylesheet"
-         href="./assets/plugins/owlcarousel/owl.theme.default.min.css"
-      />
-      <!-- range slider -->
-      <link
-         rel="stylesheet"
-         href="./assets/plugins/rangeslider/range-slider.css"
-      />
-      <!-- font awesome 5 -->
-      <script src="./assets/fontawesome/fontawesomepro.js"></script>
-      <link
-         rel="stylesheet"
-         href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
-      />
-      <!-- custom css -->
-      <link rel="stylesheet" href="./css/style.css" />
-   </head>
-   <body class="">
-      <!-- navbar -->
-      <nav class="navbar navbar-expand-lg fixed-top">
-         <div class="container">
-            <a class="navbar-brand" href="index.html">
-               <img src="./img/logo.png" alt="" />
-            </a>
-            <button
-               class="navbar-toggler p-0"
-               type="button"
-               data-bs-toggle="collapse"
-               data-bs-target="#navbarNav"
-               aria-controls="navbarNav"
-               aria-expanded="false"
-               aria-label="Toggle navigation"
-            >
-               <i class="far fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-               <ul class="navbar-nav mx-auto">
-                  <li class="nav-item">
-                     <a class="nav-link active" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="pricing.html">Pricing</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="listing.html">Listing</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="category.html">Category</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="blog.html">Blogs</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-               </ul>
+    <title>Directory Listing | Listings</title>
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css"/>
+    <!-- select 2 -->
+    <link rel="stylesheet" href="./assets/plugins/select2/select2.min.css"/>
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="./assets/plugins/owlcarousel/animate.css"/>
+    <link
+            rel="stylesheet"
+            href="./assets/plugins/owlcarousel/owl.carousel.min.css"
+    />
+    <link
+            rel="stylesheet"
+            href="./assets/plugins/owlcarousel/owl.theme.default.min.css"
+    />
+    <!-- range slider -->
+    <link
+            rel="stylesheet"
+            href="./assets/plugins/rangeslider/range-slider.css"
+    />
+    <!-- font awesome 5 -->
+    <script src="./assets/fontawesome/fontawesomepro.js"></script>
+    <link rel="stylesheet" href="./assets/plugins/leaflet/leaflet.css"/>
+    <link rel="stylesheet" href="./assets/plugins/leaflet/Control.FullScreen.css"/>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body class="">
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="./img/logo.png" alt=""/>
+        </a>
+        <button
+                class="navbar-toggler p-0"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <i class="far fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="listing.html">Listing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="category.html">Category</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-text">
+            <!-- user panel -->
+            <div class="dropdown user-dropdown d-inline-block">
+                <button class="dropdown-toggle">
+                    <i class="far fa-user"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <i class="fal fa-hand-holding-usd"></i>
+                            make a deposit
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <i class="fal fa-wallet"></i>
+                            withdraw funds
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <i class="fal fa-user-friends"></i>
+                            invite friends
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <i class="fal fa-user"></i>
+                            personal profile
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <i class="fal fa-history"></i>
+                            bet history
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <i class="fal fa-cog"></i>
+                            account settings
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="navbar-text">
-               <!-- user panel -->
-               <div class="dropdown user-dropdown d-inline-block">
-                  <button class="dropdown-toggle">
-                     <i class="far fa-user"></i>
-                  </button>
-                  <ul class="dropdown-menu">
-                     <li>
-                        <a class="dropdown-item" href="#">
-                           <i class="fal fa-hand-holding-usd"></i>
-                           make a deposit
-                        </a>
-                     </li>
-                     <li>
-                        <a class="dropdown-item" href="#">
-                           <i class="fal fa-wallet"></i>
-                           withdraw funds
-                        </a>
-                     </li>
-                     <li>
-                        <a class="dropdown-item" href="#">
-                           <i class="fal fa-user-friends"></i>
-                           invite friends
-                        </a>
-                     </li>
-                     <li>
-                        <a class="dropdown-item" href="#">
-                           <i class="fal fa-user"></i>
-                           personal profile
-                        </a>
-                     </li>
-                     <li>
-                        <a class="dropdown-item" href="#">
-                           <i class="fal fa-history"></i>
-                           bet history
-                        </a>
-                     </li>
-                     <li>
-                        <a class="dropdown-item" href="#">
-                           <i class="fal fa-cog"></i>
-                           account settings
-                        </a>
-                     </li>
-                  </ul>
-               </div>
-               <!-- notification panel -->
-               <div class="notification-panel">
-                  <button class="dropdown-toggle">
-                     <i class="far fa-bell"></i>
-                     <span class="count">34</span>
-                  </button>
-                  <ul class="notification-dropdown">
-                     <div class="dropdown-box">
+            <!-- notification panel -->
+            <div class="notification-panel">
+                <button class="dropdown-toggle">
+                    <i class="far fa-bell"></i>
+                    <span class="count">34</span>
+                </button>
+                <ul class="notification-dropdown">
+                    <div class="dropdown-box">
                         <li>
-                           <a class="dropdown-item" href="#">
-                              <i class="fal fa-bell"></i>
-                              <div class="text">
-                                 <p>Notification</p>
-                                 <span>Lorem ipsum dolor sit amet.</span>
-                              </div>
-                           </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fal fa-bell"></i>
+                                <div class="text">
+                                    <p>Notification</p>
+                                    <span>Lorem ipsum dolor sit amet.</span>
+                                </div>
+                            </a>
                         </li>
                         <li>
-                           <a class="dropdown-item" href="#">
-                              <i class="fal fa-bell"></i>
-                              <div class="text">
-                                 <p>Notification</p>
-                                 <span>Lorem ipsum dolor sit amet. </span>
-                              </div>
-                           </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fal fa-bell"></i>
+                                <div class="text">
+                                    <p>Notification</p>
+                                    <span>Lorem ipsum dolor sit amet. </span>
+                                </div>
+                            </a>
                         </li>
                         <li>
-                           <a class="dropdown-item" href="#">
-                              <i class="fal fa-bell"></i>
-                              <div class="text">
-                                 <p>Notification</p>
-                                 <span>Lorem ipsum dolor sit amet.</span>
-                              </div>
-                           </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fal fa-bell"></i>
+                                <div class="text">
+                                    <p>Notification</p>
+                                    <span>Lorem ipsum dolor sit amet.</span>
+                                </div>
+                            </a>
                         </li>
                         <li>
-                           <a class="dropdown-item" href="#">
-                              <i class="fal fa-bell"></i>
-                              <div class="text">
-                                 <p>Notification</p>
-                                 <span>Lorem ipsum dolor sit amet.</span>
-                              </div>
-                           </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fal fa-bell"></i>
+                                <div class="text">
+                                    <p>Notification</p>
+                                    <span>Lorem ipsum dolor sit amet.</span>
+                                </div>
+                            </a>
                         </li>
                         <li>
-                           <a class="dropdown-item" href="#">
-                              <i class="fal fa-bell"></i>
-                              <div class="text">
-                                 <p>Notification</p>
-                                 <span>Lorem ipsum dolor sit amet.</span>
-                              </div>
-                           </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fal fa-bell"></i>
+                                <div class="text">
+                                    <p>Notification</p>
+                                    <span>Lorem ipsum dolor sit amet.</span>
+                                </div>
+                            </a>
                         </li>
-                     </div>
-                     <div class="clear-all fixed-bottom">
+                    </div>
+                    <div class="clear-all fixed-bottom">
                         <a href="">Clear all</a>
-                     </div>
-                  </ul>
-               </div>
-               <!-- login register button -->
-               <a href="login.html" class="btn-custom">Sign in</a>
+                    </div>
+                </ul>
             </div>
-         </div>
-      </nav>
+            <!-- login register button -->
+            <a href="login.html" class="btn-custom">Sign in</a>
+        </div>
+    </div>
+</nav>
 
-      <!-- banner section -->
-      <section class="banner-section">
-         <div class="overlay">
-            <div class="container">
-               <div class="row">
-                  <div class="col">
-                     <div class="header-text text-center">
-                        <h3>Best Listings</h3>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-
-      <section class="listing-section">
-         <div class="container-fluid">
+<!-- banner section -->
+<section class="banner-section">
+    <div class="overlay">
+        <div class="container">
             <div class="row">
-               <div class="col-xl-2 col-lg-4 my-4">
-                  <div class="filter-area">
-                     <!-- INPUT FIELD -->
-                     <div class="filter-box">
+                <div class="col">
+                    <div class="header-text text-center">
+                        <h3>Best Listings</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="listing-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-2 col-lg-4 my-4">
+                <div class="filter-area">
+                    <!-- INPUT FIELD -->
+                    <div class="filter-box">
                         <h5>search</h5>
                         <div class="input-group mb-3">
-                           <input
-                              type="email"
-                              class="form-control"
-                              placeholder="search"
-                           />
+                            <input
+                                    type="email"
+                                    class="form-control"
+                                    placeholder="search"
+                            />
                         </div>
                         <div class="input-group mb-3">
-                           <select
-                              class="js-example-basic-single form-control"
-                              name="state"
-                           >
-                              <option value="Audi">Select Region</option>
-                              <option value="Bmw">Bmw</option>
-                              <option value="Cadillac">Cadillac</option>
-                              <option value="Dodge">Dodge</option>
-                              <option value="Ferrari">Ferrari</option>
-                              <option value="Hennessey">Hennessey</option>
-                              <option value="Jaguar">Jaguar</option>
-                           </select>
+                            <select
+                                    class="js-example-basic-single form-control"
+                                    name="state"
+                            >
+                                <option value="Audi">Select Region</option>
+                                <option value="Bmw">Bmw</option>
+                                <option value="Cadillac">Cadillac</option>
+                                <option value="Dodge">Dodge</option>
+                                <option value="Ferrari">Ferrari</option>
+                                <option value="Hennessey">Hennessey</option>
+                                <option value="Jaguar">Jaguar</option>
+                            </select>
                         </div>
                         <div class="input-group">
-                           <select
-                              class="js-example-basic-single form-control"
-                              name="state"
-                           >
-                              <option value="Audi">Select Region</option>
-                              <option value="Bmw">Bmw</option>
-                              <option value="Cadillac">Cadillac</option>
-                              <option value="Dodge">Dodge</option>
-                              <option value="Ferrari">Ferrari</option>
-                              <option value="Hennessey">Hennessey</option>
-                              <option value="Jaguar">Jaguar</option>
-                           </select>
+                            <select
+                                    class="js-example-basic-single form-control"
+                                    name="state"
+                            >
+                                <option value="Audi">Select Region</option>
+                                <option value="Bmw">Bmw</option>
+                                <option value="Cadillac">Cadillac</option>
+                                <option value="Dodge">Dodge</option>
+                                <option value="Ferrari">Ferrari</option>
+                                <option value="Hennessey">Hennessey</option>
+                                <option value="Jaguar">Jaguar</option>
+                            </select>
                         </div>
-                     </div>
-                     <!-- PRICE RANGE -->
-                     <div class="filter-box">
+                    </div>
+                    <!-- PRICE RANGE -->
+                    <div class="filter-box">
                         <h5>Filter by price</h5>
                         <div class="input-box">
-                           <input
-                              type="text"
-                              class="js-range-slider"
-                              name="my_range"
-                              value=""
-                           />
-                           <label for="customRange1" class="form-label mt-3">
-                              $10 — $1,200</label
-                           >
+                            <input
+                                    type="text"
+                                    class="js-range-slider"
+                                    name="my_range"
+                                    value=""
+                            />
+                            <label for="customRange1" class="form-label mt-3">
+                                $10 — $1,200</label
+                            >
                         </div>
-                     </div>
-                     <div class="filter-box">
+                    </div>
+                    <div class="filter-box">
                         <h5>Filter by Ratings</h5>
                         <div class="check-box">
-                           <div class="form-check">
-                              <input
-                                 class="form-check-input"
-                                 type="checkbox"
-                                 value=""
-                                 id="check1"
-                              />
-                              <label class="form-check-label" for="check1">
-                                 <i class="fas fa-star"></i>
-                                 <i class="fas fa-star"></i>
-                                 <i class="fas fa-star"></i>
-                                 <i class="fas fa-star"></i>
-                                 <i class="fas fa-star"></i>
-                              </label>
-                           </div>
-                           <div class="form-check">
-                              <input
-                                 class="form-check-input"
-                                 type="checkbox"
-                                 value=""
-                                 id="check2"
-                              />
-                              <label class="form-check-label" for="check2">
-                                 <i class="fas fa-star"></i>
-                                 <i class="fas fa-star"></i>
-                                 <i class="fas fa-star"></i>
-                                 <i class="fas fa-star"></i>
-                              </label>
-                           </div>
-                           <div class="form-check">
-                              <input
-                                 class="form-check-input"
-                                 type="checkbox"
-                                 value=""
-                                 id="check3"
-                              />
-                              <label class="form-check-label" for="check3">
-                                 <i class="fas fa-star"></i>
-                                 <i class="fas fa-star"></i>
-                                 <i class="fas fa-star"></i>
-                              </label>
-                           </div>
-                           <div class="form-check">
-                              <input
-                                 class="form-check-input"
-                                 type="checkbox"
-                                 value=""
-                                 id="check4"
-                              />
-                              <label class="form-check-label" for="check4">
-                                 <i class="fas fa-star"></i>
-                                 <i class="fas fa-star"></i>
-                              </label>
-                           </div>
-                           <div class="form-check">
-                              <input
-                                 class="form-check-input"
-                                 type="checkbox"
-                                 value=""
-                                 id="check5"
-                              />
-                              <label class="form-check-label" for="check5">
-                                 <i class="fas fa-star"></i>
-                              </label>
-                           </div>
+                            <div class="form-check">
+                                <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="check1"
+                                />
+                                <label class="form-check-label" for="check1">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="check2"
+                                />
+                                <label class="form-check-label" for="check2">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="check3"
+                                />
+                                <label class="form-check-label" for="check3">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="check4"
+                                />
+                                <label class="form-check-label" for="check4">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="check5"
+                                />
+                                <label class="form-check-label" for="check5">
+                                    <i class="fas fa-star"></i>
+                                </label>
+                            </div>
                         </div>
-                     </div>
-                     <!-- SEARCH BY CATEGORIES -->
-                     <div class="filter-box">
+                    </div>
+                    <!-- SEARCH BY CATEGORIES -->
+                    <div class="filter-box">
                         <h5>Categories</h5>
                         <div class="check-box">
-                           <div class="form-check">
-                              <input
-                                 class="form-check-input"
-                                 type="checkbox"
-                                 value=""
-                                 id="categoryCheck1"
-                              />
-                              <label
-                                 class="form-check-label"
-                                 for="categoryCheck1"
-                              >
-                                 Premium Services
-                              </label>
-                           </div>
-                           <div class="form-check">
-                              <input
-                                 class="form-check-input"
-                                 type="checkbox"
-                                 value=""
-                                 id="categoryCheck2"
-                              />
-                              <label
-                                 class="form-check-label"
-                                 for="categoryCheck2"
-                              >
-                                 Verified Services
-                              </label>
-                           </div>
-                           <div class="form-check">
-                              <input
-                                 class="form-check-input"
-                                 type="checkbox"
-                                 value=""
-                                 id="categoryCheck3"
-                              />
-                              <label
-                                 class="form-check-label"
-                                 for="categoryCheck3"
-                              >
-                                 Trending Services
-                              </label>
-                           </div>
+                            <div class="form-check">
+                                <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="categoryCheck1"
+                                />
+                                <label
+                                        class="form-check-label"
+                                        for="categoryCheck1"
+                                >
+                                    Premium Services
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="categoryCheck2"
+                                />
+                                <label
+                                        class="form-check-label"
+                                        for="categoryCheck2"
+                                >
+                                    Verified Services
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="categoryCheck3"
+                                />
+                                <label
+                                        class="form-check-label"
+                                        for="categoryCheck3"
+                                >
+                                    Trending Services
+                                </label>
+                            </div>
                         </div>
-                     </div>
-                     <button class="btn-custom w-100">submit</button>
-                  </div>
-               </div>
-               <div class="col-xl-6 col-lg-8 my-4">
-                  <div class="row g-4">
-                     <div class="col-lg-4 col-md-6">
+                    </div>
+                    <button class="btn-custom w-100">submit</button>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-8 my-4">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
                         <div
-                           class="listing-box listing-map-box active"
-                           data-lat="51.509865"
-                           data-long="-0.118092"
-                           data-title="Wize Shopping Mall"
-                           Data-image="./img/item/16.jpg"
-                           data-location="singapore"
+                                class="listing-box listing-map-box"
+                                data-lat="51.509865"
+                                data-long="-0.118092"
+                                data-title="Wize Shopping Mall"
+                                data-image="./img/item/16.jpg"
+                                data-location="singapore"
+                                data-route="file:///C:/Users/User.DESKTOP-IQOQ25D/Downloads/directory-listing-main%20(4)/directory-listing-main/listing.html"
                         >
-                           <div class="img-box">
-                              <img
-                                 class="img-fluid"
-                                 src="./img/item/16.jpg"
-                                 alt=""
-                              />
-                              <button class="save">
-                                 <i class="fal fa-heart"></i>
-                              </button>
-                           </div>
-                           <div class="text-box">
-                              <div class="review">
+                            <div class="img-box">
+                                <img
+                                        class="img-fluid"
+                                        src="./img/item/16.jpg"
+                                        alt=""
+                                />
+                                <button class="save">
+                                    <i class="fal fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="text-box">
+                                <div class="review">
                                  <span>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
@@ -413,42 +412,45 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star-half"></i>
                                  </span>
-                                 <span>(45 reviews)</span>
-                              </div>
-                              <h5 class="title">Wize Shopping Mall</h5>
-                              <p>Biggest shopping amll in NY</p>
-                              <a class="author" href="profile.html">
-                                 John Wick</a
-                              >
-                              <p class="address">
-                                 <i class="fal fa-map-marker-alt"></i>
-                                 75 Prince St, NY, USA
-                              </p>
-                              <a href="listing-details.html" class="btn-custom"
-                                 >View details</a
-                              >
-                           </div>
+                                    <span>(45 reviews)</span>
+                                </div>
+                                <h5 class="title">Wize Shopping Mall</h5>
+                                <p>Biggest shopping amll in NY</p>
+                                <a class="author" href="profile.html">
+                                    John Wick</a
+                                >
+                                <p class="address">
+                                    <i class="fal fa-map-marker-alt"></i>
+                                    75 Prince St, NY, USA
+                                </p>
+                                <a href="listing-details.html" class="btn-custom"
+                                >View details</a
+                                >
+                            </div>
                         </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6">
+                    </div>
+                    <div class="col-lg-4 col-md-6">
                         <div
-                           class="listing-box listing-map-box"
-                           data-lat="41.902782"
-                           data-long="12.496366"
-                           data-title="Wize Shopping Mall 2"
+                                class="listing-box listing-map-box"
+                                data-lat="41.902782"
+                                data-long="12.496366"
+                                data-title="Wize Shopping Mall 2"
+                                data-image="./img/item/28.jpg"
+                                data-location="singapore"
+                                data-route="file:///C:/Users/User.DESKTOP-IQOQ25D/Downloads/directory-listing-main%20(4)/directory-listing-main/listing.html"
                         >
-                           <div class="img-box">
-                              <img
-                                 class="img-fluid"
-                                 src="./img/item/28.jpg"
-                                 alt=""
-                              />
-                              <button class="save">
-                                 <i class="fal fa-heart"></i>
-                              </button>
-                           </div>
-                           <div class="text-box">
-                              <div class="review">
+                            <div class="img-box">
+                                <img
+                                        class="img-fluid"
+                                        src="./img/item/28.jpg"
+                                        alt=""
+                                />
+                                <button class="save">
+                                    <i class="fal fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="text-box">
+                                <div class="review">
                                  <span>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
@@ -456,42 +458,45 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star-half"></i>
                                  </span>
-                                 <span>(45 reviews)</span>
-                              </div>
-                              <h5 class="title">Wize Shopping Mall</h5>
-                              <p>Biggest shopping amll in NY</p>
-                              <a class="author" href="profile.html">
-                                 John Wick</a
-                              >
-                              <p class="address">
-                                 <i class="fal fa-map-marker-alt"></i>
-                                 75 Prince St, NY, USA
-                              </p>
-                              <a href="listing-details.html" class="btn-custom"
-                                 >View details</a
-                              >
-                           </div>
+                                    <span>(45 reviews)</span>
+                                </div>
+                                <h5 class="title">Wize Shopping Mall</h5>
+                                <p>Biggest shopping amll in NY</p>
+                                <a class="author" href="profile.html">
+                                    John Wick</a
+                                >
+                                <p class="address">
+                                    <i class="fal fa-map-marker-alt"></i>
+                                    75 Prince St, NY, USA
+                                </p>
+                                <a href="listing-details.html" class="btn-custom"
+                                >View details</a
+                                >
+                            </div>
                         </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6">
+                    </div>
+                    <div class="col-lg-4 col-md-6">
                         <div
-                           class="listing-box listing-map-box"
-                           data-lat="40.416775"
-                           data-long="-3.703790"
-                           data-title="Wize Shopping Mall 3"
+                                class="listing-box listing-map-box"
+                                data-lat="40.416775"
+                                data-long="-3.703790"
+                                data-title="Wize Shopping Mall 3"
+                                data-image="./img/item/28.jpg"
+                                data-location="singapore"
+                                data-route="file:///C:/Users/User.DESKTOP-IQOQ25D/Downloads/directory-listing-main%20(4)/directory-listing-main/listing.html"
                         >
-                           <div class="img-box">
-                              <img
-                                 class="img-fluid"
-                                 src="./img/item/28.jpg"
-                                 alt=""
-                              />
-                              <button class="save">
-                                 <i class="fal fa-heart"></i>
-                              </button>
-                           </div>
-                           <div class="text-box">
-                              <div class="review">
+                            <div class="img-box">
+                                <img
+                                        class="img-fluid"
+                                        src="./img/item/28.jpg"
+                                        alt=""
+                                />
+                                <button class="save">
+                                    <i class="fal fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="text-box">
+                                <div class="review">
                                  <span>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
@@ -499,42 +504,45 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star-half"></i>
                                  </span>
-                                 <span>(45 reviews)</span>
-                              </div>
-                              <h5 class="title">Wize Shopping Mall</h5>
-                              <p>Biggest shopping amll in NY</p>
-                              <a class="author" href="profile.html">
-                                 John Wick</a
-                              >
-                              <p class="address">
-                                 <i class="fal fa-map-marker-alt"></i>
-                                 75 Prince St, NY, USA
-                              </p>
-                              <a href="listing-details.html" class="btn-custom"
-                                 >View details</a
-                              >
-                           </div>
+                                    <span>(45 reviews)</span>
+                                </div>
+                                <h5 class="title">Wize Shopping Mall</h5>
+                                <p>Biggest shopping amll in NY</p>
+                                <a class="author" href="profile.html">
+                                    John Wick</a
+                                >
+                                <p class="address">
+                                    <i class="fal fa-map-marker-alt"></i>
+                                    75 Prince St, NY, USA
+                                </p>
+                                <a href="listing-details.html" class="btn-custom"
+                                >View details</a
+                                >
+                            </div>
                         </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6">
+                    </div>
+                    <div class="col-lg-4 col-md-6">
                         <div
-                           class="listing-box listing-map-box"
-                           data-lat="39.925533"
-                           data-long="32.866287"
-                           data-title="Wize Shopping Mall 4"
+                                class="listing-box listing-map-box"
+                                data-lat="39.925533"
+                                data-long="32.866287"
+                                data-title="Wize Shopping Mall 4"
+                                data-image="./img/item/9.jpg"
+                                data-location="singapore"
+                                data-route="file:///C:/Users/User.DESKTOP-IQOQ25D/Downloads/directory-listing-main%20(4)/directory-listing-main/listing.html"
                         >
-                           <div class="img-box">
-                              <img
-                                 class="img-fluid"
-                                 src="./img/item/9.jpg"
-                                 alt=""
-                              />
-                              <button class="save">
-                                 <i class="fal fa-heart"></i>
-                              </button>
-                           </div>
-                           <div class="text-box">
-                              <div class="review">
+                            <div class="img-box">
+                                <img
+                                        class="img-fluid"
+                                        src="./img/item/9.jpg"
+                                        alt=""
+                                />
+                                <button class="save">
+                                    <i class="fal fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="text-box">
+                                <div class="review">
                                  <span>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
@@ -542,208 +550,209 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star-half"></i>
                                  </span>
-                                 <span>(45 reviews)</span>
-                              </div>
-                              <h5 class="title">Wize Shopping Mall</h5>
-                              <p>Biggest shopping amll in NY</p>
-                              <a class="author" href="profile.html">
-                                 John Wick</a
-                              >
-                              <p class="address">
-                                 <i class="fal fa-map-marker-alt"></i>
-                                 75 Prince St, NY, USA
-                              </p>
-                              <a href="listing-details.html" class="btn-custom"
-                                 >View details</a
-                              >
-                           </div>
+                                    <span>(45 reviews)</span>
+                                </div>
+                                <h5 class="title">Wize Shopping Mall</h5>
+                                <p>Biggest shopping amll in NY</p>
+                                <a class="author" href="profile.html">
+                                    John Wick</a
+                                >
+                                <p class="address">
+                                    <i class="fal fa-map-marker-alt"></i>
+                                    75 Prince St, NY, USA
+                                </p>
+                                <a href="listing-details.html" class="btn-custom"
+                                >View details</a
+                                >
+                            </div>
                         </div>
-                     </div>
-                  </div>
+                    </div>
+                </div>
 
-                  <nav aria-label="Page navigation example mt-5">
-                     <ul class="pagination justify-content-center mt-5">
+                <nav aria-label="Page navigation example mt-5">
+                    <ul class="pagination justify-content-center mt-5">
                         <li class="page-item disabled">
-                           <a class="page-link">Previous</a>
+                            <a class="page-link">Previous</a>
                         </li>
                         <li class="page-item active">
-                           <a class="page-link" href="#">1</a>
+                            <a class="page-link" href="#">1</a>
                         </li>
                         <li class="page-item">
-                           <a class="page-link" href="#">2</a>
+                            <a class="page-link" href="#">2</a>
                         </li>
                         <li class="page-item">
-                           <a class="page-link" href="#">3</a>
+                            <a class="page-link" href="#">3</a>
                         </li>
                         <li class="page-item">
-                           <a class="page-link" href="#">Next</a>
+                            <a class="page-link" href="#">Next</a>
                         </li>
-                     </ul>
-                  </nav>
-               </div>
-               <div class="col-xl-4 col-lg-12">
-                  <!-- <img src="./img/blog/g-map.jpg" alt="" class="img-fluid" /> -->
-                  <div class="h-100" id="map"></div>
-               </div>
+                    </ul>
+                </nav>
             </div>
-         </div>
-      </section>
+            <div class="col-xl-4 col-lg-12">
+                <!-- <img src="./img/blog/g-map.jpg" alt="" class="img-fluid" /> -->
+                <div class="h-100" id="map"></div>
+            </div>
+        </div>
+    </div>
+</section>
 
-      <!-- footer section -->
-      <footer class="footer-section">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-6 col-lg-3">
-                  <div class="footer-box">
-                     <a class="navbar-brand" href="index.html">
-                        <img src="./img/logo.png" alt="" />
-                     </a>
-                     <p>
+<!-- footer section -->
+<footer class="footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <div class="footer-box">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./img/logo.png" alt=""/>
+                    </a>
+                    <p>
                         Duis aute irure dolor in reprehenderit in voluptate
                         velit esse cillum dolore Duis aute irure dolor in
                         reprehenderit in voluptate velit esse cillum dolore
-                     </p>
-                     <div class="social-links">
+                    </p>
+                    <div class="social-links">
                         <a href="#">
-                           <i class="fab fa-facebook"></i>
+                            <i class="fab fa-facebook"></i>
                         </a>
                         <a href="#">
-                           <i class="fab fa-discord"></i>
+                            <i class="fab fa-discord"></i>
                         </a>
                         <a href="#">
-                           <i class="fab fa-twitter"></i>
+                            <i class="fab fa-twitter"></i>
                         </a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6 col-lg-3 ps-lg-5">
-                  <div class="footer-box">
-                     <h5>Quick Links</h5>
-                     <ul>
-                        <li>
-                           <a href="#">Home</a>
-                        </li>
-                        <li>
-                           <a href="#">About</a>
-                        </li>
-                        <li>
-                           <a href="#">Services</a>
-                        </li>
-                        <li>
-                           <a href="#">Blog</a>
-                        </li>
-                        <li>
-                           <a href="#">Contact</a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="col-md-6 col-lg-3 ps-lg-5">
-                  <div class="footer-box">
-                     <h5>OUR Services</h5>
-                     <ul>
-                        <li>
-                           <a href="#">Support</a>
-                        </li>
-                        <li>
-                           <a href="#">FAQ</a>
-                        </li>
-                        <li>
-                           <a href="#">About story</a>
-                        </li>
-                        <li>
-                           <a href="#">Privacy</a>
-                        </li>
-                        <li>
-                           <!-- <img src="./img/icon/arrow-orange.png" alt="" /> -->
-                           <a href="#">Terms & condition</a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="col-md-6 col-lg-3">
-                  <div class="footer-box">
-                     <h5>get in touch</h5>
-                     <ul>
-                        <li>
-                           <i class="far fa-phone-alt"></i>
-                           <span>+880 654 321 23</span>
-                        </li>
-                        <li>
-                           <i class="far fa-envelope"></i>
-                           <span>contact@bugfinder.net</span>
-                        </li>
-                        <li>
-                           <i class="far fa-map-marker-alt"></i>
-                           <span>457 Morningview, New York USA</span>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
+                    </div>
+                </div>
             </div>
-            <div class="footer-bottom">
-               <div class="row">
-                  <div class="col-md-6">
-                     <p class="copyright">
+            <div class="col-md-6 col-lg-3 ps-lg-5">
+                <div class="footer-box">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 ps-lg-5">
+                <div class="footer-box">
+                    <h5>OUR Services</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Support</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">About story</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy</a>
+                        </li>
+                        <li>
+                            <!-- <img src="./img/icon/arrow-orange.png" alt="" /> -->
+                            <a href="#">Terms & condition</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="footer-box">
+                    <h5>get in touch</h5>
+                    <ul>
+                        <li>
+                            <i class="far fa-phone-alt"></i>
+                            <span>+880 654 321 23</span>
+                        </li>
+                        <li>
+                            <i class="far fa-envelope"></i>
+                            <span>contact@bugfinder.net</span>
+                        </li>
+                        <li>
+                            <i class="far fa-map-marker-alt"></i>
+                            <span>457 Morningview, New York USA</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="copyright">
                         Copyright © 2022 <a href="">Listing</a> All Rights
                         Reserved.
-                     </p>
-                  </div>
-                  <div class="col-md-6 language">
-                     <a href="">Bengali</a>
-                     <a href="">English</a>
-                     <a href="">Spanish</a>
-                     <a href="">Turkish</a>
-                     <a href="">Arabic</a>
-                     <a href="">Korean</a>
-                     <a href="">Japanese</a>
-                     <a href="">Italian</a>
-                     <a href="">Chinese</a>
-                  </div>
-               </div>
+                    </p>
+                </div>
+                <div class="col-md-6 language">
+                    <a href="">Bengali</a>
+                    <a href="">English</a>
+                    <a href="">Spanish</a>
+                    <a href="">Turkish</a>
+                    <a href="">Arabic</a>
+                    <a href="">Korean</a>
+                    <a href="">Japanese</a>
+                    <a href="">Italian</a>
+                    <a href="">Chinese</a>
+                </div>
             </div>
-         </div>
-      </footer>
+        </div>
+    </div>
+</footer>
 
-      <!-- Cookie Alert -->
-      <div id="cookieAlert">
-         <h5>
-            <img class="cookie-img" src="./img/icon/cookie.png" alt="" />
-            Cookies & Privacy
-         </h5>
-         <p>
-            This website uses cookies or similar techonoglies to enhance your
-            browsing experience and provide personalized recommendations. By
-            contrinuing to use our website, you agree to our
-            <a href="">Privacy Policy</a>
-         </p>
-         <div class="cookie-btns">
-            <button type="button" class="close-btn" data-bs-dismiss="modal">
-               Decline
-            </button>
-            <button class="btn-custom">Accept</button>
-         </div>
-      </div>
+<!-- Cookie Alert -->
+<div id="cookieAlert">
+    <h5>
+        <img class="cookie-img" src="./img/icon/cookie.png" alt=""/>
+        Cookies & Privacy
+    </h5>
+    <p>
+        This website uses cookies or similar techonoglies to enhance your
+        browsing experience and provide personalized recommendations. By
+        contrinuing to use our website, you agree to our
+        <a href="">Privacy Policy</a>
+    </p>
+    <div class="cookie-btns">
+        <button type="button" class="close-btn" data-bs-dismiss="modal">
+            Decline
+        </button>
+        <button class="btn-custom">Accept</button>
+    </div>
+</div>
 
-      <!-- bootstrap -->
-      <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
-      <!-- jquery cdn -->
-      <script src="./assets/jquery/jquery-3.6.0.min.js"></script>
-      <!-- select 2 -->
-      <script src="./assets/plugins/select2/select2.min.js"></script>
-      <!-- owl carousel -->
-      <script src="./assets/plugins/owlcarousel/owl.carousel.min.js"></script>
-      <!-- range slider -->
-      <script src="./assets/plugins/rangeslider/range-slider.min.js"></script>
-      <!-- leaflet js -->
-      <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
-      <!-- social share -->
-      <script src="./assets/plugins/socialjs/socialSharing.js"></script>
-      <!-- magnific popup -->
-      <script src="./assets/plugins/magnific-popup/magnific-popup.js"></script>
-      <!-- xzoom -->
-      <script src="./assets/plugins/xZoom/xzoom.min.js"></script>
-      <!-- custom script -->
-      <script src="./js/script.js"></script>
-   </body>
+<!-- bootstrap -->
+<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+<!-- jquery cdn -->
+<script src="./assets/jquery/jquery-3.6.0.min.js"></script>
+<!-- select 2 -->
+<script src="./assets/plugins/select2/select2.min.js"></script>
+<!-- owl carousel -->
+<script src="./assets/plugins/owlcarousel/owl.carousel.min.js"></script>
+<!-- range slider -->
+<script src="./assets/plugins/rangeslider/range-slider.min.js"></script>
+<!-- leaflet js -->
+<script src="./assets/plugins/leaflet/leaflet.js"></script>
+<script src="./assets/plugins/leaflet/Control.FullScreen.js"></script>
+<!-- social share -->
+<script src="./assets/plugins/socialjs/socialSharing.js"></script>
+<!-- magnific popup -->
+<script src="./assets/plugins/magnific-popup/magnific-popup.js"></script>
+<!-- xzoom -->
+<script src="./assets/plugins/xZoom/xzoom.min.js"></script>
+<!-- custom script -->
+<script src="./js/script.js"></script>
+</body>
 </html>
